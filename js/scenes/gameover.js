@@ -29,9 +29,11 @@ class GameOverScene {
     ctx.globalAlpha = a;
     ctx.font = "16px 'Press Start 2P', 'Courier New', monospace"; ctx.textBaseline = 'top'; ctx.fillStyle = '#d02040';
     const s = 'ELIMINATED'; ctx.fillText(s, UI.W / 2 - ctx.measureText(s).width / 2, 40);
-    const lines = UI.wrap(ctx, this.line, UI.W - 36);
-    lines.forEach((l, i) => UI.center(ctx, l, UI.W / 2, 80 + i * 12, UI.COLORS.sys));
-    UI.center(ctx, 'Deepest floor: ' + G.deepest + '   Score: ' + G.score, UI.W / 2, 128, '#9090a8');
+    const lines = UI.wrap(ctx, (G.flags.deathReason ? G.flags.deathReason + ' ' : '') + this.line, UI.W - 36);
+    lines.forEach((l, i) => UI.center(ctx, l, UI.W / 2, 72 + i * 11, UI.COLORS.sys));
+    const st = G.stats || {};
+    UI.center(ctx, 'Floor ' + G.deepest + '  Score ' + G.score + '  Viewers ' + G.viewers, UI.W / 2, 122, '#9090a8');
+    UI.center(ctx, 'Kills ' + (st.monsterKills || 0) + '  Finishes ' + (st.finishes || 0) + '  Recruits ' + (st.recruits || 0) + '  Crits ' + (st.crits || 0), UI.W / 2, 134, '#9090a8');
     ctx.globalAlpha = 1;
     if (this.menu) this.menu.draw(ctx);
   }

@@ -37,20 +37,46 @@ const ENEMIES = {
   golem: { name: 'Mop Golem', sprite: 'golem', level: 11, hp: 170, str: 28, def: 22, spd: 4, luck: 2, exp: 140, money: 100,
     drops: [{ id: 'mop', p: 0.2 }], article: 'the',
     actions: [{ type: 'attack', verb: 'swabs', w: 6 }, { type: 'skill', id: 'bulwark', w: 1 }, { type: 'idle', text: '{n} leaves a wet floor sign.', w: 1 }] },
-  // ---- bosses ----
+  // ---- sub-bosses (guard the gates between floor sections) ----
+  ratlt: { name: 'Rat Lieutenant', sprite: 'rat', pal: { n: '#604020', z: '#ff6060' }, level: 3, hp: 80, str: 11, def: 4, spd: 8, luck: 4, exp: 60, money: 60, subboss: true,
+    drops: [{ id: 'box_bronze', p: 1 }], article: 'the', intro: 'A rat the size of a dog wears a bottle cap on a string. It salutes, then lunges.',
+    phases: [{ at: 0.5, tell: 'The Lieutenant bares its teeth and starts biting twice as fast!', effect: 'rage' }],
+    actions: [{ type: 'attack', verb: 'bites', w: 6 }, { type: 'attack', verb: 'gnaws', mult: 1.3, w: 2 }] },
+  warden: { name: 'Gate Warden', sprite: 'golem', pal: { S: '#806050', G: '#c0a080' }, level: 6, hp: 200, str: 18, def: 18, spd: 3, luck: 2, exp: 160, money: 120, subboss: true,
+    drops: [{ id: 'box_silver', p: 1 }], article: 'the', intro: 'A stone construct grinds upright in front of the gate. "ACCESS. DENIED."',
+    phases: [{ at: 0.5, tell: 'The Warden braces itself. Something heavy is coming. (Guard!)', effect: 'bigslam' }],
+    actions: [{ type: 'attack', verb: 'slams', w: 5 }, { type: 'skill', id: 'bulwark', w: 2 }, { type: 'idle', text: '{n} recalibrates.', w: 1 }] },
+  crabmom: { name: 'Crab Matriarch', sprite: 'crab', pal: { r: '#c04080' }, level: 7, hp: 260, str: 22, def: 20, spd: 2, luck: 3, exp: 220, money: 160, subboss: true,
+    drops: [{ id: 'box_silver', p: 1 }], article: 'the', intro: 'The drain water rises. Something enormous and pink clacks its claws.',
+    phases: [{ at: 0.4, tell: 'The Matriarch raises both claws high! (Guard!)', effect: 'bigslam' }],
+    actions: [{ type: 'attack', verb: 'pinches', w: 5 }, { type: 'attack', verb: 'crushes', mult: 1.4, w: 2 }, { type: 'skill', id: 'bulwark', w: 1 }] },
+  alpha: { name: 'Hound Alpha', sprite: 'hound', pal: { e: '#503030', r: '#ffd040' }, level: 10, hp: 320, str: 30, def: 12, spd: 16, luck: 8, exp: 340, money: 200, subboss: true,
+    drops: [{ id: 'box_silver', p: 1 }], article: 'the', intro: 'A howl rolls through the corridor. The pack leader steps into the light.',
+    phases: [{ at: 0.5, tell: 'The Alpha howls! Its eyes go wild and it moves faster!', effect: 'haste' }],
+    actions: [{ type: 'attack', verb: 'mauls', w: 5 }, { type: 'attack', verb: 'gnaws on', status: 'poison', chance: 0.5, w: 3 }] },
+  sentinel: { name: 'Security Sentinel', sprite: 'drone', pal: { l: '#c0c0c0', r: '#40ff40', c: '#ff4040' }, level: 12, hp: 340, str: 32, def: 16, spd: 18, luck: 10, exp: 400, money: 260, subboss: true,
+    drops: [{ id: 'box_gold', p: 0.5 }, { id: 'box_silver', p: 1 }], article: 'the', intro: 'A security drone descends, spotlight blazing. "UNAUTHORIZED. INITIATING COMPLIANCE."',
+    phases: [{ at: 0.5, tell: 'The Sentinel charges its capacitors. A big zap is coming! (Guard!)', effect: 'bigzap' }],
+    actions: [{ type: 'attack', verb: 'zaps', w: 4 }, { type: 'skill', id: 'zap', w: 3 }, { type: 'idle', text: '{n} scans your credentials.', w: 1 }] },
+  // ---- bosses (with phases: at = HP fraction, tell is shown, effect fires next enemy turn) ----
   ratking: { name: 'Ratking Reginald', sprite: 'ratking', level: 4, hp: 150, str: 14, def: 6, spd: 7, luck: 5, exp: 120, money: 150, boss: true,
     drops: [{ id: 'box_silver', p: 1 }], article: '',
     intro: 'A crown of bottle caps glints in the dark. The rats part for their king.',
+    phases: [{ at: 0.5, tell: 'Reginald squeaks a royal decree! The rats gather in the shadows... (Guard!)', effect: 'swarm' }],
     actions: [{ type: 'attack', verb: 'gnaws', w: 5 }, { type: 'attack', verb: 'commands the rats to swarm', all: true, mult: 0.6, w: 3 }, { type: 'idle', text: '{n} demands tribute.', w: 1 }] },
   steward: { name: 'The Floor Steward', sprite: 'steward', level: 8, hp: 380, str: 24, def: 14, spd: 9, luck: 8, exp: 420, money: 400, boss: true,
     drops: [{ id: 'box_gold', p: 1 }], article: '',
     intro: 'A polished maintenance unit blocks the stairs. "Your descent has not been approved."',
+    phases: [{ at: 0.5, tell: 'The Steward\'s chassis whirs: "REQUESTING BACKUP." Sponsor Drones descend!', effect: 'summon', summon: 'drone', count: 2 }],
     actions: [{ type: 'attack', verb: 'sanitizes', w: 4 }, { type: 'skill', id: 'zap', w: 3 }, { type: 'attack', verb: 'sweeps', all: true, mult: 0.7, w: 3 }, { type: 'skill', id: 'bulwark', w: 1 }] },
   gladiatron: { name: 'Gladiatron', sprite: 'gladiatron', level: 13, hp: 720, str: 38, def: 22, spd: 12, luck: 10, exp: 1200, money: 1000, boss: true,
     drops: [{ id: 'box_gold', p: 1 }, { id: 'boot', p: 1 }], article: '',
     intro: 'The crowd noise is piped in. The champion is not. Gladiatron cracks its golden knuckles.',
+    phases: [{ at: 0.6, tell: 'Gladiatron raises its arms to the crowd! The roar is deafening! (Guard everyone!)', effect: 'hypeslam' }, { at: 0.25, tell: 'Gladiatron drops to one knee... then rises, furious!', effect: 'rage' }],
     actions: [{ type: 'attack', verb: 'pummels', w: 4 }, { type: 'attack', verb: 'unleashes a Crowd Pleaser on', all: true, mult: 0.8, w: 3 }, { type: 'skill', id: 'hype', w: 1 }, { type: 'skill', id: 'siphon', w: 2 }] },
 };
+
+const SUBBOSS_POOLS = { 1: ['ratlt', 'warden'], 2: ['crabmom', 'warden'], 3: ['alpha', 'sentinel'], all: ['warden', 'crabmom', 'alpha', 'sentinel'] };
 
 const ENEMY_POOLS = {
   1: ['rat', 'goo', 'bat'],

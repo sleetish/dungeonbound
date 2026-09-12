@@ -1,0 +1,43 @@
+// ---- Sponsors -------------------------------------------------------------------------
+// Up to 3 sponsor you at once. Each watches your stats: `likes` raise satisfaction when those
+// stats tick up, `dislikes` lower it. Below 15 satisfaction they drop you. `conflicts` can't
+// share a contract. generosity: 0 never sends boxes, 1 normal, 2 lavish. Exclusive items are
+// sent when satisfaction is high and a boss is still ahead of you on the floor.
+const SPONSORS = {
+  blorp: { name: 'Blorp', tagline: 'It\'s probably food.', personality: 'Cheerful, vaguely sinister, obsessed with snacks.',
+    likes: { itemsUsed: 4, purchases: 3 }, dislikes: {}, generosity: 2, conflicts: [], exclusives: ['blorpfeast'],
+    lines: { offer: 'Blorp sees you eat. Blorp likes that. Blorp would like to feed you. On camera.', happy: 'Blorp is pleased. Have more Blorp.', unhappy: 'You have not eaten. Blorp is worried. Blorp is watching.', drop: 'Blorp withdraws. Blorp will remember your mouth.', box: 'A Blorp drone drops a crate. It is warm.' } },
+  ironclad: { name: 'Ironclad Armory', tagline: 'Hit harder.', personality: 'Gruff, respects violence against monsters, hates finesse.',
+    likes: { crits: 5, monsterKills: 1 }, dislikes: { runs: 6, parleys: 3 }, generosity: 1, conflicts: ['neurofizz'], exclusives: ['ironblade'],
+    lines: { offer: 'You swing like somebody who wants a better weapon. We make better weapons.', happy: 'That crit made the highlight reel. Good.', unhappy: 'Talking. Running. Casting. Pick up a bat.', drop: 'Contract terminated. You went soft.', box: 'Ironclad delivery. Heavy.' } },
+  mercycorp: { name: 'Mercy Corp', tagline: 'Everyone goes home.', personality: 'Earnest, pacifist, funds you to keep crawlers alive.',
+    likes: { parleys: 6, releases: 8, recruits: 5, gifts: 3 }, dislikes: { finishes: 25, knockouts: 4 }, generosity: 1, conflicts: ['bloodsport'], exclusives: ['mercykit'],
+    lines: { offer: 'We fund crawlers who don\'t make orphans. Interested?', happy: 'Another life spared. Our donors are weeping. Good weeping.', unhappy: 'Our donors saw that. They are also weeping.', drop: 'Mercy Corp cannot be associated with you. Goodbye.', box: 'A Mercy Corp care package drifts down on a tiny parachute.' } },
+  bloodsport: { name: 'Bloodsport Network', tagline: 'No mercy. No reruns.', personality: 'Loud, hungry for eliminations, bored by everything else.',
+    likes: { finishes: 30, bossKills: 6 }, dislikes: { releases: 10, parleys: 5 }, generosity: 1, conflicts: ['mercycorp', 'recovery'], exclusives: ['bloodcleaver'],
+    lines: { offer: 'Our viewers want blood. Yours or theirs, they\'re not picky. Sign here.', happy: 'THAT is television. Keep going.', unhappy: 'You let them WALK? Our ratings just walked with them.', drop: 'You\'re dull. Dropped.', box: 'Bloodsport airdrop. It\'s screaming.' } },
+  kepler: { name: 'Kepler-9 Collectors', tagline: 'Everything is memorabilia.', personality: 'Polite alien hobbyists who want to see everything opened.',
+    likes: { chests: 6, boxes: 5 }, dislikes: {}, generosity: 2, conflicts: [], exclusives: ['box_gold'],
+    lines: { offer: 'We collect Earth artifacts. You find them. Mutually beneficial.', happy: 'Exquisite. What was in it? Never mind, keep it.', unhappy: 'You walk past so many boxes. It hurts us.', drop: 'Our collection is complete without you.', box: 'A Kepler-9 courier pod materializes with a chime.' } },
+  neurofizz: { name: 'NeuroFizz', tagline: 'Think faster.', personality: 'Caffeinated, techno-babbling, in love with skill spam.',
+    likes: { mpSpent: 1 }, dislikes: { crits: 2 }, generosity: 1, conflicts: ['ironclad'], exclusives: ['neurobrew'],
+    lines: { offer: 'Your synapses are underclocked. We fix that. Legally, mostly.', happy: 'Skill usage up 40 percent. Our metrics are glowing.', unhappy: 'Bashing things? That is what the brain is for, allegedly.', drop: 'Sponsorship revoked. Enjoy your baseline cognition.', box: 'A NeuroFizz drone buzzes past and drops something fizzy.' } },
+  ddl: { name: 'Deep Descent Logistics', tagline: 'Down is the only direction.', personality: 'Clipped, impatient, only cares about pace.',
+    likes: { fastFloors: 20, floors: 8 }, dislikes: { purchases: 1 }, generosity: 1, conflicts: [], exclusives: ['ddlboots'],
+    lines: { offer: 'You move. We like movers. Descend faster and we pay.', happy: 'Ahead of schedule. Acceptable.', unhappy: 'You are lingering. Lingering is not a strategy.', drop: 'Too slow. Contract voided.', box: 'DDL express drop. No signature required.' } },
+  pawprint: { name: 'Pawprint Provisions', tagline: 'For the small ones.', personality: 'Adores Tibbs. Barely notices you.',
+    likes: { tibbsKills: 6, treats: 10 }, dislikes: { tibbsKO: 15 }, generosity: 1, conflicts: [], exclusives: ['pawcollar'],
+    lines: { offer: 'We\'d like to sponsor the raccoon. You can come too, we suppose.', happy: 'The Chancellor is thriving. Our audience is purring.', unhappy: 'The raccoon got HURT. Under your watch.', drop: 'We\'re taking the raccoon\'s side. Goodbye.', box: 'A tiny parcel addressed to "Chancellor Tibbs (and staff)".' } },
+  recovery: { name: 'The Recovery Lounge', tagline: 'Knocked out, not out.', personality: 'Chill, rehab-minded, pays for non-lethal takedowns.',
+    likes: { knockouts: 12, parleys: 3 }, dislikes: { finishes: 20 }, generosity: 1, conflicts: ['bloodsport'], exclusives: ['rlpatch'],
+    lines: { offer: 'Knock them out. Don\'t finish them. We\'ll handle the rest, and the invoice.', happy: 'Another guest for the Lounge. Business is good.', unhappy: 'That one won\'t be checking in. Ever.', drop: 'We don\'t sponsor undertakers.', box: 'A Recovery Lounge gurney rolls in with a package on it.' } },
+  gladguild: { name: 'Gladiator Guild', tagline: 'Die interestingly.', personality: 'Old-school, loves bosses and close calls.',
+    likes: { bossKills: 12, mortalSurvives: 10, subBossKills: 6 }, dislikes: { runs: 8 }, generosity: 1, conflicts: [], exclusives: ['ggplate'],
+    lines: { offer: 'We sponsor crawlers who fight the big ones. Are you one?', happy: 'Survived on a sliver. That\'s a Guild moment.', unhappy: 'Running from a fight. The Guild frowns.', drop: 'The Guild has no use for cowards.', box: 'A Guild armorer lowers a crate on a chain.' } },
+  chatterbox: { name: 'Chatterbox Streams', tagline: 'Smash that button.', personality: 'Hyper, loves parties and drama, allergic to solo runs.',
+    likes: { recruits: 10, gifts: 4, parleys: 2 }, dislikes: { dismissals: 8 }, generosity: 2, conflicts: [], exclusives: ['cbmic'],
+    lines: { offer: 'Collab? Collab. Party content is UP this quarter.', happy: 'Chat is losing it. New teammate arc!', unhappy: 'You kicked someone from the party?? Chat is DEVASTATED.', drop: 'Unsubscribed.', box: 'A Chatterbox merch drop slams down with confetti.' } },
+  vantablack: { name: 'Vantablack Ventures', tagline: 'Results only.', personality: 'Silent money. Never sends boxes. Pays cash for rank.',
+    likes: { rankUps: 8, floors: 4 }, dislikes: { deathsInParty: 6 }, generosity: 0, cash: true, conflicts: [], exclusives: ['vbcard'],
+    lines: { offer: 'We pay for leaderboard position. Nothing else. Sign.', happy: 'Your position improved. Funds transferred.', unhappy: 'Your position is slipping. Our interest is slipping with it.', drop: 'Divested.', box: 'Vantablack does not send boxes. A wire transfer arrives instead.' } },
+};

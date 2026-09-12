@@ -1,9 +1,11 @@
 // ---- Dungeon Store ---------------------------------------------------------------------
 class ShopScene {
-  constructor(stock) {
-    this.stock = stock; this.transparent = true; this.state = 'main';
+  constructor(stock, opts) {
+    opts = opts || {};
+    this.stock = stock; this.transparent = true; this.state = 'main'; this.vending = !!opts.vending;
+    this.discount = G.perk('shopDiscount') || 0;
     this.tb = new TextBox(8, 160, UI.W - 16, 56, { instant: true });
-    this.keeper = 'Gordo';
+    this.keeper = this.vending ? 'Vending Machine' : 'Gordo';
     this.main = new Menu([{ label: 'Buy', value: 'buy' }, { label: 'Sell', value: 'sell' }, { label: 'Leave', value: 'leave' }], { x: 8, y: 8, w: 70 });
     this.list = null; this.msgCo = null;
   }
@@ -13,7 +15,10 @@ class ShopScene {
   }
   exit() { Sound.play('overworld'); }
   buildBuy() {
-    return new Menu(this.stock.map(id => ({ label: ITEMS[id].name, value: id, right: ITEMS[id].price })), { x: 84, y: 8, w: UI.W - 92, rows: 9, title: 'BUY' });
+    return new Menu(this.stock.map(id => ({ label: ITEMS[id].name, value: id, right: this.price(id) })), { x: 84, y: 8, w: UI.W - 92, rows: 9, title: 'BUY' + (this.discount ? ' -' + Math.round(this.discount * 100) + '%' : '') });
+  }
+  price(id) { return Math.max(1, Math.round(ITEMS[id].price * (1 - this.discount) * (this.vending ? 1.1 : 1))); }
+  unused() {
   }
   buildSell() {
     const items = G.party.inventory.filter(e => !ITEMS[e.id].key).map(e => ({ label: ITEMS[e.id].name + ' x' + e.qty, value: e.id, right: Math.floor(ITEMS[e.id].price / 2) }));
@@ -35,9 +40,10 @@ class ShopScene {
     if (r.cancel) { this.state = 'main'; this.list = null; this.desc = null; return; }
     const id = r.select.value; const item = ITEMS[id];
     if (this.state === 'buy') {
-      if (G.party.money < item.price) { this.tb.say('You can\'t afford that. I can\'t afford this conversation.', { speaker: this.keeper }); Sound.sfx('error'); return; }
+      const price = this.price(id);
+      if (G.party.money < price) { this.tb.say('You can\'t afford that. I can\'t afford this conversation.', { speaker: this.keeper }); Sound.sfx('error'); return; }
       if (!G.party.addItem(id)) { this.tb.say('Your pockets are full. Physically. I can see them.', { speaker: this.keeper }); Sound.sfx('error'); return; }
-      G.party.money -= item.price; Sound.sfx('coin'); G.unlock('shopper');
+      G.party.money -= price; Sound.sfx('coin'); G.unlock('shopper'); G.event('purchases');
       this.tb.say('Sold! One ' + item.name + '. Pleasure doing business.', { speaker: this.keeper });
     } else {
       const price = Math.floor(item.price / 2);

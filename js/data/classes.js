@@ -23,5 +23,14 @@ const CLASSES = {
     skills: [[1, 'patch1'], [4, 'firewall'], [8, 'triage'], [12, 'lullaby']] },
 };
 
+// Skill choices: at these levels the character picks ONE of two skills (offered after battle).
+const SKILL_CHOICES = {
+  crawler: { 6: ['venom', 'trashtalk'], 12: ['siphon', 'lullaby'], 18: ['triage', 'headshot'] },
+  raccoon: { 8: ['backstab', 'venom'], 14: ['hype', 'firewall'] },
+  sniper: { 5: ['zap', 'backstab'] }, brawler: { 5: ['trashtalk', 'siphon'] }, medic: { 7: ['firewall', 'lullaby'] },
+  rogue: { 6: ['venom', 'shriek'] }, mage: { 10: ['siphon', 'glitch'] }, tank: { 8: ['hype', 'siphon'] },
+  streamer: { 8: ['shriek', 'pickpocket'] }, cleric: { 10: ['zap', 'patch2'] },
+};
+
 // experience needed to reach a level
 function expForLevel(lv) { return Math.floor(9 * Math.pow(lv - 1, 2.15) + 12 * (lv - 1)); }

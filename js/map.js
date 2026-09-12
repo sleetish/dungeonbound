@@ -4,6 +4,9 @@ const THEMES = {
   lobby: { floor: '#5c5c78', floor2: '#545470', floorHi: '#666684', wallTop: '#4a4a6c', wallHi: '#5e5e84', wallFace: '#2a2a44', wallLine: '#1a1a30', water: ['#2a4a8a', '#33559a', '#4a6ab0'], pillar: '#8a8aa8', pillarHi: '#b0b0cc', rubble: '#6a6a80', bg: '#101018' },
   sewer: { floor: '#4c6250', floor2: '#455a49', floorHi: '#566c5a', wallTop: '#3a5a40', wallHi: '#4c7052', wallFace: '#203424', wallLine: '#142016', water: ['#3a6a3a', '#447a44', '#5a9a5a'], pillar: '#7a9a80', pillarHi: '#a0c0a4', rubble: '#5a6a5a', bg: '#0c140c' },
   arena: { floor: '#8a7a56', floor2: '#82724e', floorHi: '#968662', wallTop: '#6a5a40', wallHi: '#84704e', wallFace: '#463826', wallLine: '#2e2416', water: ['#8a2a2a', '#9a3333', '#b04444'], pillar: '#c0b090', pillarHi: '#e0d0b0', rubble: '#7a6a50', bg: '#181008' },
+  safe: { floor: '#6a5a4a', floor2: '#5e5040', floorHi: '#786656', wallTop: '#4a3c30', wallHi: '#5e4e40', wallFace: '#30261c', wallLine: '#1e1610', water: ['#2a4a8a', '#33559a', '#4a6ab0'], pillar: '#a09080', pillarHi: '#c8b8a0', rubble: '#6a6a80', bg: '#100c08' },
+  hells: { floor: '#4a2a2a', floor2: '#402424', floorHi: '#563232', wallTop: '#3a1a1a', wallHi: '#5a2a2a', wallFace: '#241010', wallLine: '#160808', water: ['#8a2a2a', '#9a3333', '#b04444'], pillar: '#a06060', pillarHi: '#c88080', rubble: '#6a4a4a', bg: '#0c0404' },
+  mercy: { floor: '#3a4a5a', floor2: '#324250', floorHi: '#445666', wallTop: '#2a3a4a', wallHi: '#3e5060', wallFace: '#182430', wallLine: '#0e161e', water: ['#2a4a8a', '#33559a', '#4a6ab0'], pillar: '#80a0c0', pillarHi: '#a0c0e0', rubble: '#4a5a6a', bg: '#04080c' },
   void: { floor: '#2c2c44', floor2: '#28283e', floorHi: '#343450', wallTop: '#5a3a7a', wallHi: '#744e94', wallFace: '#341c4c', wallLine: '#1e1030', water: ['#6a2a8a', '#7a3a9a', '#9a5aba'], pillar: '#8a6aaa', pillarHi: '#b090d0', rubble: '#4a3a5a', bg: '#08040c' },
 };
 
@@ -12,24 +15,39 @@ class GameMap {
     this.data = floorData; this.theme = THEMES[floorData.theme] || THEMES.lobby;
     this.h = floorData.map.length; this.w = floorData.map[0].length;
     this.tiles = []; this.objects = {}; this.chests = []; this.npcSpots = []; this.crawlerSpots = []; this.enemySpots = [];
-    this.start = { x: 2, y: 2 }; this.bossSpot = null; this.stairs = null;
-    let chestIdx = 0;
+    this.start = { x: 2, y: 2 }; this.bossSpot = null; this.stairs = null; this.subbossSpots = []; this.gates = []; this.doors = [];
+    let chestIdx = 0, gateIdx = 0, doorIdx = 0;
+    const obj = (x, y, type, extra) => { const o = Object.assign({ type, x, y }, extra || {}); this.objects[x + ',' + y] = o; return o; };
     for (let y = 0; y < this.h; y++) {
       const row = [];
       for (let x = 0; x < this.w; x++) {
         let ch = floorData.map[y][x] || '#'; let tile = ch;
         switch (ch) {
           case 'P': this.start = { x, y }; tile = '.'; break;
-          case 'S': this.stairs = { x, y }; this.objects[x + ',' + y] = { type: 'stairs', x, y }; tile = '.'; break;
+          case 'S': this.stairs = { x, y }; obj(x, y, 'stairs'); tile = '.'; break;
           case 'B': this.bossSpot = { x, y }; tile = '.'; break;
-          case 'T': this.objects[x + ',' + y] = { type: 'terminal', x, y }; tile = '.'; break;
-          case '$': this.objects[x + ',' + y] = { type: 'shop', x, y }; tile = '.'; break;
-          case '+': this.objects[x + ',' + y] = { type: 'pod', x, y }; tile = '.'; break;
-          case 'C': { const idx = chestIdx++; const item = (floorData.chests || [])[idx] || 'ration'; this.objects[x + ',' + y] = { type: 'chest', x, y, idx, item }; this.chests.push(this.objects[x + ',' + y]); tile = '.'; break; }
+          case 'b': this.subbossSpots.push({ x, y, idx: this.subbossSpots.length }); tile = '.'; break;
+          case 'G': { // two vertically adjacent gate tiles share an index
+            const above = this.objects[x + ',' + (y - 1)];
+            const idx = above && above.type === 'gate' ? above.idx : gateIdx++;
+            this.gates.push(obj(x, y, 'gate', { idx })); tile = '.'; break; }
+          case 'T': obj(x, y, 'terminal'); tile = '.'; break;
+          case '$': obj(x, y, 'shop'); tile = '.'; break;
+          case '+': obj(x, y, 'pod'); tile = '.'; break;
+          case 'C': { const idx = chestIdx++; const item = (floorData.chests || [])[idx] || 'ration'; this.chests.push(obj(x, y, 'chest', { idx, item })); tile = '.'; break; }
+          case 'H': this.doors.push(obj(x, y, 'door_safe', { idx: doorIdx++ })); tile = '.'; break;
+          case 'K': this.doors.push(obj(x, y, 'door_hells')); tile = '.'; break;
+          case 'M': this.doors.push(obj(x, y, 'door_mercy')); tile = '.'; break;
+          case 'E': obj(x, y, 'exit'); tile = '.'; break;
+          case 'W': obj(x, y, 'stash'); tile = '.'; break;
+          case 'Q': obj(x, y, 'bench'); tile = '.'; break;
+          case 'D': obj(x, y, 'bed'); tile = '.'; break;
+          case 'c': obj(x, y, 'crate'); tile = '.'; break;
+          case 'v': obj(x, y, 'vending'); tile = '.'; break;
           case '@': this.npcSpots.push({ x, y }); tile = '.'; break;
           case '!': this.crawlerSpots.push({ x, y }); tile = '.'; break;
           case 'e': this.enemySpots.push({ x, y }); tile = '.'; break;
-          case '#': case '.': case ',': case '~': case 'X': case '%': break;
+          case '#': case '.': case ',': case '~': case 'X': case '%': case 'Z': case 't': case 'r': case 'n': case 'a': break;
           default: tile = '.';
         }
         row.push(tile);
@@ -38,18 +56,23 @@ class GameMap {
     }
     this.tileset = null; this.frame = 0;
   }
+  isSafeZone(tx, ty) { return this.tile(tx, ty) === 'Z'; }
+  // objects the player walks onto (rather than bumps into)
+  static get WALK_ON() { return ['stairs', 'exit', 'door_safe', 'door_hells', 'door_mercy']; }
   tile(tx, ty) { if (tx < 0 || ty < 0 || tx >= this.w || ty >= this.h) return '#'; return this.tiles[ty][tx]; }
   object(tx, ty) { return this.objects[tx + ',' + ty] || null; }
-  solidTile(tx, ty) {
+  solidTile(tx, ty, floorState) {
     const t = this.tile(tx, ty);
-    if (t === '#' || t === '~' || t === 'X' || t === '%') return true;
+    if (t === '#' || t === '~' || t === 'X' || t === '%' || t === 't') return true;
     const o = this.object(tx, ty);
-    return !!(o && o.type !== 'stairs');
+    if (!o) return false;
+    if (o.type === 'gate') return !(floorState && floorState.gates && floorState.gates[o.idx]);
+    return !GameMap.WALK_ON.includes(o.type);
   }
   // pixel-rect collision against solid tiles
-  solidRect(x, y, w, h) {
+  solidRect(x, y, w, h, floorState) {
     const x0 = Math.floor(x / TILE), y0 = Math.floor(y / TILE), x1 = Math.floor((x + w - 1) / TILE), y1 = Math.floor((y + h - 1) / TILE);
-    for (let ty = y0; ty <= y1; ty++) for (let tx = x0; tx <= x1; tx++) if (this.solidTile(tx, ty)) return true;
+    for (let ty = y0; ty <= y1; ty++) for (let tx = x0; tx <= x1; tx++) if (this.solidTile(tx, ty, floorState)) return true;
     return false;
   }
   get pixelW() { return this.w * TILE; }
@@ -86,16 +109,36 @@ class GameMap {
     rect(9, t.floor, 0, 0, 16, 16); rect(9, t.rubble, 2, 8, 5, 5); rect(9, t.rubble, 8, 4, 6, 6); rect(9, t.wallLine, 4, 10, 2, 2); rect(9, t.wallLine, 10, 6, 2, 2); rect(9, t.rubble, 5, 13, 8, 2); rect(9, t.pillarHi, 9, 4, 3, 1); rect(9, t.pillarHi, 2, 8, 2, 1);
     // 10 dark
     rect(10, t.bg, 0, 0, 16, 16);
+    // 11 torch wall (front face with a sconce; the light itself is drawn by the scene)
+    c.drawImage(cv, 4 * TILE, 0, TILE, TILE, 11 * TILE, 0, TILE, TILE);
+    rect(11, '#403020', 6, 9, 4, 5); rect(11, '#f8d838', 6, 5, 4, 4); rect(11, '#f88030', 7, 3, 2, 3); rect(11, '#ffffff', 7, 6, 2, 1);
+    // 12 drain (floor)
+    c.drawImage(cv, 0, 0, TILE, TILE, 12 * TILE, 0, TILE, TILE);
+    rect(12, t.wallLine, 4, 4, 8, 8); rect(12, t.floor2, 5, 5, 6, 6); for (let i = 0; i < 3; i++) rect(12, t.wallLine, 5, 6 + i * 2, 6, 1);
+    // 13 banner (floor decor: a fallen banner)
+    c.drawImage(cv, 0, 0, TILE, TILE, 13 * TILE, 0, TILE, TILE);
+    rect(13, '#a03030', 3, 2, 10, 12); rect(13, '#f8d838', 5, 4, 6, 2); rect(13, '#f8d838', 5, 8, 6, 2); rect(13, '#701818', 3, 13, 10, 1);
+    // 14 sand (floor)
+    rect(14, '#a89058', 0, 0, 16, 16); rect(14, '#b8a068', 2, 3, 5, 1); rect(14, '#b8a068', 9, 10, 4, 1); rect(14, '#988048', 6, 12, 3, 1); rect(14, '#988048', 11, 5, 2, 1);
+    // 15 neutral safe zone floor: pale with a hazard stripe
+    rect(15, t.floorHi, 0, 0, 16, 16); rect(15, t.floor, 0, 7, 16, 2); rect(15, '#f8d838', 0, 0, 16, 1); rect(15, '#f8d838', 0, 15, 16, 1);
     this.tileset = cv;
   }
   tileIndex(ch, tx, ty, frame) {
     switch (ch) {
       case '.': return ((tx * 31 + ty * 17) % 11 === 0) ? 2 : 0;
       case ',': return 1;
-      case '#': return this.tile(tx, ty + 1) === '#' || ty + 1 >= this.h ? 3 : 4; // front face only where floor lies below
+      case '#': return this.tile(tx, ty + 1) === '#' || this.tile(tx, ty + 1) === 't' || ty + 1 >= this.h ? 3 : 4; // front face only where floor lies below
+      case 't': return 11;
       case '~': return 5 + (Math.floor(frame / 24) % 3);
-      case 'X': return 8; case '%': return 9; default: return 10;
+      case 'X': return 8; case '%': return 9; case 'r': return 12; case 'n': return 13; case 'a': return 14; case 'Z': return 15;
+      default: return 10;
     }
+  }
+  // world-pixel positions of torches (for lighting)
+  torches() {
+    if (!this._torches) { this._torches = []; for (let y = 0; y < this.h; y++) for (let x = 0; x < this.w; x++) if (this.tiles[y][x] === 't') this._torches.push({ x: x * TILE + 8, y: y * TILE + 8 }); }
+    return this._torches;
   }
   draw(ctx, camX, camY, frame, floorState) {
     if (!this.tileset) this.buildTileset();
@@ -118,7 +161,9 @@ class GameMap {
       let name = o.type;
       if (o.type === 'chest') name = (floorState && floorState.chests[o.idx]) ? 'chest_open' : 'chest';
       if (o.type === 'stairs') name = (this.data.boss && !(floorState && floorState.bossDefeated)) ? 'stairs_locked' : 'stairs';
-      Sprites.draw(ctx, name, px, py, { outline: o.type !== 'stairs' });
+      if (o.type === 'gate') name = (floorState && floorState.gates && floorState.gates[o.idx]) ? 'gate_open' : 'gate';
+      const fullBleed = o.type === 'stairs' || o.type === 'gate' || o.type === 'exit' || o.type.startsWith('door');
+      Sprites.draw(ctx, name, px, py, { outline: !fullBleed });
     }
   }
 }

@@ -46,6 +46,29 @@ function sayLines(lines, opts) {
   }, opts));
 }
 
+// A sponsor makes an offer when you arrive on a floor.
+function* sponsorOfferScript(d, id) {
+  const sp = SPONSORS[id];
+  yield d.sys('Incoming sponsorship offer.');
+  yield d.who(sp.name, sp.lines.offer);
+  yield d.say(sp.name + ' (' + sp.tagline + ') ' + sp.personality + ' Likes: ' + Object.keys(sp.likes).join(', ') + '.' + (Object.keys(sp.dislikes).length ? ' Hates: ' + Object.keys(sp.dislikes).join(', ') + '.' : '') + (sp.conflicts.length ? ' Conflicts with: ' + sp.conflicts.map(c => SPONSORS[c].name).join(', ') + '.' : ''));
+  yield d.choice([{ label: 'Accept', value: 'yes' }, { label: 'Decline', value: 'no' }], { title: 'Sponsorship' });
+  if (d.result === 'yes') {
+    const dropped = G.acceptSponsor(id); Sound.sfx('coin');
+    yield d.who(sp.name, sp.lines.happy);
+    if (dropped.length) yield d.sys(dropped.join(' and ') + ' terminated their contract over the conflict of interest.');
+  } else { G.declineSponsor(id); yield d.who(sp.name, 'Your loss. Our offer stands with someone else now.'); }
+}
+
+// Level-up skill choice.
+function* skillChoiceScript(d, c) {
+  const opts = c.options.map(s => ({ label: SKILLS[s].name, value: s }));
+  yield d.sys(c.member + ' can learn a new technique. Choose one. The other is lost.');
+  yield d.choice(opts, { title: c.member, cancelable: false });
+  const member = G.party.members.find(m => m.name === c.member);
+  if (member && d.result) { if (!member.skills.includes(d.result)) member.skills.push(d.result); Sound.sfx('levelup'); yield d.sys(c.member + ' learned ' + SKILLS[d.result].name + '!'); }
+}
+
 // The opening cutscene (played on the overworld of floor 1).
 function* INTRO_SCRIPT(d) {
   yield d.wait(20);

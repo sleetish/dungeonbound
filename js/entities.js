@@ -23,6 +23,10 @@ class Actor {
     for (const slot of ['weapon', 'armor', 'acc']) { const it = this.equip[slot] && ITEMS[this.equip[slot]]; if (it && it.immune && it.immune.includes(status)) return true; }
     return false;
   }
+  hasPassive(p) {
+    for (const slot of ['weapon', 'armor', 'acc']) { const it = this.equip[slot] && ITEMS[this.equip[slot]]; if (it && it.passive === p) return true; }
+    return false;
+  }
   get maxhp() { return this.base.hp; }
   get maxmp() { return this.base.mp; }
   get str() { let v = this.base.str + this.equipBonus('str'); if (this.buffs.rally) v = Math.round(v * 1.3); if (this.buffs.weak) v = Math.round(v * 0.7); return Math.max(1, v); }
@@ -80,11 +84,11 @@ class Actor {
   clearBattleState() { this.buffs = {}; this.guarding = false; this.hpDisplay = Math.max(0, this.hp); }
   toJSON() {
     return { name: this.name, cls: this.cls, isPlayer: this.isPlayer, crawlerId: this.crawlerId, pal: this.pal, level: this.level, exp: this.exp,
-      base: this.base, equip: this.equip, skills: this.skills, hp: this.hp, mp: this.mp, status: this.status };
+      base: this.base, equip: this.equip, skills: this.skills, hp: this.hp, mp: this.mp, status: this.status, loyalty: this.loyalty };
   }
   static fromJSON(j) {
     const a = new Actor({ name: j.name, cls: j.cls, isPlayer: j.isPlayer, crawlerId: j.crawlerId, pal: j.pal });
-    a.level = j.level; a.exp = j.exp; a.base = j.base; a.equip = j.equip; a.skills = j.skills; a.hp = j.hp; a.mp = j.mp; a.status = j.status || {};
+    a.level = j.level; a.exp = j.exp; a.base = j.base; a.equip = j.equip; a.skills = j.skills; a.hp = j.hp; a.mp = j.mp; a.status = j.status || {}; a.loyalty = j.loyalty == null ? 50 : j.loyalty;
     a.hpDisplay = Math.max(0, a.hp); return a;
   }
 }

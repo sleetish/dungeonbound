@@ -50,8 +50,8 @@ class MenuScene {
     this.tb = new TextBox(8, 160, UI.W - 16, 56, { instant: true }); this.msg = false;
   }
   enter() {
-    const items = [{ label: 'Goods', value: 'items' }, { label: 'Skills', value: 'skills' }, { label: 'Equip', value: 'equip' }, { label: 'Status', value: 'status' }, { label: 'Party', value: 'party' }, { label: 'Ranking', value: 'ranking' }];
-    if (this.opts.atTerminal) items.push({ label: 'Save', value: 'save' });
+    const items = [{ label: 'Goods', value: 'items' }, { label: 'Skills', value: 'skills' }, { label: 'Equip', value: 'equip' }, { label: 'Status', value: 'status' }, { label: 'Party', value: 'party' }, { label: 'Ranking', value: 'ranking' }, { label: 'Sponsors', value: 'sponsors' }, { label: 'Trophies', value: 'trophies' }];
+    if (this.opts.inSafeRoom) items.push({ label: 'Save', value: 'save' });
     items.push({ label: 'Close', value: 'close' });
     this.push(new Menu(items, { x: 8, y: 8, w: 84 }), it => this.mainSelect(it.value), ctx => this.drawPartyStrip(ctx));
   }
@@ -103,6 +103,8 @@ class MenuScene {
     else if (v === 'status') this.openStatus();
     else if (v === 'party') this.openParty();
     else if (v === 'ranking') this.openRanking();
+    else if (v === 'sponsors') this.openSponsors();
+    else if (v === 'trophies') this.openTrophies();
     else if (v === 'save') { if (G.save()) this.message('Progress saved. The network thanks you for your data.'); else this.message('Save failed. Storage is unavailable in this browser.'); }
   }
   memberMenu(title, filter) {
@@ -213,6 +215,32 @@ class MenuScene {
       const bio = a.crawlerId ? CRAWLERS[a.crawlerId].bio : a.isPlayer ? 'You. Pajamas. Destiny.' : 'A raccoon granted sapience by the network. Regrets it hourly.';
       const by = this.leftY; UI.window(ctx, 8, by, UI.W - 16, 40); UI.text(ctx, CLASSES[a.cls].name + '  Lv' + a.level, 14, by + 6, UI.COLORS.sys);
       UI.wrap(ctx, bio, UI.W - 30).slice(0, 2).forEach((l, i) => UI.text(ctx, l, 14, by + 17 + i * 10, UI.COLORS.dim));
+    });
+  }
+  // ---- sponsors ----
+  openSponsors() {
+    const rows = G.sponsors.map(s => ({ label: SPONSORS[s.id].name, value: s.id, right: s.sat + '%' }));
+    if (!rows.length) rows.push({ label: 'No sponsors yet', value: null, disabled: true });
+    const menu = new Menu(rows, { x: 100, y: 8, w: UI.W - 108, title: 'SPONSORS' });
+    this.push(menu, () => {}, ctx => {
+      const it = menu.selected; const s = it && it.value && G.sponsors.find(x => x.id === it.value);
+      const y = 8 + rows.length * 12 + 14;
+      UI.window(ctx, 100, y, UI.W - 108, 78);
+      if (!s) { UI.wrap(ctx, 'Sponsors make offers when you reach a new floor. Do things they like to keep them, and they send boxes. Up to three at once.', UI.W - 122).slice(0, 6).forEach((l, i) => UI.text(ctx, l, 106, y + 6 + i * 10, UI.COLORS.dim)); return; }
+      const sp = SPONSORS[s.id];
+      const text = sp.tagline + ' Revenue ' + s.revenue + '. Likes: ' + Object.keys(sp.likes).join(', ') + '.' + (Object.keys(sp.dislikes).length ? ' Hates: ' + Object.keys(sp.dislikes).join(', ') + '.' : '') + (sp.generosity === 0 ? ' Pays cash instead of boxes.' : '');
+      UI.wrap(ctx, text, UI.W - 122).slice(0, 6).forEach((l, i) => UI.text(ctx, l, 106, y + 6 + i * 10, i === 0 ? UI.COLORS.sys : UI.COLORS.dim));
+    });
+  }
+  // ---- trophies ----
+  openTrophies() {
+    const ids = Object.keys(ACHIEVEMENTS);
+    const rows = ids.map(id => ({ label: G.achievements[id] ? ACHIEVEMENTS[id].title : '???', value: id, color: G.achievements[id] ? UI.COLORS.sys : UI.COLORS.dim }));
+    const menu = new Menu(rows, { x: 100, y: 8, w: UI.W - 108, rows: 9, title: 'TROPHIES ' + ids.filter(i => G.achievements[i]).length + '/' + ids.length });
+    this.push(menu, () => {}, ctx => {
+      const it = menu.selected; if (!it) return; const a = ACHIEVEMENTS[it.value];
+      const text = G.achievements[it.value] ? a.text : 'Locked. Hint: ' + a.hint;
+      UI.window(ctx, 8, 128, UI.W - 16, 30); UI.wrap(ctx, text, UI.W - 30).slice(0, 2).forEach((l, i) => UI.text(ctx, l, 14, 134 + i * 10, UI.COLORS.dim));
     });
   }
   // ---- ranking ----

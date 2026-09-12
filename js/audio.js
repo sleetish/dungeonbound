@@ -1,7 +1,9 @@
 // ---- Tiny WebAudio synth (SFX + looping chip music) -------------------------
 const Sound = {
   ctx: null, enabled: true, master: null, musicGain: null,
-  seqTimer: null, track: null,
+  seqTimer: null, track: null, intensity: 0,
+  // 0 calm, 1 tense (low HP), 2 boss phase: adds an arpeggio voice on top of the current track
+  setIntensity(n) { this.intensity = U.clamp(n, 0, 2); },
   init() {
     if (this.ctx || typeof window === 'undefined' || !(window.AudioContext || window.webkitAudioContext)) return;
     try {
@@ -79,6 +81,11 @@ const Sound = {
         const i = step % tr.bass.length;
         if (tr.bass[i] && self.enabled) self.mnote(tr.bass[i], stepDur * 0.9, 'triangle', 0.5, next);
         if (tr.lead[i] && self.enabled) self.mnote(tr.lead[i], stepDur * 0.7, tr.type, 0.22, next);
+        if (self.intensity > 0 && self.enabled && tr.bass[i]) { // urgency voice: fast octave arpeggio over the bass
+          const base = tr.bass[i] * 4; const arp = [base, base * 1.5, base * 2, base * 1.5][step % 4];
+          self.mnote(arp, stepDur * 0.35, 'square', self.intensity === 2 ? 0.16 : 0.1, next);
+          if (self.intensity === 2) self.mnote(arp * 1.26, stepDur * 0.3, 'square', 0.08, next + stepDur * 0.5);
+        }
         next += stepDur; step++;
       }
     };
