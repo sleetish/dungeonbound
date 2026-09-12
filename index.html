@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Dungeonbound</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="stage">
+  <canvas id="game" width="320" height="224" tabindex="0"></canvas>
+  <div id="touch">
+    <div id="dpad">
+      <button data-act="up">▲</button>
+      <button data-act="left">◀</button>
+      <button data-act="right">▶</button>
+      <button data-act="down">▼</button>
+    </div>
+    <div id="btns">
+      <button data-act="menu" class="small">MENU</button>
+      <button data-act="cancel">B</button>
+      <button data-act="confirm">A</button>
+    </div>
+  </div>
+</div>
+<div id="hint">Arrows/WASD move · Z/Space confirm · X/Esc cancel · Enter menu · M mute · mouse works in menus · type your name at the prompt</div>
+
+<script src="js/util.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/input.js"></script>
+<script src="js/sprites.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/data/items.js"></script>
+<script src="js/data/skills.js"></script>
+<script src="js/data/classes.js"></script>
+<script src="js/data/enemies.js"></script>
+<script src="js/data/crawlers.js"></script>
+<script src="js/data/achievements.js"></script>
+<script src="js/data/floors.js"></script>
+<script src="js/entities.js"></script>
+<script src="js/map.js"></script>
+<script src="js/game.js"></script>
+<script src="js/scenes/title.js"></script>
+<script src="js/scenes/nameentry.js"></script>
+<script src="js/scenes/dialog.js"></script>
+<script src="js/scenes/overworld.js"></script>
+<script src="js/scenes/battle.js"></script>
+<script src="js/scenes/menu.js"></script>
+<script src="js/scenes/shop.js"></script>
+<script src="js/scenes/gameover.js"></script>
+<script src="js/main.js"></script>
+<script>document.getElementById("stage").addEventListener("pointerdown", function () { document.getElementById("game").focus(); });</script>
+</body>
+</html>

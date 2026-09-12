@@ -1,0 +1,23 @@
+// ---- Achievements (the System is very proud of you) ------------------------------
+const ACHIEVEMENTS = {
+  first_blood: { title: 'Fisticuffs', text: 'You defeated your first monster. It was a rat. Everyone starts somewhere. Reward: Bronze Loot Box.', reward: 'box_bronze' },
+  smash: { title: 'SMAAAASH!!', text: 'You landed a critical hit. The viewers loved it. Please do it again, louder. Reward: Bronze Loot Box.', reward: 'box_bronze' },
+  mortal: { title: 'Not Today', text: 'You took mortal damage and survived by ending the fight first. Bold. Stupid. Great television. Reward: Silver Loot Box.', reward: 'box_silver' },
+  chest: { title: 'Finders Keepers', text: 'You opened a chest. Legally, everything down here belongs to the network. We will not be pursuing this. Reward: Bronze Loot Box.', reward: 'box_bronze' },
+  recruit: { title: 'Squad Goals', text: 'You convinced another crawler to join your party. Teamwork increases your survival odds and halves your screen time. Reward: Silver Loot Box.', reward: 'box_silver' },
+  gift: { title: 'Bribery', text: 'You gave another crawler a gift. Kindness is not a stat. It should be. Reward: Bronze Loot Box.', reward: 'box_bronze' },
+  pk: { title: 'Player Killer', text: 'You eliminated a fellow crawler. They have been relocated to the Recovery Lounge. Their fans have been notified. Reward: Gold Loot Box.', reward: 'box_gold' },
+  parley: { title: 'Use Your Words', text: 'You talked your way out of a fight. The audience is confused but intrigued. Reward: Bronze Loot Box.', reward: 'box_bronze' },
+  floor2: { title: 'Going Down', text: 'You reached Floor 2. Only sixteen and a half floors to go. Reward: Silver Loot Box.', reward: 'box_silver' },
+  floor3: { title: 'Deeper Still', text: 'You reached Floor 3. Statistically, this is where the fun starts. For us. Reward: Silver Loot Box.', reward: 'box_silver' },
+  floor4: { title: 'Beyond the Script', text: 'You reached Floor 4. The producers did not plan for this. The floors below are generated live. Reward: Gold Loot Box.', reward: 'box_gold' },
+  boss1: { title: 'Regicide', text: 'You dethroned Ratking Reginald. His bottle-cap crown has been auctioned to a collector on Kepler-9. Reward: Silver Loot Box.', reward: 'box_silver' },
+  boss2: { title: 'Unscheduled Maintenance', text: 'You decommissioned the Floor Steward. HR has been notified. HR is also a robot. Reward: Gold Loot Box.', reward: 'box_gold' },
+  boss3: { title: 'Champion of the Colosseum', text: 'You beat Gladiatron in front of a live studio audience of forty billion. Merch is available. Reward: Gold Loot Box.', reward: 'box_gold' },
+  level10: { title: 'Double Digits', text: 'You reached level 10. Your sponsors are cautiously optimistic. Reward: Silver Loot Box.', reward: 'box_silver' },
+  rich: { title: 'Liquid Assets', text: 'You are carrying over 1000 gold. The Dungeon Store thanks you in advance. Reward: Bronze Loot Box.', reward: 'box_bronze' },
+  shopper: { title: 'Consumer', text: 'You bought something from a Dungeon Store. Every purchase feeds the algorithm. Reward: Bronze Loot Box.', reward: 'box_bronze' },
+  fullparty: { title: 'Full House', text: 'Your party has four members. That is the maximum. The camera can only fit so many faces. Reward: Gold Loot Box.', reward: 'box_gold' },
+  ran: { title: 'Tactical Retreat', text: 'You ran from a fight. Viewers have voted this "cowardly" and also "relatable". Reward: Bronze Loot Box.', reward: 'box_bronze' },
+  pacifist: { title: 'Coexistence', text: 'You descended a floor without eliminating a single crawler. The producers find this boring. Reward: Silver Loot Box.', reward: 'box_silver' },
+};

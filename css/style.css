@@ -1,0 +1,19 @@
+html, body { margin:0; padding:0; background:#0b0b14; color:#ddd; height:100%; overflow:hidden;
+  font-family:'Press Start 2P', monospace; -webkit-user-select:none; user-select:none; touch-action:none; }
+#stage { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; }
+#game { image-rendering:pixelated; image-rendering:crisp-edges; background:#000; }
+#hint { position:fixed; bottom:4px; left:0; right:0; text-align:center; font-size:8px; color:#667; pointer-events:none; }
+#touch { display:none; position:fixed; inset:0; pointer-events:none; }
+#touch button { pointer-events:auto; position:absolute; width:44px; height:44px; border-radius:50%;
+  border:2px solid #667; background:rgba(40,40,70,.55); color:#eee; font-family:inherit; font-size:12px; }
+#touch button:active { background:rgba(120,120,200,.8); }
+#dpad { position:absolute; left:12px; bottom:24px; width:140px; height:140px; }
+#dpad button[data-act=up]    { left:48px; top:0; }
+#dpad button[data-act=left]  { left:0;  top:48px; }
+#dpad button[data-act=right] { left:96px; top:48px; }
+#dpad button[data-act=down]  { left:48px; top:96px; }
+#btns { position:absolute; right:12px; bottom:24px; width:150px; height:140px; }
+#btns button[data-act=confirm] { right:0; bottom:40px; width:56px; height:56px; }
+#btns button[data-act=cancel]  { right:64px; bottom:8px; }
+#btns button.small { right:0; top:0; width:64px; height:28px; border-radius:8px; font-size:8px; }
+@media (pointer:coarse) { #touch { display:block; } #hint { display:none; } }
