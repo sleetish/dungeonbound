@@ -1,7 +1,7 @@
 // ---- Character classes ------------------------------------------------------------
 // base: level-1 stats. growth: average gain per level (randomized +-).
 const CLASSES = {
-  crawler:  { name: 'Crawler', sprite: 'human', base: { hp: 38, mp: 12, str: 8, def: 5, spd: 6, luck: 5 }, growth: { hp: 7, mp: 3, str: 2.2, def: 1.6, spd: 1.2, luck: 0.8 },
+  crawler:  { name: 'Crawler', sprite: 'hero', base: { hp: 38, mp: 12, str: 8, def: 5, spd: 6, luck: 5 }, growth: { hp: 7, mp: 3, str: 2.2, def: 1.6, spd: 1.2, luck: 0.8 },
     skills: [[1, 'rockit1'], [3, 'patch1'], [5, 'firewall'], [8, 'rockit2'], [10, 'zap'], [13, 'patch2'], [16, 'hype'], [20, 'rockit3'], [24, 'patch3'], [28, 'nova']] },
   raccoon:  { name: 'Raccoon', sprite: 'raccoon', base: { hp: 24, mp: 18, str: 6, def: 3, spd: 10, luck: 9 }, growth: { hp: 4.5, mp: 4, str: 1.6, def: 1.0, spd: 1.8, luck: 1.4 },
     skills: [[1, 'bite'], [2, 'pickpocket'], [6, 'shriek'], [9, 'glitch'], [12, 'siphon'], [15, 'lullaby'], [18, 'patch2'], [22, 'trashtalk']] },

@@ -54,11 +54,11 @@ const G = {
     if (this.viewers >= 10000) this.unlock('viewers');
   },
   // ---- achievements & loot -------------------------------------------------------
-  unlock(id) {
+  unlock(id, vars) {
     if (this.achievements[id]) return false;
     const a = ACHIEVEMENTS[id]; if (!a) return false;
     this.achievements[id] = true; this.score += 50; this.addViewers(150);
-    let text = a.text;
+    let text = a.text.replace(/\{(\w+)\}/g, (m, k) => (vars && vars[k] != null) ? vars[k] : 'thing');
     if (a.reward) { if (!this.party.addItem(a.reward)) { this.party.money += 100; text += ' (Inventory full: converted to 100 gold.)'; } }
     Toast.show('New Achievement! [' + a.title + ']', text);
     return true;

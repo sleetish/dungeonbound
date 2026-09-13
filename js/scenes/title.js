@@ -44,7 +44,7 @@ class TitleScene {
     UI.center(ctx, 'reDUNGEONmastered', UI.W / 2, 94, '#f8d838');
     // little party walking
     const wx = (this.t / 2) % (UI.W + 50) - 30;
-    Sprites.draw(ctx, 'human_side', wx, 108, { pal: { 1: '#d83030', 2: '#885030', 3: '#3868d0' } });
+    Sprites.draw(ctx, 'hero_side' + (((this.t >> 3) & 1) ? '_w1' : '_w2'), wx, 108, { pal: { 1: '#d83030', 2: '#885030', 3: '#3868d0' } });
     Sprites.draw(ctx, 'raccoon_side', wx - 20, 110);
     Sprites.draw(ctx, 'rat', wx + 40, 110, { flip: true });
     if (!this.menu) { if ((this.t >> 5) & 1) UI.center(ctx, 'PRESS START', UI.W / 2, 160, '#fff'); }

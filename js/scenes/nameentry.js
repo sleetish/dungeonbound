@@ -61,7 +61,7 @@ class NameEntryScene {
     UI.text(ctx, 'What is your name, crawler?', 24, 18, UI.COLORS.sys);
     const shown = this.name + (((this.t >> 4) & 1) ? '_' : ' ');
     UI.text(ctx, shown, 24, 34, '#fff');
-    Sprites.draw(ctx, 'human_down', UI.W - 48, 26, { pal: { 1: '#d83030', 2: '#885030', 3: '#3868d0' } });
+    Sprites.draw(ctx, 'hero_down', UI.W - 48, 26, { pal: { 1: '#d83030', 2: '#885030', 3: '#3868d0' } });
     UI.window(ctx, 16, 60, UI.W - 32, 140);
     for (let i = 0; i < this.chars.length; i++) {
       const cx = i % this.cols, cy = Math.floor(i / this.cols);

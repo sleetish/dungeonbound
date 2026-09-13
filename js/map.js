@@ -54,6 +54,11 @@ class GameMap {
       }
       this.tiles.push(row);
     }
+    // Gates are indexed left to right by column, and each guardian gets the index of the
+    // first gate to its right, so beating guardian n always opens gate n.
+    const gateCols = [...new Set(this.gates.map(g => g.x))].sort((a, b) => a - b);
+    for (const g of this.gates) g.idx = gateCols.indexOf(g.x);
+    for (const s of this.subbossSpots) s.idx = Math.min(Math.max(0, gateCols.length - 1), gateCols.filter(c => c < s.x).length);
     this.tileset = null; this.frame = 0;
   }
   isSafeZone(tx, ty) { return this.tile(tx, ty) === 'Z'; }

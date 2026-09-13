@@ -4,18 +4,42 @@ const UI = {
   W: 320, H: 224,
   LINE: 12,
   COLORS: { text: '#ffffff', dim: '#9090a8', sys: '#f8d838', hp: '#ffffff', bad: '#ff6060', good: '#80f080' },
+  // Overflow detection (enabled by the test harness): text drawn inside the most recent
+  // window's vertical span but past its right edge is recorded as an overflow.
+  checkOverflow: false, overflows: [], _lastWin: null,
   text(ctx, str, x, y, color) {
     ctx.font = this.FONT; ctx.textBaseline = 'top'; ctx.fillStyle = color || this.COLORS.text;
+    if (this.checkOverflow && this._lastWin) {
+      const w = this._lastWin; const tw = ctx.measureText(str).width;
+      const inside = y >= w.y && y < w.y + w.h && x >= w.x && x < w.x + w.w;
+      if (inside && (x + tw > w.x + w.w - 2 || y + 8 > w.y + w.h - 2)) this.overflows.push({ text: String(str), x, y, win: Object.assign({}, w) });
+    }
     ctx.fillText(str, Math.round(x), Math.round(y));
+  },
+  // A window that sizes itself to its text. opts: {color, right (x is the right edge), minW, fill, border}
+  labelBox(ctx, str, x, y, opts) {
+    opts = opts || {};
+    const w = Math.max(opts.minW || 0, this.width(ctx, str) + 16), h = opts.h || 18;
+    const bx = opts.right ? x - w : x;
+    this.window(ctx, bx, y, w, h, opts);
+    this.text(ctx, str, bx + 8, y + 5, opts.color);
+    return { x: bx, y, w, h };
   },
   textShadow(ctx, str, x, y, color) {
     this.text(ctx, str, x + 1, y + 1, '#000'); this.text(ctx, str, x, y, color);
+  },
+  // text that lives in the world (markers, floaters), not inside any window
+  worldText(ctx, str, x, y, color, shadow) {
+    const w = this._lastWin; this._lastWin = null;
+    if (shadow) this.textShadow(ctx, str, x, y, color); else this.text(ctx, str, x, y, color);
+    this._lastWin = w;
   },
   width(ctx, str) { ctx.font = this.FONT; return ctx.measureText(str).width; },
   center(ctx, str, cx, y, color) { this.text(ctx, str, cx - this.width(ctx, str) / 2, y, color); },
   // EarthBound-style window: black fill, white border with a subtle inner line
   window(ctx, x, y, w, h, style) {
     style = style || {};
+    this._lastWin = { x, y, w, h };
     ctx.fillStyle = style.fill || '#101018'; ctx.fillRect(x, y, w, h);
     ctx.fillStyle = style.border || '#ffffff';
     ctx.fillRect(x + 1, y, w - 2, 1); ctx.fillRect(x + 1, y + h - 1, w - 2, 1);

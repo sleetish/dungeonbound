@@ -1,7 +1,7 @@
 // ---- Achievements (the System is very proud of you) ------------------------------
 // hint: shown in the Trophy Room while locked.
 const ACHIEVEMENTS = {
-  first_blood: { title: 'Fisticuffs', hint: 'Win your first fight.', text: 'You defeated your first monster. It was a rat. Everyone starts somewhere. Reward: Bronze Loot Box.', reward: 'box_bronze' },
+  first_blood: { title: 'Fisticuffs', hint: 'Win your first fight.', text: 'You defeated your first monster. It was a {enemy}. Everyone starts somewhere. Reward: Bronze Loot Box.', reward: 'box_bronze' },
   smash: { title: 'SMAAAASH!!', hint: 'Land a critical hit.', text: 'You landed a critical hit. The viewers loved it. Please do it again, louder. Reward: Bronze Loot Box.', reward: 'box_bronze' },
   mortal: { title: 'Not Today', hint: 'Survive mortal damage by ending the fight first.', text: 'You took mortal damage and survived by ending the fight first. Bold. Stupid. Great television. Reward: Silver Loot Box.', reward: 'box_silver' },
   chest: { title: 'Finders Keepers', hint: 'Open a chest.', text: 'You opened a chest. Legally, everything down here belongs to the network. We will not be pursuing this. Reward: Bronze Loot Box.', reward: 'box_bronze' },

@@ -442,7 +442,8 @@ class BattleScene {
       else lines.push((e.article ? 'The ' : '') + e.name + ' dropped a ' + ITEMS[d.id].name + ', but your bag is full.');
     }
     if (G.party.money >= 1000) G.unlock('rich');
-    if (G.kills >= 1) G.unlock('first_blood');
+    const firstMonster = enemies.find(e => !e.isCrawler);
+    if (G.kills >= 1 && firstMonster) G.unlock('first_blood', { enemy: firstMonster.name });
     return lines;
   }
   *victory() {
@@ -582,12 +583,12 @@ class BattleScene {
       if (e.flash > 0 && (e.flash & 1)) { ctx.globalCompositeOperation = 'source-atop'; ctx.fillStyle = 'rgba(255,255,255,0.8)'; ctx.fillRect(e.px + jx - s, e.py + bob - s, 18 * s, 18 * s); ctx.globalCompositeOperation = 'source-over'; }
       ctx.restore();
       const st = Object.keys(e.status || {}).filter(k => e.status[k]).map(k => STATUS_INFO[k].short).concat(e.buffs.rage ? ['RAGE'] : [], e.buffs.ward ? ['WRD'] : []).join(' ');
-      if (st && e.alive) UI.text(ctx, st, e.px, e.py - 10, UI.COLORS.bad);
+      if (st && e.alive) UI.worldText(ctx, st, e.px, e.py - 10, UI.COLORS.bad);
       if (this.targetMode && this.targetMode.kind === 'enemy' && this.targetMode.list[this.targetMode.idx] === e) {
         const ay = e.py - 14 + ((this.t >> 3) & 1) * 2;
         ctx.fillStyle = '#fff'; ctx.fillRect(e.px + 8 * s - 3, ay, 6, 2); ctx.fillRect(e.px + 8 * s - 2, ay + 2, 4, 2); ctx.fillRect(e.px + 8 * s - 1, ay + 4, 2, 2);
         const label = e.name + (e.isCrawler ? ' (' + CLASSES[CRAWLERS[e.crawlerId].cls].name + ' L' + e.level + ')' : '');
-        UI.window(ctx, 8, 52, UI.width(ctx, label) + 16, 18); UI.text(ctx, label, 16, 57, UI.COLORS.sys);
+        UI.labelBox(ctx, label, 8, 52, { color: UI.COLORS.sys });
       }
     });
     // the party, backs to the camera, above their status boxes
@@ -612,16 +613,16 @@ class BattleScene {
       const active = this.activeMember === m || (this.targetMode && this.targetMode.kind === 'ally' && this.targetMode.list[this.targetMode.idx] === m);
       const x = Math.round(x0 + i * (bw + 2)), y = 178 - (active ? 6 : 0);
       this.partyRects[i] = { x, y: 150, w: bw, h: 72 };
-      UI.window(ctx, x, y, bw, 44, { border: m.alive ? (active ? '#ffe080' : '#fff') : '#804040', fill: m.alive ? '#101018' : '#200a0a' });
-      UI.text(ctx, m.name.slice(0, Math.floor((bw - 8) / 8)), x + 4, y + 4, m.alive ? '#fff' : UI.COLORS.bad);
-      UI.text(ctx, 'HP', x + 4, y + 16, UI.COLORS.dim); UI.odometer(ctx, m.hpDisplay, x + bw - 28, y + 16, 3, m.hp <= 0 ? UI.COLORS.bad : (m.hpDisplay < m.maxhp * 0.25 ? '#ffd040' : '#fff'));
-      UI.text(ctx, 'MP', x + 4, y + 27, UI.COLORS.dim); UI.odometer(ctx, m.mp, x + bw - 28, y + 27, 3, '#80c0ff');
+      UI.window(ctx, x, y, bw, 46, { border: m.alive ? (active ? '#ffe080' : '#fff') : '#804040', fill: m.alive ? '#101018' : '#200a0a' });
+      UI.text(ctx, m.name.slice(0, Math.floor((bw - 8) / 8)), x + 4, y + 3, m.alive ? '#fff' : UI.COLORS.bad);
+      UI.text(ctx, 'HP', x + 4, y + 14, UI.COLORS.dim); UI.odometer(ctx, m.hpDisplay, x + bw - 28, y + 14, 3, m.hp <= 0 ? UI.COLORS.bad : (m.hpDisplay < m.maxhp * 0.25 ? '#ffd040' : '#fff'));
+      UI.text(ctx, 'MP', x + 4, y + 25, UI.COLORS.dim); UI.odometer(ctx, m.mp, x + bw - 28, y + 25, 3, '#80c0ff');
       const st = Object.keys(m.status).map(s => STATUS_INFO[s].short).concat(m.buffs.ward ? ['WRD'] : [], m.buffs.rally ? ['HYP'] : [], m.guarding ? ['GRD'] : []).join(' ');
-      if (st) UI.text(ctx, st.slice(0, 7), x + 4, y + 37, m.buffs.ward || m.buffs.rally ? UI.COLORS.good : UI.COLORS.bad);
+      if (st) UI.text(ctx, st.slice(0, Math.floor((bw - 8) / 8)), x + 4, y + 35, m.buffs.ward || m.buffs.rally ? UI.COLORS.good : UI.COLORS.bad);
     });
     if (this.tb.visible) this.tb.draw(ctx);
     if (this.menu) this.menu.draw(ctx);
-    if (this.auto) UI.text(ctx, 'AUTO (X to stop)', UI.W - 136, 52, UI.COLORS.sys);
-    if (this.timed) UI.text(ctx, 'GUARDS: ' + Math.max(0, this.timed - this.round + 1), UI.W - 100, 40, '#ff8080');
+    if (this.auto) UI.labelBox(ctx, 'AUTO (X to stop)', UI.W - 8, 52, { right: true, color: UI.COLORS.sys });
+    if (this.timed) UI.labelBox(ctx, 'GUARDS IN ' + Math.max(0, this.timed - this.round + 1), UI.W - 8, this.auto ? 72 : 52, { right: true, color: '#ff8080' });
   }
 }

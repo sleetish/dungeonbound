@@ -83,11 +83,11 @@ class MenuScene {
       const y = 8 + i * 36;
       UI.window(ctx, 100, y, UI.W - 108, 34);
       const [sp] = Sprites.facing(m.sprite, 'down'); Sprites.draw(ctx, sp, 104, y + 9, { pal: m.pal });
-      UI.text(ctx, m.name, 122, y + 5, m.alive ? '#fff' : UI.COLORS.bad);
+      UI.text(ctx, m.name.slice(0, 8), 122, y + 5, m.alive ? '#fff' : UI.COLORS.bad);
       UI.text(ctx, 'L' + m.level, UI.W - 42, y + 5, UI.COLORS.dim);
       UI.text(ctx, 'HP' + U.pad(Math.max(0, m.hp), 4) + ' MP' + U.pad(m.mp, 3), 122, y + 16, '#fff');
-      const st = Object.keys(m.status).map(s => STATUS_INFO[s].short).join(' ');
-      if (st) UI.text(ctx, st, 122, y + 25, UI.COLORS.bad);
+      const st = Object.keys(m.status).map(s => STATUS_INFO[s].short).slice(0, 2).join(' ');
+      if (st) UI.text(ctx, st, 196, y + 5, UI.COLORS.bad);
     });
     const gy = this.leftY; UI.window(ctx, 8, gy, 84, 36);
     UI.text(ctx, 'Gold', 14, gy + 5, UI.COLORS.dim); UI.text(ctx, String(G.party.money), 14, gy + 15, '#fff');

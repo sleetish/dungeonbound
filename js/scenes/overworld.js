@@ -27,13 +27,7 @@ class OverworldScene {
     this.player = { kind: 'player', x: this.map.start.x * TILE, y: this.map.start.y * TILE, dir: 'down', base: heroActor.sprite, pal: heroActor.pal, moving: false, cooldown: 0, anim: 0 };
     this.ents.push(this.player);
     this.rebuildFollowers();
-    const pool = fd.pool === 'all' ? [].concat(ENEMY_POOLS[1], ENEMY_POOLS[2], ENEMY_POOLS[3]) : ENEMY_POOLS[fd.pool];
-    this.map.enemySpots.forEach((s, idx) => {
-      if (fs.enemies[idx]) return;
-      const key = fd.pool === 'all' ? U.choice(pool.slice(Math.max(0, pool.length - 8))) : U.choice(pool);
-      const proto = G.makeEnemy(key, G.floor);
-      this.ents.push({ kind: 'enemy', x: s.x * TILE, y: s.y * TILE, key, idx, level: proto.level, sprite: proto.sprite, pal: proto.pal, fx: 0, fy: 1, timer: 0, speed: 0.6, cooldown: 0, flip: false, home: { x: s.x * TILE, y: s.y * TILE } });
-    });
+    this.map.enemySpots.forEach((s, idx) => { if (!this.enemyDue(idx)) return; this.spawnEnemy(s, idx); });
     if (fd.boss && !fs.bossDefeated && this.map.bossSpot) {
       const proto = G.makeEnemy(fd.boss, G.floor);
       this.ents.push({ kind: 'boss', x: this.map.bossSpot.x * TILE, y: this.map.bossSpot.y * TILE, key: fd.boss, sprite: proto.sprite, pal: proto.pal, level: proto.level, fx: 0, fy: 1, cooldown: 0 });
@@ -87,6 +81,24 @@ class OverworldScene {
       G.unlock('club');
     }
     Sound.play(fd.music || 'shop');
+  }
+  // Monsters respawn a while after being beaten (the floor clock keeps this honest).
+  static get RESPAWN() { return 60 * 75; }
+  enemyDue(idx) { const v = this.fs.enemies[idx]; if (!v) return true; if (v === true) return false; return G.playtime - v >= OverworldScene.RESPAWN; }
+  spawnEnemy(s, idx) {
+    const fd = this.floorData;
+    const pool = fd.pool === 'all' ? [].concat(ENEMY_POOLS[1], ENEMY_POOLS[2], ENEMY_POOLS[3]) : ENEMY_POOLS[fd.pool];
+    const key = fd.pool === 'all' ? U.choice(pool.slice(Math.max(0, pool.length - 8))) : U.choice(pool);
+    const proto = G.makeEnemy(key, G.floor);
+    delete this.fs.enemies[idx];
+    this.ents.push({ kind: 'enemy', x: s.x * TILE, y: s.y * TILE, key, idx, level: proto.level, sprite: proto.sprite, pal: proto.pal, fx: 0, fy: 1, timer: 0, speed: 0.6, cooldown: 90, flip: false, home: { x: s.x * TILE, y: s.y * TILE } });
+  }
+  respawnEnemies() {
+    this.map.enemySpots.forEach((s, idx) => {
+      if (!this.fs.enemies[idx] || !this.enemyDue(idx)) return;
+      if (U.dist(s.x * TILE, s.y * TILE, this.player.x, this.player.y) < 120) return; // never in your face
+      this.spawnEnemy(s, idx);
+    });
   }
   resume() {
     Sound.play(this.floorData.music || 'overworld'); this.rebuildFollowers(); this.pruneCrawlers();
@@ -147,7 +159,7 @@ class OverworldScene {
     if (this.banner > 0) this.banner--;
     for (const f of this.floaters) f.t--; this.floaters = this.floaters.filter(f => f.t > 0);
     if (this.flashT > 0) { this.flashT--; if (this.flashT === 0 && this.pending) { const p = this.pending; this.pending = null; Game.push(new BattleScene(p)); } return; }
-    if (this.isFloor) { if (this.t % 60 === 0) G.tickScores(); if (this.tickClock()) return; if (this.processQueued()) return; }
+    if (this.isFloor) { if (this.t % 60 === 0) G.tickScores(); if (this.t % 120 === 0) this.respawnEnemies(); if (this.tickClock()) return; if (this.processQueued()) return; }
     if (Input.justPressed('menu')) { Game.push(new MenuScene({ inSafeRoom: this.interior === 'safe' })); return; }
     this.updatePlayer();
     for (const e of this.ents) {
@@ -264,7 +276,7 @@ class OverworldScene {
       if (U.chance(p)) { this.fs.chests[target.chest.idx] = true; e.looted++; st.score += 40; this.floater(CRAWLERS[e.id].name + ' looted a chest!', e.x - 30, e.y - 12, '#ffd040'); }
       return;
     }
-    const enemy = target; if (enemy.idx != null) this.fs.enemies[enemy.idx] = true;
+    const enemy = target; if (enemy.idx != null) this.fs.enemies[enemy.idx] = G.playtime || 1;
     const i = this.ents.indexOf(enemy); if (i >= 0) this.ents.splice(i, 1);
     st.score += 25; if (U.chance(0.35)) st.level++;
     this.floater(CRAWLERS[e.id].name + ' beat a ' + ENEMIES[enemy.key].name, e.x - 30, e.y - 12, '#c0c0ff');
@@ -318,7 +330,7 @@ class OverworldScene {
     const initiative = this.initiativeFor(e);
     this.startBattle({ enemies, initiative, boss: false, onEnd: res => this.afterBattle(res, group) });
   }
-  removeGroup(group) { for (const g of group) { if (g.idx != null) this.fs.enemies[g.idx] = true; const i = this.ents.indexOf(g); if (i >= 0) this.ents.splice(i, 1); } }
+  removeGroup(group) { for (const g of group) { if (g.idx != null) this.fs.enemies[g.idx] = G.playtime || 1; const i = this.ents.indexOf(g); if (i >= 0) this.ents.splice(i, 1); } }
   afterBattle(res, group) {
     if (res === 'win') this.removeGroup(group);
     else { for (const g of group) g.cooldown = 150; this.player.cooldown = 60; }
@@ -334,6 +346,10 @@ class OverworldScene {
     Game.push(new DialogScene(function* (d) {
       yield d.sys(isSub ? 'A gate guardian blocks the way. Beat it and the section beyond unlocks.' : 'Warning: a Floor Boss is present. Viewership is spiking. Please die interestingly.');
       yield d.say(proto.intro || 'The boss looms.');
+      const lv = G.hero.level; const gap = proto.level - lv;
+      yield d.sys(proto.name + ' is level ' + proto.level + '. You are level ' + lv + '.' + (gap >= 3 ? ' That is a bad matchup. Monsters respawn; the Terminal saves; nobody is judging you. Everybody is judging you.' : gap >= 1 ? ' Winnable with skills and a Guard on the tell.' : ' You should be fine. Probably.'));
+      yield d.choice([{ label: 'Fight', value: 'fight' }, { label: 'Not yet', value: 'no' }], { title: proto.name });
+      if (d.result !== 'fight') { e.cooldown = 90; self.player.cooldown = 30; self.player.y += 8; yield d.say('You back away. It watches you go.'); return; }
       self.startBattle({ enemies: [proto], initiative: null, boss: !isSub, subboss: isSub, onEnd: res => {
         if (res !== 'win') return;
         const i = self.ents.indexOf(e); if (i >= 0) self.ents.splice(i, 1);
@@ -627,7 +643,7 @@ class OverworldScene {
         if (e.kind === 'subboss') { ctx.fillStyle = 'rgba(255,200,60,0.22)'; ctx.fillRect(sx - 2, sy - 2, 20, 20); }
         this.shadow(ctx, sx, sy);
         Sprites.draw(ctx, e.sprite, sx, sy + bob, { flip: e.flip, pal: e.pal });
-        if (e.kind === 'enemy' && e.level + 6 <= G.hero.level && (this.t >> 3) % 3 === 0) UI.text(ctx, '!', sx + 6, sy - 9, '#8f8');
+        if (e.kind === 'enemy' && e.level + 6 <= G.hero.level && (this.t >> 3) % 3 === 0) UI.worldText(ctx, '!', sx + 6, sy - 9, '#8f8');
         continue;
       }
       const dir = e.dir || 'down';
@@ -643,12 +659,12 @@ class OverworldScene {
         const disp = G.disposition(e.id);
         ctx.fillStyle = disp === 'hostile' ? '#ff4040' : disp === 'wary' ? '#ffd040' : '#40ff80';
         ctx.fillRect(sx + 6, sy - 5, 4, 3);
-        if (e.ambusher) UI.text(ctx, '!!', sx + 2, sy - 14, '#ff4040');
+        if (e.ambusher) UI.worldText(ctx, '!!', sx + 2, sy - 14, '#ff4040');
       }
     }
     this.drawLighting(ctx);
     this.drawVignette(ctx);
-    for (const f of this.floaters) { ctx.globalAlpha = Math.min(1, f.t / 20); UI.textShadow(ctx, f.text, f.x - this.camX, f.y - this.camY - (90 - f.t) * 0.2, f.color); ctx.globalAlpha = 1; }
+    for (const f of this.floaters) { ctx.globalAlpha = Math.min(1, f.t / 20); UI.worldText(ctx, f.text, f.x - this.camX, f.y - this.camY - (90 - f.t) * 0.2, f.color, true); ctx.globalAlpha = 1; }
     if (this.flashT > 0) {
       const k = this.flashT;
       ctx.fillStyle = (k & 2) ? 'rgba(255,255,255,0.35)' : 'rgba(0,0,0,0.35)'; ctx.fillRect(0, 0, UI.W, UI.H);
@@ -661,15 +677,16 @@ class OverworldScene {
     if (this.banner > 0) {
       const a = Math.min(1, this.banner / 30);
       const mods = this.isFloor ? this.floorData.modifiers.map(m => FLOOR_MODIFIERS[m].name) : [];
-      const title = this.floorData.name + (mods.length ? '  [' + mods.join(', ') + ']' : '');
-      ctx.globalAlpha = a; UI.window(ctx, 8, 8, Math.min(UI.W - 16, UI.width(ctx, title) + 16), 18); UI.text(ctx, title, 16, 13, UI.COLORS.sys); ctx.globalAlpha = 1;
+      let title = this.floorData.name + (mods.length ? '  [' + mods.join(', ') + ']' : '');
+      while (UI.width(ctx, title) > UI.W - 96 && title.length > 4) title = title.slice(0, -1);
+      ctx.globalAlpha = a; UI.labelBox(ctx, title, 8, 8, { color: UI.COLORS.sys }); ctx.globalAlpha = 1;
     }
     if (this.isFloor && this.fs.timeLeft != null) {
       const s = Math.ceil(this.fs.timeLeft / 60); const mm = Math.floor(s / 60), ss = s % 60;
       const txt = mm + ':' + (ss < 10 ? '0' : '') + ss; const low = this.fs.timeLeft < 7200;
-      UI.window(ctx, UI.W - 58, 8, 50, 18, { border: low && (this.t >> 4) & 1 ? '#ff4040' : '#fff' }); UI.text(ctx, txt, UI.W - 52, 13, low ? '#ff6060' : '#fff');
+      UI.labelBox(ctx, txt, UI.W - 8, 8, { right: true, minW: 56, border: low && (this.t >> 4) & 1 ? '#ff4040' : '#fff', color: low ? '#ff6060' : '#fff' });
       const v = G.viewers >= 1000 ? (G.viewers / 1000).toFixed(1) + 'k' : String(G.viewers);
-      UI.window(ctx, UI.W - 58, 28, 50, 18); UI.text(ctx, 'V' + U.pad(v, 5), UI.W - 54, 33, '#c0c0ff');
+      UI.labelBox(ctx, 'V ' + v, UI.W - 8, 28, { right: true, minW: 56, color: '#c0c0ff' });
     }
   }
 }

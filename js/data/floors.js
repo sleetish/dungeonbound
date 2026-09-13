@@ -202,7 +202,7 @@ function generateFloor(n) {
   const bosses = ['ratking', 'steward', 'gladiatron'];
   const names = ['The Undercroft', 'The Server Farm', 'The Food Court', 'The Vault', 'The Nursery', 'The Boiler Deck', 'The Archive', 'The Aquarium', 'The Parking Structure', 'The Studio'];
   const subPool = spec ? SUBBOSS_POOLS[spec.pool] : SUBBOSS_POOLS.all;
-  const subbosses = [subPool[ri(0, subPool.length - 1)], subPool[ri(0, subPool.length - 1)]];
+  const subbosses = spec ? [subPool[0], subPool[1]] : [subPool[ri(0, 1)], subPool[ri(2, subPool.length - 1)]];
   return {
     name: spec ? spec.name : 'Floor ' + n + ': ' + names[(n - 4) % names.length], pool: spec ? spec.pool : 'all', level: n, generated: true,
     boss: spec ? spec.boss : bosses[(n - 1) % bosses.length], subbosses, music: 'overworld', theme, modifiers,

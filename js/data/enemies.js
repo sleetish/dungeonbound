@@ -38,19 +38,19 @@ const ENEMIES = {
     drops: [{ id: 'mop', p: 0.2 }], article: 'the',
     actions: [{ type: 'attack', verb: 'swabs', w: 6 }, { type: 'skill', id: 'bulwark', w: 1 }, { type: 'idle', text: '{n} leaves a wet floor sign.', w: 1 }] },
   // ---- sub-bosses (guard the gates between floor sections) ----
-  ratlt: { name: 'Rat Lieutenant', sprite: 'rat', pal: { n: '#604020', z: '#ff6060' }, level: 3, hp: 80, str: 11, def: 4, spd: 8, luck: 4, exp: 60, money: 60, subboss: true,
+  ratlt: { name: 'Rat Lieutenant', sprite: 'rat', pal: { n: '#604020', z: '#ff6060' }, level: 2, hp: 60, str: 9, def: 3, spd: 7, luck: 4, exp: 50, money: 50, subboss: true,
     drops: [{ id: 'box_bronze', p: 1 }], article: 'the', intro: 'A rat the size of a dog wears a bottle cap on a string. It salutes, then lunges.',
     phases: [{ at: 0.5, tell: 'The Lieutenant bares its teeth and starts biting twice as fast!', effect: 'rage' }],
     actions: [{ type: 'attack', verb: 'bites', w: 6 }, { type: 'attack', verb: 'gnaws', mult: 1.3, w: 2 }] },
-  warden: { name: 'Gate Warden', sprite: 'golem', pal: { S: '#806050', G: '#c0a080' }, level: 6, hp: 200, str: 18, def: 18, spd: 3, luck: 2, exp: 160, money: 120, subboss: true,
+  warden: { name: 'Gate Warden', sprite: 'golem', pal: { S: '#806050', G: '#c0a080' }, level: 4, hp: 130, str: 13, def: 8, spd: 3, luck: 2, exp: 120, money: 100, subboss: true,
     drops: [{ id: 'box_silver', p: 1 }], article: 'the', intro: 'A stone construct grinds upright in front of the gate. "ACCESS. DENIED."',
     phases: [{ at: 0.5, tell: 'The Warden braces itself. Something heavy is coming. (Guard!)', effect: 'bigslam' }],
     actions: [{ type: 'attack', verb: 'slams', w: 5 }, { type: 'skill', id: 'bulwark', w: 2 }, { type: 'idle', text: '{n} recalibrates.', w: 1 }] },
-  crabmom: { name: 'Crab Matriarch', sprite: 'crab', pal: { r: '#c04080' }, level: 7, hp: 260, str: 22, def: 20, spd: 2, luck: 3, exp: 220, money: 160, subboss: true,
+  crabmom: { name: 'Crab Matriarch', sprite: 'crab', pal: { r: '#c04080' }, level: 6, hp: 220, str: 19, def: 13, spd: 2, luck: 3, exp: 200, money: 150, subboss: true,
     drops: [{ id: 'box_silver', p: 1 }], article: 'the', intro: 'The drain water rises. Something enormous and pink clacks its claws.',
     phases: [{ at: 0.4, tell: 'The Matriarch raises both claws high! (Guard!)', effect: 'bigslam' }],
     actions: [{ type: 'attack', verb: 'pinches', w: 5 }, { type: 'attack', verb: 'crushes', mult: 1.4, w: 2 }, { type: 'skill', id: 'bulwark', w: 1 }] },
-  alpha: { name: 'Hound Alpha', sprite: 'hound', pal: { e: '#503030', r: '#ffd040' }, level: 10, hp: 320, str: 30, def: 12, spd: 16, luck: 8, exp: 340, money: 200, subboss: true,
+  alpha: { name: 'Hound Alpha', sprite: 'hound', pal: { e: '#503030', r: '#ffd040' }, level: 9, hp: 300, str: 27, def: 11, spd: 15, luck: 8, exp: 320, money: 200, subboss: true,
     drops: [{ id: 'box_silver', p: 1 }], article: 'the', intro: 'A howl rolls through the corridor. The pack leader steps into the light.',
     phases: [{ at: 0.5, tell: 'The Alpha howls! Its eyes go wild and it moves faster!', effect: 'haste' }],
     actions: [{ type: 'attack', verb: 'mauls', w: 5 }, { type: 'attack', verb: 'gnaws on', status: 'poison', chance: 0.5, w: 3 }] },
@@ -76,7 +76,8 @@ const ENEMIES = {
     actions: [{ type: 'attack', verb: 'pummels', w: 4 }, { type: 'attack', verb: 'unleashes a Crowd Pleaser on', all: true, mult: 0.8, w: 3 }, { type: 'skill', id: 'hype', w: 1 }, { type: 'skill', id: 'siphon', w: 2 }] },
 };
 
-const SUBBOSS_POOLS = { 1: ['ratlt', 'warden'], 2: ['crabmom', 'warden'], 3: ['alpha', 'sentinel'], all: ['warden', 'crabmom', 'alpha', 'sentinel'] };
+// per floor: [first gate guardian, second gate guardian], ordered weak to strong
+const SUBBOSS_POOLS = { 1: ['ratlt', 'warden'], 2: ['warden', 'crabmom'], 3: ['alpha', 'sentinel'], all: ['warden', 'crabmom', 'alpha', 'sentinel'] };
 
 const ENEMY_POOLS = {
   1: ['rat', 'goo', 'bat'],
