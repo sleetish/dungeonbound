@@ -1,0 +1,483 @@
+[
+  {
+    "id": "human_down",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/human_down.png",
+    "file8x": "assets/reference/8x/human_down.png"
+  },
+  {
+    "id": "human_down_w1",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/human_down_w1.png",
+    "file8x": "assets/reference/8x/human_down_w1.png"
+  },
+  {
+    "id": "human_down_w2",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/human_down_w2.png",
+    "file8x": "assets/reference/8x/human_down_w2.png"
+  },
+  {
+    "id": "human_up",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/human_up.png",
+    "file8x": "assets/reference/8x/human_up.png"
+  },
+  {
+    "id": "human_up_w1",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/human_up_w1.png",
+    "file8x": "assets/reference/8x/human_up_w1.png"
+  },
+  {
+    "id": "human_up_w2",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/human_up_w2.png",
+    "file8x": "assets/reference/8x/human_up_w2.png"
+  },
+  {
+    "id": "human_side",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/human_side.png",
+    "file8x": "assets/reference/8x/human_side.png"
+  },
+  {
+    "id": "human_side_w1",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/human_side_w1.png",
+    "file8x": "assets/reference/8x/human_side_w1.png"
+  },
+  {
+    "id": "human_side_w2",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/human_side_w2.png",
+    "file8x": "assets/reference/8x/human_side_w2.png"
+  },
+  {
+    "id": "hero_down",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/hero_down.png",
+    "file8x": "assets/reference/8x/hero_down.png"
+  },
+  {
+    "id": "hero_down_w1",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/hero_down_w1.png",
+    "file8x": "assets/reference/8x/hero_down_w1.png"
+  },
+  {
+    "id": "hero_down_w2",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/hero_down_w2.png",
+    "file8x": "assets/reference/8x/hero_down_w2.png"
+  },
+  {
+    "id": "hero_up",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/hero_up.png",
+    "file8x": "assets/reference/8x/hero_up.png"
+  },
+  {
+    "id": "hero_up_w1",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/hero_up_w1.png",
+    "file8x": "assets/reference/8x/hero_up_w1.png"
+  },
+  {
+    "id": "hero_up_w2",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/hero_up_w2.png",
+    "file8x": "assets/reference/8x/hero_up_w2.png"
+  },
+  {
+    "id": "hero_side",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/hero_side.png",
+    "file8x": "assets/reference/8x/hero_side.png"
+  },
+  {
+    "id": "hero_side_w1",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/hero_side_w1.png",
+    "file8x": "assets/reference/8x/hero_side_w1.png"
+  },
+  {
+    "id": "hero_side_w2",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/hero_side_w2.png",
+    "file8x": "assets/reference/8x/hero_side_w2.png"
+  },
+  {
+    "id": "raccoon_down",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/raccoon_down.png",
+    "file8x": "assets/reference/8x/raccoon_down.png"
+  },
+  {
+    "id": "raccoon_down_w1",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/raccoon_down_w1.png",
+    "file8x": "assets/reference/8x/raccoon_down_w1.png"
+  },
+  {
+    "id": "raccoon_down_w2",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/raccoon_down_w2.png",
+    "file8x": "assets/reference/8x/raccoon_down_w2.png"
+  },
+  {
+    "id": "raccoon_up",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/raccoon_up.png",
+    "file8x": "assets/reference/8x/raccoon_up.png"
+  },
+  {
+    "id": "raccoon_up_w1",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/raccoon_up_w1.png",
+    "file8x": "assets/reference/8x/raccoon_up_w1.png"
+  },
+  {
+    "id": "raccoon_up_w2",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/raccoon_up_w2.png",
+    "file8x": "assets/reference/8x/raccoon_up_w2.png"
+  },
+  {
+    "id": "raccoon_side",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/raccoon_side.png",
+    "file8x": "assets/reference/8x/raccoon_side.png"
+  },
+  {
+    "id": "raccoon_side_w1",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/raccoon_side_w1.png",
+    "file8x": "assets/reference/8x/raccoon_side_w1.png"
+  },
+  {
+    "id": "raccoon_side_w2",
+    "group": "characters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/raccoon_side_w2.png",
+    "file8x": "assets/reference/8x/raccoon_side_w2.png"
+  },
+  {
+    "id": "rat",
+    "group": "monsters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/rat.png",
+    "file8x": "assets/reference/8x/rat.png"
+  },
+  {
+    "id": "goo",
+    "group": "monsters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/goo.png",
+    "file8x": "assets/reference/8x/goo.png"
+  },
+  {
+    "id": "bat",
+    "group": "monsters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/bat.png",
+    "file8x": "assets/reference/8x/bat.png"
+  },
+  {
+    "id": "drone",
+    "group": "monsters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/drone.png",
+    "file8x": "assets/reference/8x/drone.png"
+  },
+  {
+    "id": "golem",
+    "group": "monsters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/golem.png",
+    "file8x": "assets/reference/8x/golem.png"
+  },
+  {
+    "id": "crab",
+    "group": "monsters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/crab.png",
+    "file8x": "assets/reference/8x/crab.png"
+  },
+  {
+    "id": "cart",
+    "group": "monsters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/cart.png",
+    "file8x": "assets/reference/8x/cart.png"
+  },
+  {
+    "id": "goblin",
+    "group": "monsters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/goblin.png",
+    "file8x": "assets/reference/8x/goblin.png"
+  },
+  {
+    "id": "hound",
+    "group": "monsters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/hound.png",
+    "file8x": "assets/reference/8x/hound.png"
+  },
+  {
+    "id": "trash",
+    "group": "monsters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/trash.png",
+    "file8x": "assets/reference/8x/trash.png"
+  },
+  {
+    "id": "skeleton",
+    "group": "monsters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/skeleton.png",
+    "file8x": "assets/reference/8x/skeleton.png"
+  },
+  {
+    "id": "mimic",
+    "group": "monsters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/mimic.png",
+    "file8x": "assets/reference/8x/mimic.png"
+  },
+  {
+    "id": "ratking",
+    "group": "monsters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/ratking.png",
+    "file8x": "assets/reference/8x/ratking.png"
+  },
+  {
+    "id": "steward",
+    "group": "monsters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/steward.png",
+    "file8x": "assets/reference/8x/steward.png"
+  },
+  {
+    "id": "gladiatron",
+    "group": "monsters",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/gladiatron.png",
+    "file8x": "assets/reference/8x/gladiatron.png"
+  },
+  {
+    "id": "gate",
+    "group": "objects",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/gate.png",
+    "file8x": "assets/reference/8x/gate.png"
+  },
+  {
+    "id": "gate_open",
+    "group": "objects",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/gate_open.png",
+    "file8x": "assets/reference/8x/gate_open.png"
+  },
+  {
+    "id": "door_safe",
+    "group": "objects",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/door_safe.png",
+    "file8x": "assets/reference/8x/door_safe.png"
+  },
+  {
+    "id": "door_hells",
+    "group": "objects",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/door_hells.png",
+    "file8x": "assets/reference/8x/door_hells.png"
+  },
+  {
+    "id": "door_mercy",
+    "group": "objects",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/door_mercy.png",
+    "file8x": "assets/reference/8x/door_mercy.png"
+  },
+  {
+    "id": "exit",
+    "group": "objects",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/exit.png",
+    "file8x": "assets/reference/8x/exit.png"
+  },
+  {
+    "id": "stash",
+    "group": "objects",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/stash.png",
+    "file8x": "assets/reference/8x/stash.png"
+  },
+  {
+    "id": "bench",
+    "group": "objects",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/bench.png",
+    "file8x": "assets/reference/8x/bench.png"
+  },
+  {
+    "id": "bed",
+    "group": "objects",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/bed.png",
+    "file8x": "assets/reference/8x/bed.png"
+  },
+  {
+    "id": "crate",
+    "group": "objects",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/crate.png",
+    "file8x": "assets/reference/8x/crate.png"
+  },
+  {
+    "id": "vending",
+    "group": "objects",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/vending.png",
+    "file8x": "assets/reference/8x/vending.png"
+  },
+  {
+    "id": "chest",
+    "group": "objects",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/chest.png",
+    "file8x": "assets/reference/8x/chest.png"
+  },
+  {
+    "id": "chest_open",
+    "group": "objects",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/chest_open.png",
+    "file8x": "assets/reference/8x/chest_open.png"
+  },
+  {
+    "id": "terminal",
+    "group": "objects",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/terminal.png",
+    "file8x": "assets/reference/8x/terminal.png"
+  },
+  {
+    "id": "stairs",
+    "group": "objects",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/stairs.png",
+    "file8x": "assets/reference/8x/stairs.png"
+  },
+  {
+    "id": "stairs_locked",
+    "group": "objects",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/stairs_locked.png",
+    "file8x": "assets/reference/8x/stairs_locked.png"
+  },
+  {
+    "id": "shop",
+    "group": "objects",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/shop.png",
+    "file8x": "assets/reference/8x/shop.png"
+  },
+  {
+    "id": "pod",
+    "group": "objects",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/pod.png",
+    "file8x": "assets/reference/8x/pod.png"
+  },
+  {
+    "id": "lootbox",
+    "group": "objects",
+    "size": "16x16",
+    "file1x": "assets/reference/1x/lootbox.png",
+    "file8x": "assets/reference/8x/lootbox.png"
+  },
+  {
+    "id": "human_mask_down",
+    "group": "masks",
+    "size": "16x16",
+    "file8x": "assets/reference/8x/human_mask_down.png"
+  },
+  {
+    "id": "human_mask_down_w1",
+    "group": "masks",
+    "size": "16x16",
+    "file8x": "assets/reference/8x/human_mask_down_w1.png"
+  },
+  {
+    "id": "human_mask_down_w2",
+    "group": "masks",
+    "size": "16x16",
+    "file8x": "assets/reference/8x/human_mask_down_w2.png"
+  },
+  {
+    "id": "human_mask_up",
+    "group": "masks",
+    "size": "16x16",
+    "file8x": "assets/reference/8x/human_mask_up.png"
+  },
+  {
+    "id": "human_mask_up_w1",
+    "group": "masks",
+    "size": "16x16",
+    "file8x": "assets/reference/8x/human_mask_up_w1.png"
+  },
+  {
+    "id": "human_mask_up_w2",
+    "group": "masks",
+    "size": "16x16",
+    "file8x": "assets/reference/8x/human_mask_up_w2.png"
+  },
+  {
+    "id": "human_mask_side",
+    "group": "masks",
+    "size": "16x16",
+    "file8x": "assets/reference/8x/human_mask_side.png"
+  },
+  {
+    "id": "human_mask_side_w1",
+    "group": "masks",
+    "size": "16x16",
+    "file8x": "assets/reference/8x/human_mask_side_w1.png"
+  },
+  {
+    "id": "human_mask_side_w2",
+    "group": "masks",
+    "size": "16x16",
+    "file8x": "assets/reference/8x/human_mask_side_w2.png"
+  }
+]

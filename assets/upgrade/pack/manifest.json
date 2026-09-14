@@ -1,0 +1,361 @@
+{
+  "version": 1,
+  "outline": "baked 1px #101020; disable automatic outline when loading",
+  "assets": {
+    "characters/hero_down.png": {
+      "file": "characters/hero_down.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/hero_down_w1.png": {
+      "file": "characters/hero_down_w1.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/hero_down_w2.png": {
+      "file": "characters/hero_down_w2.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/hero_up.png": {
+      "file": "characters/hero_up.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/hero_up_w1.png": {
+      "file": "characters/hero_up_w1.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/hero_up_w2.png": {
+      "file": "characters/hero_up_w2.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/hero_side.png": {
+      "file": "characters/hero_side.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/hero_side_w1.png": {
+      "file": "characters/hero_side_w1.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/hero_side_w2.png": {
+      "file": "characters/hero_side_w2.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/raccoon_down.png": {
+      "file": "characters/raccoon_down.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/raccoon_down_w1.png": {
+      "file": "characters/raccoon_down_w1.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/raccoon_down_w2.png": {
+      "file": "characters/raccoon_down_w2.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/raccoon_up.png": {
+      "file": "characters/raccoon_up.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/raccoon_up_w1.png": {
+      "file": "characters/raccoon_up_w1.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/raccoon_up_w2.png": {
+      "file": "characters/raccoon_up_w2.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/raccoon_side.png": {
+      "file": "characters/raccoon_side.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/raccoon_side_w1.png": {
+      "file": "characters/raccoon_side_w1.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/raccoon_side_w2.png": {
+      "file": "characters/raccoon_side_w2.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/human_down.png": {
+      "file": "characters/human_down.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/human_down_w1.png": {
+      "file": "characters/human_down_w1.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/human_down_w2.png": {
+      "file": "characters/human_down_w2.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/human_up.png": {
+      "file": "characters/human_up.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/human_up_w1.png": {
+      "file": "characters/human_up_w1.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/human_up_w2.png": {
+      "file": "characters/human_up_w2.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/human_side.png": {
+      "file": "characters/human_side.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/human_side_w1.png": {
+      "file": "characters/human_side_w1.png",
+      "width": 32,
+      "height": 32
+    },
+    "characters/human_side_w2.png": {
+      "file": "characters/human_side_w2.png",
+      "width": 32,
+      "height": 32
+    },
+    "masks/human_mask_down.png": {
+      "file": "masks/human_mask_down.png",
+      "width": 32,
+      "height": 32
+    },
+    "masks/human_mask_down_w1.png": {
+      "file": "masks/human_mask_down_w1.png",
+      "width": 32,
+      "height": 32
+    },
+    "masks/human_mask_down_w2.png": {
+      "file": "masks/human_mask_down_w2.png",
+      "width": 32,
+      "height": 32
+    },
+    "masks/human_mask_up.png": {
+      "file": "masks/human_mask_up.png",
+      "width": 32,
+      "height": 32
+    },
+    "masks/human_mask_up_w1.png": {
+      "file": "masks/human_mask_up_w1.png",
+      "width": 32,
+      "height": 32
+    },
+    "masks/human_mask_up_w2.png": {
+      "file": "masks/human_mask_up_w2.png",
+      "width": 32,
+      "height": 32
+    },
+    "masks/human_mask_side.png": {
+      "file": "masks/human_mask_side.png",
+      "width": 32,
+      "height": 32
+    },
+    "masks/human_mask_side_w1.png": {
+      "file": "masks/human_mask_side_w1.png",
+      "width": 32,
+      "height": 32
+    },
+    "masks/human_mask_side_w2.png": {
+      "file": "masks/human_mask_side_w2.png",
+      "width": 32,
+      "height": 32
+    },
+    "monsters/rat.png": {
+      "file": "monsters/rat.png",
+      "width": 64,
+      "height": 64
+    },
+    "monsters/goo.png": {
+      "file": "monsters/goo.png",
+      "width": 64,
+      "height": 64
+    },
+    "monsters/bat.png": {
+      "file": "monsters/bat.png",
+      "width": 64,
+      "height": 64
+    },
+    "monsters/goblin.png": {
+      "file": "monsters/goblin.png",
+      "width": 64,
+      "height": 64
+    },
+    "monsters/crab.png": {
+      "file": "monsters/crab.png",
+      "width": 64,
+      "height": 64
+    },
+    "monsters/cart.png": {
+      "file": "monsters/cart.png",
+      "width": 64,
+      "height": 64
+    },
+    "monsters/drone.png": {
+      "file": "monsters/drone.png",
+      "width": 64,
+      "height": 64
+    },
+    "monsters/hound.png": {
+      "file": "monsters/hound.png",
+      "width": 64,
+      "height": 64
+    },
+    "monsters/trash.png": {
+      "file": "monsters/trash.png",
+      "width": 64,
+      "height": 64
+    },
+    "monsters/skeleton.png": {
+      "file": "monsters/skeleton.png",
+      "width": 64,
+      "height": 64
+    },
+    "monsters/mimic.png": {
+      "file": "monsters/mimic.png",
+      "width": 64,
+      "height": 64
+    },
+    "monsters/golem.png": {
+      "file": "monsters/golem.png",
+      "width": 64,
+      "height": 64
+    },
+    "monsters/ratlt.png": {
+      "file": "monsters/ratlt.png",
+      "width": 64,
+      "height": 64
+    },
+    "monsters/warden.png": {
+      "file": "monsters/warden.png",
+      "width": 64,
+      "height": 64
+    },
+    "monsters/crabmom.png": {
+      "file": "monsters/crabmom.png",
+      "width": 64,
+      "height": 64
+    },
+    "monsters/alpha.png": {
+      "file": "monsters/alpha.png",
+      "width": 64,
+      "height": 64
+    },
+    "monsters/sentinel.png": {
+      "file": "monsters/sentinel.png",
+      "width": 64,
+      "height": 64
+    },
+    "monsters/ratking.png": {
+      "file": "monsters/ratking.png",
+      "width": 96,
+      "height": 96
+    },
+    "monsters/steward.png": {
+      "file": "monsters/steward.png",
+      "width": 96,
+      "height": 96
+    },
+    "monsters/gladiatron.png": {
+      "file": "monsters/gladiatron.png",
+      "width": 96,
+      "height": 96
+    },
+    "objects/chest.png": {
+      "file": "objects/chest.png",
+      "width": 32,
+      "height": 32
+    },
+    "objects/chest_open.png": {
+      "file": "objects/chest_open.png",
+      "width": 32,
+      "height": 32
+    },
+    "objects/terminal.png": {
+      "file": "objects/terminal.png",
+      "width": 32,
+      "height": 32
+    },
+    "objects/stairs.png": {
+      "file": "objects/stairs.png",
+      "width": 32,
+      "height": 32
+    },
+    "objects/stairs_locked.png": {
+      "file": "objects/stairs_locked.png",
+      "width": 32,
+      "height": 32
+    },
+    "objects/shop.png": {
+      "file": "objects/shop.png",
+      "width": 32,
+      "height": 32
+    },
+    "objects/pod.png": {
+      "file": "objects/pod.png",
+      "width": 32,
+      "height": 32
+    },
+    "objects/gate.png": {
+      "file": "objects/gate.png",
+      "width": 32,
+      "height": 32
+    },
+    "objects/gate_open.png": {
+      "file": "objects/gate_open.png",
+      "width": 32,
+      "height": 32
+    },
+    "objects/door_safe.png": {
+      "file": "objects/door_safe.png",
+      "width": 32,
+      "height": 32
+    },
+    "objects/door_hells.png": {
+      "file": "objects/door_hells.png",
+      "width": 32,
+      "height": 32
+    },
+    "objects/door_mercy.png": {
+      "file": "objects/door_mercy.png",
+      "width": 32,
+      "height": 32
+    },
+    "objects/exit.png": {
+      "file": "objects/exit.png",
+      "width": 32,
+      "height": 32
+    },
+    "objects/stash.png": {
+      "file": "objects/stash.png",
+      "width": 32,
+      "height": 32
+    },
+    "objects/bed.png": {
+      "file": "objects/bed.png",
+      "width": 32,
+      "height": 32
+    }
+  }
+}

@@ -1,0 +1,888 @@
+{
+  "expected": 162,
+  "present": 71,
+  "groups": {
+    "characters": 27,
+    "masks": 9,
+    "monsters": 20,
+    "objects": 15,
+    "tiles": 0
+  },
+  "passed": false,
+  "errors": [
+    "Missing objects/bench.png",
+    "Missing objects/crate.png",
+    "Missing objects/vending.png",
+    "Missing objects/lootbox.png",
+    "Missing tiles/lobby/floor.png",
+    "Missing tiles/lobby/floor_alt.png",
+    "Missing tiles/lobby/floor_cracked.png",
+    "Missing tiles/lobby/wall_top.png",
+    "Missing tiles/lobby/wall_front.png",
+    "Missing tiles/lobby/wall_torch.png",
+    "Missing tiles/lobby/water_1.png",
+    "Missing tiles/lobby/water_2.png",
+    "Missing tiles/lobby/water_3.png",
+    "Missing tiles/lobby/pillar.png",
+    "Missing tiles/lobby/rubble.png",
+    "Missing tiles/lobby/safe_zone.png",
+    "Missing tiles/sewer/floor.png",
+    "Missing tiles/sewer/floor_alt.png",
+    "Missing tiles/sewer/floor_cracked.png",
+    "Missing tiles/sewer/wall_top.png",
+    "Missing tiles/sewer/wall_front.png",
+    "Missing tiles/sewer/wall_torch.png",
+    "Missing tiles/sewer/water_1.png",
+    "Missing tiles/sewer/water_2.png",
+    "Missing tiles/sewer/water_3.png",
+    "Missing tiles/sewer/pillar.png",
+    "Missing tiles/sewer/rubble.png",
+    "Missing tiles/sewer/safe_zone.png",
+    "Missing tiles/arena/floor.png",
+    "Missing tiles/arena/floor_alt.png",
+    "Missing tiles/arena/floor_cracked.png",
+    "Missing tiles/arena/wall_top.png",
+    "Missing tiles/arena/wall_front.png",
+    "Missing tiles/arena/wall_torch.png",
+    "Missing tiles/arena/water_1.png",
+    "Missing tiles/arena/water_2.png",
+    "Missing tiles/arena/water_3.png",
+    "Missing tiles/arena/pillar.png",
+    "Missing tiles/arena/rubble.png",
+    "Missing tiles/arena/safe_zone.png",
+    "Missing tiles/void/floor.png",
+    "Missing tiles/void/floor_alt.png",
+    "Missing tiles/void/floor_cracked.png",
+    "Missing tiles/void/wall_top.png",
+    "Missing tiles/void/wall_front.png",
+    "Missing tiles/void/wall_torch.png",
+    "Missing tiles/void/water_1.png",
+    "Missing tiles/void/water_2.png",
+    "Missing tiles/void/water_3.png",
+    "Missing tiles/void/pillar.png",
+    "Missing tiles/void/rubble.png",
+    "Missing tiles/void/safe_zone.png",
+    "Missing tiles/safe/floor.png",
+    "Missing tiles/safe/floor_alt.png",
+    "Missing tiles/safe/floor_cracked.png",
+    "Missing tiles/safe/wall_top.png",
+    "Missing tiles/safe/wall_front.png",
+    "Missing tiles/safe/wall_torch.png",
+    "Missing tiles/safe/water_1.png",
+    "Missing tiles/safe/water_2.png",
+    "Missing tiles/safe/water_3.png",
+    "Missing tiles/safe/pillar.png",
+    "Missing tiles/safe/rubble.png",
+    "Missing tiles/safe/safe_zone.png",
+    "Missing tiles/hells/floor.png",
+    "Missing tiles/hells/floor_alt.png",
+    "Missing tiles/hells/floor_cracked.png",
+    "Missing tiles/hells/wall_top.png",
+    "Missing tiles/hells/wall_front.png",
+    "Missing tiles/hells/wall_torch.png",
+    "Missing tiles/hells/water_1.png",
+    "Missing tiles/hells/water_2.png",
+    "Missing tiles/hells/water_3.png",
+    "Missing tiles/hells/pillar.png",
+    "Missing tiles/hells/rubble.png",
+    "Missing tiles/hells/safe_zone.png",
+    "Missing tiles/mercy/floor.png",
+    "Missing tiles/mercy/floor_alt.png",
+    "Missing tiles/mercy/floor_cracked.png",
+    "Missing tiles/mercy/wall_top.png",
+    "Missing tiles/mercy/wall_front.png",
+    "Missing tiles/mercy/wall_torch.png",
+    "Missing tiles/mercy/water_1.png",
+    "Missing tiles/mercy/water_2.png",
+    "Missing tiles/mercy/water_3.png",
+    "Missing tiles/mercy/pillar.png",
+    "Missing tiles/mercy/rubble.png",
+    "Missing tiles/mercy/safe_zone.png",
+    "Missing tiles/shared/drain.png",
+    "Missing tiles/shared/banner.png",
+    "Missing tiles/shared/sand.png"
+  ],
+  "assets": [
+    {
+      "file": "characters/hero_down.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "3b72cf8c2062accbdff44b4aa3a476ca2e9820de9eb1d936b27403e4bb169c36",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "characters/hero_down_w1.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "18f85bd30993a584c657b9411c1e4d89277752b7541b6c949770be67fd3d5551",
+      "method": "Derived walking pose with unchanged head and palette"
+    },
+    {
+      "file": "characters/hero_down_w2.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "fd51c61240cf2b1906f873989f4aba5a254e5025f576141b3a20cd58b3265f34",
+      "method": "Derived walking pose with unchanged head and palette"
+    },
+    {
+      "file": "characters/hero_up.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "d4818b57f2ba1e20445014cd13868714ee975f6aa1be9d1a16a567e3f09fc90c",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "characters/hero_up_w1.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "7d5bdb3882123debfd3e906c284f017531e8710243d89c3655e778d6f53b1f7f",
+      "method": "Derived walking pose with unchanged head and palette"
+    },
+    {
+      "file": "characters/hero_up_w2.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "aac843135f7eaf8c3d187a41371899bdbba353ab3baba2e80834b01e84f8455d",
+      "method": "Derived walking pose with unchanged head and palette"
+    },
+    {
+      "file": "characters/hero_side.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 15,
+      "binaryAlpha": true,
+      "sha256": "ecc7239cda1cbc3318c9f7901ee0394de9081c7b41c7b857ceb64f90143c3e8c",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "characters/hero_side_w1.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 14,
+      "binaryAlpha": true,
+      "sha256": "5e7f3fb0845c0698353f8574551feafca7bfe420a3ec8dbe83028ef180b4f44e",
+      "method": "Derived walking pose with unchanged head and palette"
+    },
+    {
+      "file": "characters/hero_side_w2.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 15,
+      "binaryAlpha": true,
+      "sha256": "2722f06f4c3b3f370f765bfab103806e310bc8bf1f8a46b0838fb1ec10858cd1",
+      "method": "Derived walking pose with unchanged head and palette"
+    },
+    {
+      "file": "characters/raccoon_down.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 13,
+      "binaryAlpha": true,
+      "sha256": "8bbf1f6c7dd129ca51a45fd3b3ab80d3685cc609b76cf817b0cc278dadc7a1c3",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "characters/raccoon_down_w1.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 13,
+      "binaryAlpha": true,
+      "sha256": "36eb15a7c9166031b84450c10f5f5616a8bd7a47898d0265cf8662d117f1ebf1",
+      "method": "Derived walking pose with unchanged head and palette"
+    },
+    {
+      "file": "characters/raccoon_down_w2.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 13,
+      "binaryAlpha": true,
+      "sha256": "2c037af295c2752b320eac437faacc5f35279a06e4691f109a1636ecdb4770b4",
+      "method": "Derived walking pose with unchanged head and palette"
+    },
+    {
+      "file": "characters/raccoon_up.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 13,
+      "binaryAlpha": true,
+      "sha256": "0b2656819e6965bcc3504a0db1798a604928d0154df200bae6241f854673e1cd",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "characters/raccoon_up_w1.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 13,
+      "binaryAlpha": true,
+      "sha256": "f5ac544331f5c87c2cd3f4899af0325dd7044392c016b6e67dcb180ff289015d",
+      "method": "Derived walking pose with unchanged head and palette"
+    },
+    {
+      "file": "characters/raccoon_up_w2.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 13,
+      "binaryAlpha": true,
+      "sha256": "e2107f06b237133e4f07e7030bcd84caf3250abb3ed76d3113bdaa841741196d",
+      "method": "Derived walking pose with unchanged head and palette"
+    },
+    {
+      "file": "characters/raccoon_side.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 13,
+      "binaryAlpha": true,
+      "sha256": "4af4f2ab9aad7741bc127f34e0ee01ca1dd732399e9c19f6b30c3c68eb636e0c",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "characters/raccoon_side_w1.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 13,
+      "binaryAlpha": true,
+      "sha256": "6c32de0ad6a71328912ff4a970693b00a6adaff178b158153723e6d6998bda17",
+      "method": "Derived walking pose with unchanged head and palette"
+    },
+    {
+      "file": "characters/raccoon_side_w2.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 13,
+      "binaryAlpha": true,
+      "sha256": "88c85a04ba87249de85a59317d18ba949c921156bf340df233e75dce88e7b389",
+      "method": "Derived walking pose with unchanged head and palette"
+    },
+    {
+      "file": "characters/human_down.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 13,
+      "binaryAlpha": true,
+      "sha256": "b2566aeb4c70cce34520438913434717122de799b1dacefe6e3793cb37454893",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "characters/human_down_w1.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 13,
+      "binaryAlpha": true,
+      "sha256": "8d664726a0abaccbbc71eb79b5db8f7f0ee8d2e68818cc870416947f3223397a",
+      "method": "Derived walking pose with unchanged head and palette"
+    },
+    {
+      "file": "characters/human_down_w2.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 13,
+      "binaryAlpha": true,
+      "sha256": "3dc9a5e885643d1c8e275c4d07f15189bebe7d8b48d05db406b7ae2cb588bfe4",
+      "method": "Derived walking pose with unchanged head and palette"
+    },
+    {
+      "file": "characters/human_up.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 11,
+      "binaryAlpha": true,
+      "sha256": "08ddfd27c3d4caabaef36d668e86a777f7432504677c530d1980f5c50277d3d2",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "characters/human_up_w1.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 11,
+      "binaryAlpha": true,
+      "sha256": "3fd5b38f94a3f309f1ce867203e2b4caa3f2e2f9b6d18e10dcd54c46dd6e8a16",
+      "method": "Derived walking pose with unchanged head and palette"
+    },
+    {
+      "file": "characters/human_up_w2.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 11,
+      "binaryAlpha": true,
+      "sha256": "0337a3b36e6738b7c5812fe8a14f5881f061e1a41196306855867e51ddf220f6",
+      "method": "Derived walking pose with unchanged head and palette"
+    },
+    {
+      "file": "characters/human_side.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 14,
+      "binaryAlpha": true,
+      "sha256": "5e04f0e4dec7d75386cdc710c55de838f2682fef8baf254506406244cb834264",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "characters/human_side_w1.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 14,
+      "binaryAlpha": true,
+      "sha256": "290210b247f857eac227390c70b86e0207992d4a8298c11eed94de96c4683b33",
+      "method": "Derived walking pose with unchanged head and palette"
+    },
+    {
+      "file": "characters/human_side_w2.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 14,
+      "binaryAlpha": true,
+      "sha256": "526fe863350a8285aec19ba099428f86fbe8775d14fe388060cefb1fcbab25b5",
+      "method": "Derived walking pose with unchanged head and palette"
+    },
+    {
+      "file": "masks/human_mask_down.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "cf79f204366ce09e2ef8739c4371aada935dbd7760d19d521821535eec1ac419",
+      "method": "Exact semantic palette mask of corresponding final human frame"
+    },
+    {
+      "file": "masks/human_mask_down_w1.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "aa31813b54363f5e4f876d9d7c8c2df275e50335e21ba7505754e2c55dd00351",
+      "method": "Exact semantic palette mask of corresponding final human frame"
+    },
+    {
+      "file": "masks/human_mask_down_w2.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "f3c90f728b1cfa002f6c41184c674b492775b17aee62d7cee98163a7b90422b5",
+      "method": "Exact semantic palette mask of corresponding final human frame"
+    },
+    {
+      "file": "masks/human_mask_up.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "f2a3eed1be8e1c11e2aae8d10287aa8ef486c612aab0a66a8221b48360644ee0",
+      "method": "Exact semantic palette mask of corresponding final human frame"
+    },
+    {
+      "file": "masks/human_mask_up_w1.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "8888293b14b70d4a4502c10ba030ba91391be9c45d957522d70142779025452e",
+      "method": "Exact semantic palette mask of corresponding final human frame"
+    },
+    {
+      "file": "masks/human_mask_up_w2.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "e81afb5f81d34d01b6e360ea6a5c3cb0ce2fefe52aab5730c7ebf75e8e2d2af0",
+      "method": "Exact semantic palette mask of corresponding final human frame"
+    },
+    {
+      "file": "masks/human_mask_side.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "d570d8713a69c849aad189fae8eee2f66f3db2935abc3c59f714077e34e8faed",
+      "method": "Exact semantic palette mask of corresponding final human frame"
+    },
+    {
+      "file": "masks/human_mask_side_w1.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "e589798c0983c54960c350394facc7452f8b827b156542bfe02cfc40d8a678cc",
+      "method": "Exact semantic palette mask of corresponding final human frame"
+    },
+    {
+      "file": "masks/human_mask_side_w2.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "47350dc910db61d14a5830d4bc1af53c20553fa6b464d7034ce31a27a0b3b63b",
+      "method": "Exact semantic palette mask of corresponding final human frame"
+    },
+    {
+      "file": "monsters/rat.png",
+      "size": [
+        64,
+        64
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "a89df976916cfccc480f72921a02526a475c9188a25cc11d12c445cdadd6d34c",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "monsters/goo.png",
+      "size": [
+        64,
+        64
+      ],
+      "colors": 10,
+      "binaryAlpha": true,
+      "sha256": "d2e6c0cdff8820ef09e7c62d549d61950bae207ac6ffbd801142b440dbd492eb",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "monsters/bat.png",
+      "size": [
+        64,
+        64
+      ],
+      "colors": 14,
+      "binaryAlpha": true,
+      "sha256": "d41b08150d7d61fd85a0a8ebd12100a32cafb25b4f53acb8f0fd7172a80364bf",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "monsters/goblin.png",
+      "size": [
+        64,
+        64
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "acd73877978e38c19bf077517965cff60b3ad6d4b7d4b65e071955e914a36d78",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "monsters/crab.png",
+      "size": [
+        64,
+        64
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "12595544bd37c84306f57ad553fea6f5f184b9170459a87cf0a394d9f4a356e8",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "monsters/cart.png",
+      "size": [
+        64,
+        64
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "5eed7498ae42011ea0ee037f1ed0514a9a8b2f313f9474759685f8218729ec4c",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "monsters/drone.png",
+      "size": [
+        64,
+        64
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "4dbd40f9421bbb01e1e3dcb836570b60baa7825afe9090abb2f4c45d362892a0",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "monsters/hound.png",
+      "size": [
+        64,
+        64
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "0b382b80f98af86a417ffc8d0f29ce20d7267715ba42a7d6809614be172eec9c",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "monsters/trash.png",
+      "size": [
+        64,
+        64
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "7a086e06ad7419daf30015d7d7370d89366ffa91ecb15e9b7545287890cf22d5",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "monsters/skeleton.png",
+      "size": [
+        64,
+        64
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "7ed48d072beacbc420f20b1aaf7b788cb9a872d30bf66a4ffaed69a5f69f0604",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "monsters/mimic.png",
+      "size": [
+        64,
+        64
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "ffdfd5365f677721e036929e4abeb0c14e45fa0c0ff38aaff15e7cb83687573f",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "monsters/golem.png",
+      "size": [
+        64,
+        64
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "36c0fdfbfeaed0074460f83952608fc87fb652e77990d41a70ec9aa2f8e0d25d",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "monsters/ratlt.png",
+      "size": [
+        64,
+        64
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "27304adb5d677d86d245c22b37e2b3066955818ef7aadff07286d3bcc96b10b4",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "monsters/warden.png",
+      "size": [
+        64,
+        64
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "cac576f0624043cb08639d1363287b584dac7896ddf953991030e7cbec445752",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "monsters/crabmom.png",
+      "size": [
+        64,
+        64
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "f5869e00f948a7f068f4d806fc72c08761cf8b4a38bac8edc038263915dcbe3d",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "monsters/alpha.png",
+      "size": [
+        64,
+        64
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "da3e5c3668c52f5b2102dc60c134cacf69c9d33a64d895cfaf31be745cef74d8",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "monsters/sentinel.png",
+      "size": [
+        64,
+        64
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "0a271706135f359168f8192d3ce38123c4d8f0d35d669af4f46478b4ca18b794",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "monsters/ratking.png",
+      "size": [
+        96,
+        96
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "db1a8d165f192cbf6bd44b3a580de86ca902c9254da92bdf93cd13a80f6185f1",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "monsters/steward.png",
+      "size": [
+        96,
+        96
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "690c371d1b69bba2f974d259e82de4ce15f0382f8dcf4e613ed3306f4e23c9ef",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "monsters/gladiatron.png",
+      "size": [
+        96,
+        96
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "f6b047e60be0594ea6e15eb10028b521933763a6819d500e4e82028e4fba1757",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "objects/chest.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 14,
+      "binaryAlpha": true,
+      "sha256": "b55ce4306c56d275ebd72764d079c845adc24584e2db5292239b3c536c97ebf8",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "objects/chest_open.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 13,
+      "binaryAlpha": true,
+      "sha256": "c8f2ad7bcd988af204f017b82fb7544274be33dcd7d8bc3a70a03deb34a238cf",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "objects/terminal.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "db4a42ee1f76370aa13b4dac9314f9ce727984ea556e3faf7efa12d1ffcb5fc1",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "objects/stairs.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 15,
+      "binaryAlpha": true,
+      "sha256": "9ed939014ac91bea4665ff27c161d6b6dd7faf362077bf9219b3f87cdedce579",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "objects/stairs_locked.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "643852e0c85380535a3b17ccd1efc2abd81643116c9c48d1f01eb2ccf323cec8",
+      "method": "Same stair tile with red energy seal and padlock overlay"
+    },
+    {
+      "file": "objects/shop.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "11504107bfae561e4745205fc2425d2f171338fe6912a3b31862112062ae176f",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "objects/pod.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "53f6b728ace29142cc7643f56c293ece9dcd874ca529a04439941f557433ca7d",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "objects/gate.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 14,
+      "binaryAlpha": true,
+      "sha256": "fb2b817b5cdc542cae33f25fddf9ec0ae46f75917dfe8d829af3e6f686db52d4",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "objects/gate_open.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 12,
+      "binaryAlpha": true,
+      "sha256": "9f179d76f5dc8aed955caf52a2f0aa3260c3cec740f8aaf80bc87a2d473f664c",
+      "method": "Same gate frame with bars retracted to either side"
+    },
+    {
+      "file": "objects/door_safe.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 15,
+      "binaryAlpha": true,
+      "sha256": "6578df5d4b1ba07f0065928e3783bd709d6730cbf4de4d8200e9ca86c83a18a2",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "objects/door_hells.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 13,
+      "binaryAlpha": true,
+      "sha256": "6f45ce6343a866ec9701314adf2e2a4a510c7e60601fe58e715cc26459c06015",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "objects/door_mercy.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "1793203f6adb8f39e4a51902b01d450ee36b32a0e30c2b7ed6936a9c2f9582ed",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "objects/exit.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 14,
+      "binaryAlpha": true,
+      "sha256": "831a2c178f08e96762fec76845d94e36de8bcbb4784b4b09acfbcdc7ae712587",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "objects/stash.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "df95a73457cf2f2876da101496933fe6c44fab6910d30971b9c47480e96c9679",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "objects/bed.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "8affd4aeea118e1a516ae909666abe8f2664382f7ab9d9088532fe0d0a42a8f5",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    }
+  ]
+}

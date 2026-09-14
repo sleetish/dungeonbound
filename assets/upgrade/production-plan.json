@@ -1,0 +1,1304 @@
+{
+  "source": "ASSET_SPEC.md",
+  "scope": "162 core assets; optional tier deferred",
+  "method": "Built-in image generation; exact-format processing awaiting user response",
+  "outline": "1px #101020",
+  "assets": [
+    {
+      "file": "characters/hero_down.png",
+      "width": 32,
+      "height": 32,
+      "description": "The player. Brown hair with a fringe, red-and-white striped flannel pajama top, blue pajama pants, brown slippers. Friendly, a little bewildered.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. The player. Brown hair with a fringe, red-and-white striped flannel pajama top, blue pajama pants, brown slippers. Friendly, a little bewildered. Facing camera. Standing. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/hero_down_w1.png",
+      "width": 32,
+      "height": 32,
+      "description": "The player. Brown hair with a fringe, red-and-white striped flannel pajama top, blue pajama pants, brown slippers. Friendly, a little bewildered.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. The player. Brown hair with a fringe, red-and-white striped flannel pajama top, blue pajama pants, brown slippers. Friendly, a little bewildered. Facing camera. Left foot forward. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/hero_down_w2.png",
+      "width": 32,
+      "height": 32,
+      "description": "The player. Brown hair with a fringe, red-and-white striped flannel pajama top, blue pajama pants, brown slippers. Friendly, a little bewildered.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. The player. Brown hair with a fringe, red-and-white striped flannel pajama top, blue pajama pants, brown slippers. Friendly, a little bewildered. Facing camera. Right foot forward. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/hero_up.png",
+      "width": 32,
+      "height": 32,
+      "description": "The player. Brown hair with a fringe, red-and-white striped flannel pajama top, blue pajama pants, brown slippers. Friendly, a little bewildered.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. The player. Brown hair with a fringe, red-and-white striped flannel pajama top, blue pajama pants, brown slippers. Friendly, a little bewildered. Seen from behind. Standing. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/hero_up_w1.png",
+      "width": 32,
+      "height": 32,
+      "description": "The player. Brown hair with a fringe, red-and-white striped flannel pajama top, blue pajama pants, brown slippers. Friendly, a little bewildered.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. The player. Brown hair with a fringe, red-and-white striped flannel pajama top, blue pajama pants, brown slippers. Friendly, a little bewildered. Seen from behind. Left foot forward. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/hero_up_w2.png",
+      "width": 32,
+      "height": 32,
+      "description": "The player. Brown hair with a fringe, red-and-white striped flannel pajama top, blue pajama pants, brown slippers. Friendly, a little bewildered.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. The player. Brown hair with a fringe, red-and-white striped flannel pajama top, blue pajama pants, brown slippers. Friendly, a little bewildered. Seen from behind. Right foot forward. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/hero_side.png",
+      "width": 32,
+      "height": 32,
+      "description": "The player. Brown hair with a fringe, red-and-white striped flannel pajama top, blue pajama pants, brown slippers. Friendly, a little bewildered.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. The player. Brown hair with a fringe, red-and-white striped flannel pajama top, blue pajama pants, brown slippers. Friendly, a little bewildered. Facing RIGHT. Standing. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/hero_side_w1.png",
+      "width": 32,
+      "height": 32,
+      "description": "The player. Brown hair with a fringe, red-and-white striped flannel pajama top, blue pajama pants, brown slippers. Friendly, a little bewildered.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. The player. Brown hair with a fringe, red-and-white striped flannel pajama top, blue pajama pants, brown slippers. Friendly, a little bewildered. Facing RIGHT. Left foot forward. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/hero_side_w2.png",
+      "width": 32,
+      "height": 32,
+      "description": "The player. Brown hair with a fringe, red-and-white striped flannel pajama top, blue pajama pants, brown slippers. Friendly, a little bewildered.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. The player. Brown hair with a fringe, red-and-white striped flannel pajama top, blue pajama pants, brown slippers. Friendly, a little bewildered. Facing RIGHT. Right foot forward. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/raccoon_down.png",
+      "width": 32,
+      "height": 32,
+      "description": "Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug. Facing camera. Standing. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/raccoon_down_w1.png",
+      "width": 32,
+      "height": 32,
+      "description": "Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug. Facing camera. Left foot forward. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/raccoon_down_w2.png",
+      "width": 32,
+      "height": 32,
+      "description": "Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug. Facing camera. Right foot forward. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/raccoon_up.png",
+      "width": 32,
+      "height": 32,
+      "description": "Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug. Seen from behind. Standing. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/raccoon_up_w1.png",
+      "width": 32,
+      "height": 32,
+      "description": "Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug. Seen from behind. Left foot forward. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/raccoon_up_w2.png",
+      "width": 32,
+      "height": 32,
+      "description": "Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug. Seen from behind. Right foot forward. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/raccoon_side.png",
+      "width": 32,
+      "height": 32,
+      "description": "Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug. Facing RIGHT. Standing. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/raccoon_side_w1.png",
+      "width": 32,
+      "height": 32,
+      "description": "Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug. Facing RIGHT. Left foot forward. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/raccoon_side_w2.png",
+      "width": 32,
+      "height": 32,
+      "description": "Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug. Facing RIGHT. Right foot forward. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/human_down.png",
+      "width": 32,
+      "height": 32,
+      "description": "The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below).",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below). Facing camera. Standing. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/human_down_w1.png",
+      "width": 32,
+      "height": 32,
+      "description": "The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below).",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below). Facing camera. Left foot forward. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/human_down_w2.png",
+      "width": 32,
+      "height": 32,
+      "description": "The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below).",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below). Facing camera. Right foot forward. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/human_up.png",
+      "width": 32,
+      "height": 32,
+      "description": "The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below).",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below). Seen from behind. Standing. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/human_up_w1.png",
+      "width": 32,
+      "height": 32,
+      "description": "The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below).",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below). Seen from behind. Left foot forward. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/human_up_w2.png",
+      "width": 32,
+      "height": 32,
+      "description": "The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below).",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below). Seen from behind. Right foot forward. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/human_side.png",
+      "width": 32,
+      "height": 32,
+      "description": "The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below).",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below). Facing RIGHT. Standing. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/human_side_w1.png",
+      "width": 32,
+      "height": 32,
+      "description": "The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below).",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below). Facing RIGHT. Left foot forward. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "characters/human_side_w2.png",
+      "width": 32,
+      "height": 32,
+      "description": "The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below).",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below). Facing RIGHT. Right foot forward. Same head position across animation frames. Center horizontally, exactly two empty rows below feet. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "masks/human_mask_down.png",
+      "width": 32,
+      "height": 32,
+      "description": "Pixel-aligned mask for human_down: shirt pure red, hair pure green, pants pure blue, all other pixels transparent.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Pixel-aligned mask for human_down: shirt pure red, hair pure green, pants pure blue, all other pixels transparent.  Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "masks/human_mask_down_w1.png",
+      "width": 32,
+      "height": 32,
+      "description": "Pixel-aligned mask for human_down_w1: shirt pure red, hair pure green, pants pure blue, all other pixels transparent.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Pixel-aligned mask for human_down_w1: shirt pure red, hair pure green, pants pure blue, all other pixels transparent.  Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "masks/human_mask_down_w2.png",
+      "width": 32,
+      "height": 32,
+      "description": "Pixel-aligned mask for human_down_w2: shirt pure red, hair pure green, pants pure blue, all other pixels transparent.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Pixel-aligned mask for human_down_w2: shirt pure red, hair pure green, pants pure blue, all other pixels transparent.  Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "masks/human_mask_up.png",
+      "width": 32,
+      "height": 32,
+      "description": "Pixel-aligned mask for human_up: shirt pure red, hair pure green, pants pure blue, all other pixels transparent.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Pixel-aligned mask for human_up: shirt pure red, hair pure green, pants pure blue, all other pixels transparent.  Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "masks/human_mask_up_w1.png",
+      "width": 32,
+      "height": 32,
+      "description": "Pixel-aligned mask for human_up_w1: shirt pure red, hair pure green, pants pure blue, all other pixels transparent.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Pixel-aligned mask for human_up_w1: shirt pure red, hair pure green, pants pure blue, all other pixels transparent.  Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "masks/human_mask_up_w2.png",
+      "width": 32,
+      "height": 32,
+      "description": "Pixel-aligned mask for human_up_w2: shirt pure red, hair pure green, pants pure blue, all other pixels transparent.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Pixel-aligned mask for human_up_w2: shirt pure red, hair pure green, pants pure blue, all other pixels transparent.  Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "masks/human_mask_side.png",
+      "width": 32,
+      "height": 32,
+      "description": "Pixel-aligned mask for human_side: shirt pure red, hair pure green, pants pure blue, all other pixels transparent.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Pixel-aligned mask for human_side: shirt pure red, hair pure green, pants pure blue, all other pixels transparent.  Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "masks/human_mask_side_w1.png",
+      "width": 32,
+      "height": 32,
+      "description": "Pixel-aligned mask for human_side_w1: shirt pure red, hair pure green, pants pure blue, all other pixels transparent.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Pixel-aligned mask for human_side_w1: shirt pure red, hair pure green, pants pure blue, all other pixels transparent.  Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "masks/human_mask_side_w2.png",
+      "width": 32,
+      "height": 32,
+      "description": "Pixel-aligned mask for human_side_w2: shirt pure red, hair pure green, pants pure blue, all other pixels transparent.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Pixel-aligned mask for human_side_w2: shirt pure red, hair pure green, pants pure blue, all other pixels transparent.  Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "monsters/rat.png",
+      "width": 64,
+      "height": 64,
+      "description": "Lobby Rat: scruffy brown rat, pink tail and ears, beady eyes.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Lobby Rat: scruffy brown rat, pink tail and ears, beady eyes. Transparent background, center horizontally with two empty rows below feet. Exact 64x64 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "monsters/goo.png",
+      "width": 64,
+      "height": 64,
+      "description": "Lobby Goo: green blob with two dark eyes and a wobbly grin.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Lobby Goo: green blob with two dark eyes and a wobbly grin. Transparent background, center horizontally with two empty rows below feet. Exact 64x64 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "monsters/bat.png",
+      "width": 64,
+      "height": 64,
+      "description": "Vent Bat: purple bat, wings spread, red eyes.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Vent Bat: purple bat, wings spread, red eyes. Transparent background, center horizontally with two empty rows below feet. Exact 64x64 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "monsters/goblin.png",
+      "width": 64,
+      "height": 64,
+      "description": "Goblin Intern: small green goblin in a white shirt and lanyard, holding a stapler.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Goblin Intern: small green goblin in a white shirt and lanyard, holding a stapler. Transparent background, center horizontally with two empty rows below feet. Exact 64x64 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "monsters/crab.png",
+      "width": 64,
+      "height": 64,
+      "description": "Sewer Crab: red crab, raised claws, many legs.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Sewer Crab: red crab, raised claws, many legs. Transparent background, center horizontally with two empty rows below feet. Exact 64x64 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "monsters/cart.png",
+      "width": 64,
+      "height": 64,
+      "description": "Rogue Cart: a shopping cart with a wobbly wheel and an angry expression.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Rogue Cart: a shopping cart with a wobbly wheel and an angry expression. Transparent background, center horizontally with two empty rows below feet. Exact 64x64 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "monsters/drone.png",
+      "width": 64,
+      "height": 64,
+      "description": "Sponsor Drone: floating grey camera drone with a red lens and a cyan light on top.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Sponsor Drone: floating grey camera drone with a red lens and a cyan light on top. Transparent background, center horizontally with two empty rows below feet. Exact 64x64 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "monsters/hound.png",
+      "width": 64,
+      "height": 64,
+      "description": "Bog Hound: dark green swamp dog, dripping, red eyes.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Bog Hound: dark green swamp dog, dripping, red eyes. Transparent background, center horizontally with two empty rows below feet. Exact 64x64 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "monsters/trash.png",
+      "width": 64,
+      "height": 64,
+      "description": "Trash Elemental: heap of garbage with two glowing yellow eyes and a red mouth.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Trash Elemental: heap of garbage with two glowing yellow eyes and a red mouth. Transparent background, center horizontally with two empty rows below feet. Exact 64x64 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "monsters/skeleton.png",
+      "width": 64,
+      "height": 64,
+      "description": "Crawler Remains: skeleton in torn crawler clothes.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Crawler Remains: skeleton in torn crawler clothes. Transparent background, center horizontally with two empty rows below feet. Exact 64x64 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "monsters/mimic.png",
+      "width": 64,
+      "height": 64,
+      "description": "Mimic Chest: treasure chest with an open toothy mouth and a red tongue.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Mimic Chest: treasure chest with an open toothy mouth and a red tongue. Transparent background, center horizontally with two empty rows below feet. Exact 64x64 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "monsters/golem.png",
+      "width": 64,
+      "height": 64,
+      "description": "Mop Golem: stone construct built around mops and buckets.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Mop Golem: stone construct built around mops and buckets. Transparent background, center horizontally with two empty rows below feet. Exact 64x64 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "monsters/ratlt.png",
+      "width": 64,
+      "height": 64,
+      "description": "Rat Lieutenant: a dog-sized rat wearing a bottle cap on a string like a medal.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Rat Lieutenant: a dog-sized rat wearing a bottle cap on a string like a medal. Transparent background, center horizontally with two empty rows below feet. Exact 64x64 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "monsters/warden.png",
+      "width": 64,
+      "height": 64,
+      "description": "Gate Warden: sandstone golem with glowing seams, blocky and heavy.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Gate Warden: sandstone golem with glowing seams, blocky and heavy. Transparent background, center horizontally with two empty rows below feet. Exact 64x64 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "monsters/crabmom.png",
+      "width": 64,
+      "height": 64,
+      "description": "Crab Matriarch: enormous pink crab crusted with barnacles.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Crab Matriarch: enormous pink crab crusted with barnacles. Transparent background, center horizontally with two empty rows below feet. Exact 64x64 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "monsters/alpha.png",
+      "width": 64,
+      "height": 64,
+      "description": "Hound Alpha: black hound, yellow eyes, raised hackles.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Hound Alpha: black hound, yellow eyes, raised hackles. Transparent background, center horizontally with two empty rows below feet. Exact 64x64 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "monsters/sentinel.png",
+      "width": 64,
+      "height": 64,
+      "description": "Security Sentinel: chrome drone with a green scanning lens and a red warning light.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Security Sentinel: chrome drone with a green scanning lens and a red warning light. Transparent background, center horizontally with two empty rows below feet. Exact 64x64 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "monsters/ratking.png",
+      "width": 96,
+      "height": 96,
+      "description": "Ratking Reginald: huge rat with a crown of bottle caps, sitting on a throne of garbage.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Ratking Reginald: huge rat with a crown of bottle caps, sitting on a throne of garbage. Transparent background, center horizontally with two empty rows below feet. Exact 96x96 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "monsters/steward.png",
+      "width": 96,
+      "height": 96,
+      "description": "The Floor Steward: polished white-and-cyan maintenance robot, one red eye, broom arm.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. The Floor Steward: polished white-and-cyan maintenance robot, one red eye, broom arm. Transparent background, center horizontally with two empty rows below feet. Exact 96x96 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "monsters/gladiatron.png",
+      "width": 96,
+      "height": 96,
+      "description": "Gladiatron: gold armored robot gladiator with red plume and glowing eyes.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Gladiatron: gold armored robot gladiator with red plume and glowing eyes. Transparent background, center horizontally with two empty rows below feet. Exact 96x96 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "objects/chest.png",
+      "width": 32,
+      "height": 32,
+      "description": "Closed wooden chest with brass lock.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Closed wooden chest with brass lock. Transparent background, center horizontally with two empty rows below object. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "objects/chest_open.png",
+      "width": 32,
+      "height": 32,
+      "description": "Same chest, lid open, empty.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Same chest, lid open, empty. Transparent background, center horizontally with two empty rows below object. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "objects/terminal.png",
+      "width": 32,
+      "height": 32,
+      "description": "Dungeon terminal: a CRT on a pedestal with green text. Save point.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Dungeon terminal: a CRT on a pedestal with green text. Save point. Transparent background, center horizontally with two empty rows below object. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "objects/stairs.png",
+      "width": 32,
+      "height": 32,
+      "description": "Stairs down: dark square opening with steps descending. Full-bleed tile, no transparent border.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Stairs down: dark square opening with steps descending. Full-bleed tile, no transparent border. Opaque full-bleed tile. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "objects/stairs_locked.png",
+      "width": 32,
+      "height": 32,
+      "description": "Same stairs sealed with a red energy lock and a padlock icon. Full-bleed.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Same stairs sealed with a red energy lock and a padlock icon. Full-bleed. Opaque full-bleed tile. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "objects/shop.png",
+      "width": 32,
+      "height": 32,
+      "description": "Dungeon Store sign: yellow awning with \"SHOP\" and a striped counter.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Dungeon Store sign: yellow awning with \"SHOP\" and a striped counter. Transparent background, center horizontally with two empty rows below object. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "objects/pod.png",
+      "width": 32,
+      "height": 32,
+      "description": "Med pod: cyan glass capsule on a metal base.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Med pod: cyan glass capsule on a metal base. Transparent background, center horizontally with two empty rows below object. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "objects/gate.png",
+      "width": 32,
+      "height": 32,
+      "description": "Closed gate: iron bars with red lock lights. Full-bleed, tiles vertically (two are stacked).",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Closed gate: iron bars with red lock lights. Full-bleed, tiles vertically (two are stacked). Opaque full-bleed tile. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "objects/gate_open.png",
+      "width": 32,
+      "height": 32,
+      "description": "Same gate frame with bars retracted. Full-bleed.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Same gate frame with bars retracted. Full-bleed. Opaque full-bleed tile. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "objects/door_safe.png",
+      "width": 32,
+      "height": 32,
+      "description": "Safe-room door: wooden door with a small manager portrait plaque.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Safe-room door: wooden door with a small manager portrait plaque. Transparent background, center horizontally with two empty rows below object. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "objects/door_hells.png",
+      "width": 32,
+      "height": 32,
+      "description": "Hell's Kitchen door: black door, red frame, flame motif.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Hell's Kitchen door: black door, red frame, flame motif. Transparent background, center horizontally with two empty rows below object. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "objects/door_mercy.png",
+      "width": 32,
+      "height": 32,
+      "description": "Mercy Lounge door: blue door, pale frame, dove or cross motif.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Mercy Lounge door: blue door, pale frame, dove or cross motif. Transparent background, center horizontally with two empty rows below object. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "objects/exit.png",
+      "width": 32,
+      "height": 32,
+      "description": "Interior exit door: plain steel door with a green EXIT light.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Interior exit door: plain steel door with a green EXIT light. Transparent background, center horizontally with two empty rows below object. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "objects/stash.png",
+      "width": 32,
+      "height": 32,
+      "description": "Stash locker: grey metal locker with a brass tag.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Stash locker: grey metal locker with a brass tag. Transparent background, center horizontally with two empty rows below object. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "objects/bench.png",
+      "width": 32,
+      "height": 32,
+      "description": "Crafting bench: workbench with tools and an \"OFFLINE\" screen.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Crafting bench: workbench with tools and an \"OFFLINE\" screen. Transparent background, center horizontally with two empty rows below object. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "objects/bed.png",
+      "width": 32,
+      "height": 32,
+      "description": "Cot with a white pillow and blue blanket.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Cot with a white pillow and blue blanket. Transparent background, center horizontally with two empty rows below object. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "objects/crate.png",
+      "width": 32,
+      "height": 32,
+      "description": "Wooden crate, stackable look.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Wooden crate, stackable look. Transparent background, center horizontally with two empty rows below object. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "objects/vending.png",
+      "width": 32,
+      "height": 32,
+      "description": "Vending machine with colorful cans behind glass.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Vending machine with colorful cans behind glass. Transparent background, center horizontally with two empty rows below object. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "objects/lootbox.png",
+      "width": 32,
+      "height": 32,
+      "description": "Gold and magenta loot box (used in menus).",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Gold and magenta loot box (used in menus). Transparent background, center horizontally with two empty rows below object. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/lobby/floor.png",
+      "width": 32,
+      "height": 32,
+      "description": "grey-blue office: Plain floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. grey-blue office: Plain floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/lobby/floor_alt.png",
+      "width": 32,
+      "height": 32,
+      "description": "grey-blue office: Subtle variant of plain floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. grey-blue office: Subtle variant of plain floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/lobby/floor_cracked.png",
+      "width": 32,
+      "height": 32,
+      "description": "grey-blue office: Floor with one clear crack or scuff.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. grey-blue office: Floor with one clear crack or scuff. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/lobby/wall_top.png",
+      "width": 32,
+      "height": 32,
+      "description": "grey-blue office: Top face of wall seen from above.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. grey-blue office: Top face of wall seen from above. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/lobby/wall_front.png",
+      "width": 32,
+      "height": 32,
+      "description": "grey-blue office: Front face of wall with lit top edge.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. grey-blue office: Front face of wall with lit top edge. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/lobby/wall_torch.png",
+      "width": 32,
+      "height": 32,
+      "description": "grey-blue office: Wall front with centered lit torch sconce.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. grey-blue office: Wall front with centered lit torch sconce. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/lobby/water_1.png",
+      "width": 32,
+      "height": 32,
+      "description": "grey-blue office: Animated hazard liquid frame 1.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. grey-blue office: Animated hazard liquid frame 1. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/lobby/water_2.png",
+      "width": 32,
+      "height": 32,
+      "description": "grey-blue office: Animated hazard liquid frame 2.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. grey-blue office: Animated hazard liquid frame 2. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/lobby/water_3.png",
+      "width": 32,
+      "height": 32,
+      "description": "grey-blue office: Animated hazard liquid frame 3.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. grey-blue office: Animated hazard liquid frame 3. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/lobby/pillar.png",
+      "width": 32,
+      "height": 32,
+      "description": "grey-blue office: Column standing on floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. grey-blue office: Column standing on floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/lobby/rubble.png",
+      "width": 32,
+      "height": 32,
+      "description": "grey-blue office: Broken stone on floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. grey-blue office: Broken stone on floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/lobby/safe_zone.png",
+      "width": 32,
+      "height": 32,
+      "description": "grey-blue office: Floor with yellow hazard stripes at top and bottom.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. grey-blue office: Floor with yellow hazard stripes at top and bottom. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/sewer/floor.png",
+      "width": 32,
+      "height": 32,
+      "description": "green wet stone: Plain floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. green wet stone: Plain floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/sewer/floor_alt.png",
+      "width": 32,
+      "height": 32,
+      "description": "green wet stone: Subtle variant of plain floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. green wet stone: Subtle variant of plain floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/sewer/floor_cracked.png",
+      "width": 32,
+      "height": 32,
+      "description": "green wet stone: Floor with one clear crack or scuff.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. green wet stone: Floor with one clear crack or scuff. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/sewer/wall_top.png",
+      "width": 32,
+      "height": 32,
+      "description": "green wet stone: Top face of wall seen from above.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. green wet stone: Top face of wall seen from above. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/sewer/wall_front.png",
+      "width": 32,
+      "height": 32,
+      "description": "green wet stone: Front face of wall with lit top edge.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. green wet stone: Front face of wall with lit top edge. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/sewer/wall_torch.png",
+      "width": 32,
+      "height": 32,
+      "description": "green wet stone: Wall front with centered lit torch sconce.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. green wet stone: Wall front with centered lit torch sconce. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/sewer/water_1.png",
+      "width": 32,
+      "height": 32,
+      "description": "green wet stone: Animated hazard liquid frame 1.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. green wet stone: Animated hazard liquid frame 1. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/sewer/water_2.png",
+      "width": 32,
+      "height": 32,
+      "description": "green wet stone: Animated hazard liquid frame 2.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. green wet stone: Animated hazard liquid frame 2. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/sewer/water_3.png",
+      "width": 32,
+      "height": 32,
+      "description": "green wet stone: Animated hazard liquid frame 3.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. green wet stone: Animated hazard liquid frame 3. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/sewer/pillar.png",
+      "width": 32,
+      "height": 32,
+      "description": "green wet stone: Column standing on floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. green wet stone: Column standing on floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/sewer/rubble.png",
+      "width": 32,
+      "height": 32,
+      "description": "green wet stone: Broken stone on floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. green wet stone: Broken stone on floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/sewer/safe_zone.png",
+      "width": 32,
+      "height": 32,
+      "description": "green wet stone: Floor with yellow hazard stripes at top and bottom.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. green wet stone: Floor with yellow hazard stripes at top and bottom. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/arena/floor.png",
+      "width": 32,
+      "height": 32,
+      "description": "sand and warm stone: Plain floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. sand and warm stone: Plain floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/arena/floor_alt.png",
+      "width": 32,
+      "height": 32,
+      "description": "sand and warm stone: Subtle variant of plain floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. sand and warm stone: Subtle variant of plain floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/arena/floor_cracked.png",
+      "width": 32,
+      "height": 32,
+      "description": "sand and warm stone: Floor with one clear crack or scuff.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. sand and warm stone: Floor with one clear crack or scuff. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/arena/wall_top.png",
+      "width": 32,
+      "height": 32,
+      "description": "sand and warm stone: Top face of wall seen from above.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. sand and warm stone: Top face of wall seen from above. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/arena/wall_front.png",
+      "width": 32,
+      "height": 32,
+      "description": "sand and warm stone: Front face of wall with lit top edge.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. sand and warm stone: Front face of wall with lit top edge. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/arena/wall_torch.png",
+      "width": 32,
+      "height": 32,
+      "description": "sand and warm stone: Wall front with centered lit torch sconce.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. sand and warm stone: Wall front with centered lit torch sconce. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/arena/water_1.png",
+      "width": 32,
+      "height": 32,
+      "description": "sand and warm stone: Animated hazard liquid frame 1.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. sand and warm stone: Animated hazard liquid frame 1. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/arena/water_2.png",
+      "width": 32,
+      "height": 32,
+      "description": "sand and warm stone: Animated hazard liquid frame 2.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. sand and warm stone: Animated hazard liquid frame 2. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/arena/water_3.png",
+      "width": 32,
+      "height": 32,
+      "description": "sand and warm stone: Animated hazard liquid frame 3.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. sand and warm stone: Animated hazard liquid frame 3. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/arena/pillar.png",
+      "width": 32,
+      "height": 32,
+      "description": "sand and warm stone: Column standing on floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. sand and warm stone: Column standing on floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/arena/rubble.png",
+      "width": 32,
+      "height": 32,
+      "description": "sand and warm stone: Broken stone on floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. sand and warm stone: Broken stone on floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/arena/safe_zone.png",
+      "width": 32,
+      "height": 32,
+      "description": "sand and warm stone: Floor with yellow hazard stripes at top and bottom.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. sand and warm stone: Floor with yellow hazard stripes at top and bottom. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/void/floor.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark purple: Plain floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark purple: Plain floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/void/floor_alt.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark purple: Subtle variant of plain floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark purple: Subtle variant of plain floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/void/floor_cracked.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark purple: Floor with one clear crack or scuff.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark purple: Floor with one clear crack or scuff. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/void/wall_top.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark purple: Top face of wall seen from above.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark purple: Top face of wall seen from above. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/void/wall_front.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark purple: Front face of wall with lit top edge.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark purple: Front face of wall with lit top edge. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/void/wall_torch.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark purple: Wall front with centered lit torch sconce.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark purple: Wall front with centered lit torch sconce. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/void/water_1.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark purple: Animated hazard liquid frame 1.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark purple: Animated hazard liquid frame 1. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/void/water_2.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark purple: Animated hazard liquid frame 2.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark purple: Animated hazard liquid frame 2. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/void/water_3.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark purple: Animated hazard liquid frame 3.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark purple: Animated hazard liquid frame 3. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/void/pillar.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark purple: Column standing on floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark purple: Column standing on floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/void/rubble.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark purple: Broken stone on floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark purple: Broken stone on floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/void/safe_zone.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark purple: Floor with yellow hazard stripes at top and bottom.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark purple: Floor with yellow hazard stripes at top and bottom. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/safe/floor.png",
+      "width": 32,
+      "height": 32,
+      "description": "warm wood and plaster: Plain floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. warm wood and plaster: Plain floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/safe/floor_alt.png",
+      "width": 32,
+      "height": 32,
+      "description": "warm wood and plaster: Subtle variant of plain floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. warm wood and plaster: Subtle variant of plain floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/safe/floor_cracked.png",
+      "width": 32,
+      "height": 32,
+      "description": "warm wood and plaster: Floor with one clear crack or scuff.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. warm wood and plaster: Floor with one clear crack or scuff. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/safe/wall_top.png",
+      "width": 32,
+      "height": 32,
+      "description": "warm wood and plaster: Top face of wall seen from above.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. warm wood and plaster: Top face of wall seen from above. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/safe/wall_front.png",
+      "width": 32,
+      "height": 32,
+      "description": "warm wood and plaster: Front face of wall with lit top edge.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. warm wood and plaster: Front face of wall with lit top edge. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/safe/wall_torch.png",
+      "width": 32,
+      "height": 32,
+      "description": "warm wood and plaster: Wall front with centered lit torch sconce.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. warm wood and plaster: Wall front with centered lit torch sconce. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/safe/water_1.png",
+      "width": 32,
+      "height": 32,
+      "description": "warm wood and plaster: Animated hazard liquid frame 1.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. warm wood and plaster: Animated hazard liquid frame 1. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/safe/water_2.png",
+      "width": 32,
+      "height": 32,
+      "description": "warm wood and plaster: Animated hazard liquid frame 2.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. warm wood and plaster: Animated hazard liquid frame 2. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/safe/water_3.png",
+      "width": 32,
+      "height": 32,
+      "description": "warm wood and plaster: Animated hazard liquid frame 3.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. warm wood and plaster: Animated hazard liquid frame 3. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/safe/pillar.png",
+      "width": 32,
+      "height": 32,
+      "description": "warm wood and plaster: Column standing on floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. warm wood and plaster: Column standing on floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/safe/rubble.png",
+      "width": 32,
+      "height": 32,
+      "description": "warm wood and plaster: Broken stone on floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. warm wood and plaster: Broken stone on floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/safe/safe_zone.png",
+      "width": 32,
+      "height": 32,
+      "description": "warm wood and plaster: Floor with yellow hazard stripes at top and bottom.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. warm wood and plaster: Floor with yellow hazard stripes at top and bottom. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/hells/floor.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark red kitchen tile: Plain floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark red kitchen tile: Plain floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/hells/floor_alt.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark red kitchen tile: Subtle variant of plain floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark red kitchen tile: Subtle variant of plain floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/hells/floor_cracked.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark red kitchen tile: Floor with one clear crack or scuff.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark red kitchen tile: Floor with one clear crack or scuff. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/hells/wall_top.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark red kitchen tile: Top face of wall seen from above.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark red kitchen tile: Top face of wall seen from above. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/hells/wall_front.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark red kitchen tile: Front face of wall with lit top edge.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark red kitchen tile: Front face of wall with lit top edge. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/hells/wall_torch.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark red kitchen tile: Wall front with centered lit torch sconce.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark red kitchen tile: Wall front with centered lit torch sconce. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/hells/water_1.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark red kitchen tile: Animated hazard liquid frame 1.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark red kitchen tile: Animated hazard liquid frame 1. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/hells/water_2.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark red kitchen tile: Animated hazard liquid frame 2.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark red kitchen tile: Animated hazard liquid frame 2. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/hells/water_3.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark red kitchen tile: Animated hazard liquid frame 3.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark red kitchen tile: Animated hazard liquid frame 3. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/hells/pillar.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark red kitchen tile: Column standing on floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark red kitchen tile: Column standing on floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/hells/rubble.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark red kitchen tile: Broken stone on floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark red kitchen tile: Broken stone on floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/hells/safe_zone.png",
+      "width": 32,
+      "height": 32,
+      "description": "dark red kitchen tile: Floor with yellow hazard stripes at top and bottom.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. dark red kitchen tile: Floor with yellow hazard stripes at top and bottom. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/mercy/floor.png",
+      "width": 32,
+      "height": 32,
+      "description": "cool blue lounge: Plain floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. cool blue lounge: Plain floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/mercy/floor_alt.png",
+      "width": 32,
+      "height": 32,
+      "description": "cool blue lounge: Subtle variant of plain floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. cool blue lounge: Subtle variant of plain floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/mercy/floor_cracked.png",
+      "width": 32,
+      "height": 32,
+      "description": "cool blue lounge: Floor with one clear crack or scuff.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. cool blue lounge: Floor with one clear crack or scuff. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/mercy/wall_top.png",
+      "width": 32,
+      "height": 32,
+      "description": "cool blue lounge: Top face of wall seen from above.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. cool blue lounge: Top face of wall seen from above. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/mercy/wall_front.png",
+      "width": 32,
+      "height": 32,
+      "description": "cool blue lounge: Front face of wall with lit top edge.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. cool blue lounge: Front face of wall with lit top edge. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/mercy/wall_torch.png",
+      "width": 32,
+      "height": 32,
+      "description": "cool blue lounge: Wall front with centered lit torch sconce.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. cool blue lounge: Wall front with centered lit torch sconce. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/mercy/water_1.png",
+      "width": 32,
+      "height": 32,
+      "description": "cool blue lounge: Animated hazard liquid frame 1.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. cool blue lounge: Animated hazard liquid frame 1. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/mercy/water_2.png",
+      "width": 32,
+      "height": 32,
+      "description": "cool blue lounge: Animated hazard liquid frame 2.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. cool blue lounge: Animated hazard liquid frame 2. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/mercy/water_3.png",
+      "width": 32,
+      "height": 32,
+      "description": "cool blue lounge: Animated hazard liquid frame 3.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. cool blue lounge: Animated hazard liquid frame 3. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/mercy/pillar.png",
+      "width": 32,
+      "height": 32,
+      "description": "cool blue lounge: Column standing on floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. cool blue lounge: Column standing on floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/mercy/rubble.png",
+      "width": 32,
+      "height": 32,
+      "description": "cool blue lounge: Broken stone on floor.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. cool blue lounge: Broken stone on floor. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/mercy/safe_zone.png",
+      "width": 32,
+      "height": 32,
+      "description": "cool blue lounge: Floor with yellow hazard stripes at top and bottom.",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. cool blue lounge: Floor with yellow hazard stripes at top and bottom. Opaque full-bleed tile, seamless left-right, floor and liquid seamless in all directions. Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/shared/drain.png",
+      "width": 32,
+      "height": 32,
+      "description": "Grate in floor",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Grate in floor  Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/shared/banner.png",
+      "width": 32,
+      "height": 32,
+      "description": "Fallen red banner on floor",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Fallen red banner on floor  Exact 32x32 canvas.",
+      "status": "pending"
+    },
+    {
+      "file": "tiles/shared/sand.png",
+      "width": 32,
+      "height": 32,
+      "description": "Loose sand patch",
+      "prompt": "Late-SNES 16-bit JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, top-left light, maximum 16 opaque colors, #101020 one-pixel outline on sprites, no blur, no gradients, no shadow. PNG RGBA, hard binary alpha. Loose sand patch  Exact 32x32 canvas.",
+      "status": "pending"
+    }
+  ]
+}
