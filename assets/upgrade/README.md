@@ -1,22 +1,23 @@
-# Upgrade asset production — incomplete
+﻿# Dungeonbound upgrade assets
 
-The requested core pack contains 162 PNGs. `production-plan.json` records every
-required filename, size, description, and production prompt, derived from
-`ASSET_SPEC.md`. Regenerate it with `node tools/plan-upgrade-assets.js`.
+The complete core pack contains 162 PNGs: 27 character frames, 9 human recolor masks, 20 monsters, 19 objects, and 87 tiles across seven themes and shared decor.
 
-Source illustrations are being generated using the built-in image generation tool
-and preserved under `sources/`. Finished-format PNGs are built under `pack/`.
-The runtime game has not been changed.
+- Deliverable: [dungeonbound-core-upgrade.zip](dungeonbound-core-upgrade.zip), preserving the specified folder layout.
+- Browse: [offline gallery and character animations](review.html).
+- Inspect: [room compositions](preview-scenes.png), [tile repeats](preview-seams.png), and [human recolors](preview-recolors.png).
+- Evidence: [validation.json](validation.json) records dimensions, colors, hashes, and production methods.
 
-The generator did not honor the requested native canvas dimensions. Exact pixel
-sizing, palette limits, binary transparency, animation alignment, and recolor masks
-use controlled processing and validation. The user authorized scripted image
-processing. Production is continuing through all 162 core files; `validation.json`
-records the current count and any remaining failures or missing files.
+All 162 files pass exact-size, RGBA, binary-alpha, maximum-16-color, filename, sprite-baseline, outline, mask-alignment, and applicable tile-edge checks. Character heads remain aligned within each direction's animation. Room compositions are asset previews, not screenshots of an integrated game.
 
-Run `python tools/build-upgrade-assets.py --partial` for an incremental build.
-Omit `--partial` for a final build that fails if any core asset is absent or invalid.
-Pillow is installed locally under `tools/.asset-deps/`, excluded from Git.
+Built-in image generation supplied the source artwork; user-authorized scripted processing supplied native sizing, palette reduction, transparency cleanup, outlines, masks, walk poses, paired-object states, and tile variants. Original generated images are preserved in sources/. generation-log.json records source paths and prompts; production-plan.json records all required output descriptions.
 
-Outline target: one pixel in #101020. Full-bleed tiles are opaque as required by
-the section-specific rules. Optional assets are deferred until the core is ready.
+The game runtime is unchanged. See [pack/README.md](pack/README.md) for loader, nearest-neighbor scaling, baked-outline, and recoloring guidance. The optional 48-image tier in section 7 of the specification is outside this core delivery.
+
+Rebuild and validate from the repository root with:
+
+    python -W ignore tools/build-upgrade-assets.py
+    python tools/review-upgrade-assets.py
+    python tools/preview-upgrade-masks.py
+    python tools/preview-upgrade-scenes.py
+
+Pillow is installed under tools/.asset-deps/ and excluded from Git.
