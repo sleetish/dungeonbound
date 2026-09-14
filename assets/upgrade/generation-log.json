@@ -1,0 +1,347 @@
+[
+  {
+    "file": "characters/hero_up.png",
+    "source": "assets/upgrade/sources/characters__hero_up.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. The player. Brown hair with a fringe, red-and-white striped flannel pajama top, blue pajama pants, brown slippers. Friendly, a little bewildered. Native 32x32 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. Standing seen from behind. Head 11 logical pixels, torso 7 pixels, legs 6 pixels. No pose tilt. "
+  },
+  {
+    "file": "characters/raccoon_up.png",
+    "source": "assets/upgrade/sources/characters__raccoon_up.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug. Native 32x32 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. Standing seen from behind. Head 11 logical pixels, torso 7 pixels, legs 6 pixels. No pose tilt. "
+  },
+  {
+    "file": "characters/hero_side.png",
+    "source": "assets/upgrade/sources/characters__hero_side.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. The player. Brown hair with a fringe, red-and-white striped flannel pajama top, blue pajama pants, brown slippers. Friendly, a little bewildered. Native 32x32 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. Standing facing RIGHT in profile. Head 11 logical pixels, torso 7 pixels, legs 6 pixels. No pose tilt. "
+  },
+  {
+    "file": "characters/human_up.png",
+    "source": "assets/upgrade/sources/characters__human_up.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below). Native 32x32 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. Standing seen from behind. Head 11 logical pixels, torso 7 pixels, legs 6 pixels. No pose tilt. Neutral adult short dark BROWN hair, RED plain shirt, BLUE trousers, warm peach skin. Distinct hue regions for masks."
+  },
+  {
+    "file": "characters/raccoon_down.png",
+    "source": "assets/upgrade/sources/characters__raccoon_down.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug. Native 32x32 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. Standing facing camera. Head 11 logical pixels, torso 7 pixels, legs 6 pixels. No pose tilt. "
+  },
+  {
+    "file": "characters/raccoon_side.png",
+    "source": "assets/upgrade/sources/characters__raccoon_side.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. Chancellor Tibbs. A raccoon standing on all fours, black mask, white cheeks, ringed tail, wearing a small jeweled collar. Smug. Native 32x32 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. Standing facing RIGHT in profile. Head 11 logical pixels, torso 7 pixels, legs 6 pixels. No pose tilt. "
+  },
+  {
+    "file": "characters/human_side.png",
+    "source": "assets/upgrade/sources/characters__human_side.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below). Native 32x32 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. Standing facing RIGHT in profile. Head 11 logical pixels, torso 7 pixels, legs 6 pixels. No pose tilt. Neutral adult short dark BROWN hair, RED plain shirt, BLUE trousers, warm peach skin. Distinct hue regions for masks."
+  },
+  {
+    "file": "monsters/bat.png",
+    "source": "assets/upgrade/sources/monsters__bat.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. Vent Bat: purple bat, wings spread, red eyes. Native 64x64 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. "
+  },
+  {
+    "file": "monsters/goblin.png",
+    "source": "assets/upgrade/sources/monsters__goblin.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. Goblin Intern: small green goblin in a white shirt and lanyard, holding a stapler. Native 64x64 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. "
+  },
+  {
+    "file": "monsters/drone.png",
+    "source": "assets/upgrade/sources/monsters__drone.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. Sponsor Drone: floating grey camera drone with a red lens and a cyan light on top. Native 64x64 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. "
+  },
+  {
+    "file": "characters/human_down.png",
+    "source": "assets/upgrade/sources/characters__human_down.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. The generic crawler body used for all 20 rivals, NPCs and managers. Neutral face, plain shirt, plain pants, dark hair. This one is recolored at runtime, so it also needs masks (below). Native 32x32 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. Standing facing camera. Head 11 logical pixels, torso 7 pixels, legs 6 pixels. No pose tilt. Neutral adult short dark BROWN hair, RED plain shirt, BLUE trousers, warm peach skin. Distinct hue regions for masks."
+  },
+  {
+    "file": "monsters/skeleton.png",
+    "source": "assets/upgrade/sources/monsters__skeleton.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. Crawler Remains: skeleton in torn crawler clothes. Native 64x64 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. "
+  },
+  {
+    "file": "monsters/cart.png",
+    "source": "assets/upgrade/sources/monsters__cart.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. Rogue Cart: a shopping cart with a wobbly wheel and an angry expression. Native 64x64 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. "
+  },
+  {
+    "file": "monsters/goo.png",
+    "source": "assets/upgrade/sources/monsters__goo.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. Lobby Goo: green blob with two dark eyes and a wobbly grin. Native 64x64 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. "
+  },
+  {
+    "file": "monsters/crab.png",
+    "source": "assets/upgrade/sources/monsters__crab.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. Sewer Crab: red crab, raised claws, many legs. Native 64x64 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. "
+  },
+  {
+    "file": "monsters/ratlt.png",
+    "source": "assets/upgrade/sources/monsters__ratlt.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. Rat Lieutenant: a dog-sized rat wearing a bottle cap on a string like a medal. Native 64x64 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. "
+  },
+  {
+    "file": "monsters/trash.png",
+    "source": "assets/upgrade/sources/monsters__trash.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. Trash Elemental: heap of garbage with two glowing yellow eyes and a red mouth. Native 64x64 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. "
+  },
+  {
+    "file": "monsters/hound.png",
+    "source": "assets/upgrade/sources/monsters__hound.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. Bog Hound: dark green swamp dog, dripping, red eyes. Native 64x64 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. "
+  },
+  {
+    "file": "monsters/golem.png",
+    "source": "assets/upgrade/sources/monsters__golem.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. Mop Golem: stone construct built around mops and buckets. Native 64x64 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. "
+  },
+  {
+    "file": "monsters/mimic.png",
+    "source": "assets/upgrade/sources/monsters__mimic.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. Mimic Chest: treasure chest with an open toothy mouth and a red tongue. Native 64x64 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. "
+  },
+  {
+    "file": "monsters/crabmom.png",
+    "source": "assets/upgrade/sources/monsters__crabmom.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. Crab Matriarch: enormous pink crab crusted with barnacles. Native 64x64 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. "
+  },
+  {
+    "file": "monsters/ratking.png",
+    "source": "assets/upgrade/sources/monsters__ratking.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. Ratking Reginald: huge rat with a crown of bottle caps, sitting on a throne of garbage. Native 96x96 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. "
+  },
+  {
+    "file": "monsters/alpha.png",
+    "source": "assets/upgrade/sources/monsters__alpha.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. Hound Alpha: black hound, yellow eyes, raised hackles. Native 64x64 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. "
+  },
+  {
+    "file": "objects/chest.png",
+    "source": "assets/upgrade/sources/objects__chest.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. Closed wooden chest with brass lock. Native 32x32 pixel design, maximum 16 colors. Genuinely transparent RGBA background. One pixel #101020 dark outline. Center the complete object with clear empty space around silhouette. No ground or shadow. "
+  },
+  {
+    "file": "objects/stairs.png",
+    "source": "assets/upgrade/sources/objects__stairs.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, very chunky readable silhouette, big heads on characters, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow, no text unless requested. Single asset only, no sheet or presentation. Stairs down: dark square opening with steps descending. Full-bleed tile, no transparent border. Native 32x32 pixel design, maximum 16 colors. Opaque full-bleed square texture, no border or margin. Seamless tiling. Flat overhead view for floors and water, straight-on wall front."
+  },
+  {
+    "file": "monsters/warden.png",
+    "source": "assets/upgrade/sources/monsters__warden.png",
+    "prompt": "Recovered generated Gate Warden source from interrupted batch."
+  },
+  {
+    "file": "monsters/sentinel.png",
+    "source": "assets/upgrade/sources/monsters__sentinel.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow. Single asset, not a sheet or presentation. Security Sentinel: chrome drone with a green scanning lens and a red warning light. Native 64x64 pixel design, max 16 colors. Genuinely transparent RGBA background, one-pixel #101020 outline, complete object centered."
+  },
+  {
+    "file": "monsters/gladiatron.png",
+    "source": "assets/upgrade/sources/monsters__gladiatron.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow. Single asset, not a sheet or presentation. Gladiatron: gold armored robot gladiator with red plume and glowing eyes. Native 96x96 pixel design, max 16 colors. Genuinely transparent RGBA background, one-pixel #101020 outline, complete object centered."
+  },
+  {
+    "file": "monsters/steward.png",
+    "source": "assets/upgrade/sources/monsters__steward.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow. Single asset, not a sheet or presentation. The Floor Steward: polished white-and-cyan maintenance robot, one red eye, broom arm. Native 96x96 pixel design, max 16 colors. Genuinely transparent RGBA background, one-pixel #101020 outline, complete object centered."
+  },
+  {
+    "file": "objects/terminal.png",
+    "source": "assets/upgrade/sources/objects__terminal.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow. Single asset, not a sheet or presentation. Dungeon terminal: a CRT on a pedestal with green text. Save point. Native 32x32 pixel design, max 16 colors. Genuinely transparent RGBA background, one-pixel #101020 outline, complete object centered."
+  },
+  {
+    "file": "objects/chest_open.png",
+    "source": "assets/upgrade/sources/objects__chest_open.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow. Single asset, not a sheet or presentation. Same chest, lid open, empty. Native 32x32 pixel design, max 16 colors. Genuinely transparent RGBA background, one-pixel #101020 outline, complete object centered."
+  },
+  {
+    "file": "objects/stairs_locked.png",
+    "source": "assets/upgrade/sources/objects__stairs_locked.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow. Single asset, not a sheet or presentation. Same stairs sealed with a red energy lock and a padlock icon. Full-bleed. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square seamless tile, no border or margin."
+  },
+  {
+    "file": "objects/shop.png",
+    "source": "assets/upgrade/sources/objects__shop.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow. Single asset, not a sheet or presentation. Dungeon Store sign: yellow awning with \"SHOP\" and a striped counter. Native 32x32 pixel design, max 16 colors. Genuinely transparent RGBA background, one-pixel #101020 outline, complete object centered. Simple clear shapes legible at 32 pixels."
+  },
+  {
+    "file": "objects/pod.png",
+    "source": "assets/upgrade/sources/objects__pod.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow. Single asset, not a sheet or presentation. Med pod: cyan glass capsule on a metal base. Native 32x32 pixel design, max 16 colors. Genuinely transparent RGBA background, one-pixel #101020 outline, complete object centered. Simple clear shapes legible at 32 pixels."
+  },
+  {
+    "file": "objects/door_safe.png",
+    "source": "assets/upgrade/sources/objects__door_safe.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow. Single asset, not a sheet or presentation. Safe-room door: wooden door with a small manager portrait plaque. Native 32x32 pixel design, max 16 colors. Genuinely transparent RGBA background, one-pixel #101020 outline, complete object centered. Simple clear shapes legible at 32 pixels."
+  },
+  {
+    "file": "objects/gate.png",
+    "source": "assets/upgrade/sources/objects__gate.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow. Single asset, not a sheet or presentation. Closed gate: iron bars with red lock lights. Full-bleed, tiles vertically (two are stacked). Native 32x32 pixel design, max 16 colors. Opaque full-bleed square tile, iron bars fill whole height, seamless top to bottom for vertical stacking, no arched top."
+  },
+  {
+    "file": "objects/door_hells.png",
+    "source": "assets/upgrade/sources/objects__door_hells.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow. Single asset, not a sheet or presentation. Hell's Kitchen door: black door, red frame, flame motif. Native 32x32 pixel design, max 16 colors. Genuinely transparent RGBA background, one-pixel #101020 outline, complete object centered. Simple clear shapes legible at 32 pixels."
+  },
+  {
+    "file": "objects/exit.png",
+    "source": "assets/upgrade/sources/objects__exit.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow. Single asset, not a sheet or presentation. Interior exit door: plain steel door with a green EXIT light. Native 32x32 pixel design, max 16 colors. Genuinely transparent RGBA background, one-pixel #101020 outline, complete object centered. Simple clear shapes legible at 32 pixels."
+  },
+  {
+    "file": "objects/bed.png",
+    "source": "assets/upgrade/sources/objects__bed.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow. Single asset, not a sheet or presentation. Cot with a white pillow and blue blanket. Native 32x32 pixel design, max 16 colors. Genuinely transparent RGBA background, one-pixel #101020 outline, complete object centered. Simple clear shapes legible at 32 pixels."
+  },
+  {
+    "file": "objects/door_mercy.png",
+    "source": "assets/upgrade/sources/objects__door_mercy.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow. Single asset, not a sheet or presentation. Mercy Lounge door: blue door, pale frame, dove or cross motif. Native 32x32 pixel design, max 16 colors. Genuinely transparent RGBA background, one-pixel #101020 outline, complete object centered. Simple clear shapes legible at 32 pixels."
+  },
+  {
+    "file": "objects/stash.png",
+    "source": "assets/upgrade/sources/objects__stash.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow. Single asset, not a sheet or presentation. Stash locker: grey metal locker with a brass tag. Native 32x32 pixel design, max 16 colors. Genuinely transparent RGBA background, one-pixel #101020 outline, complete object centered. Simple clear shapes legible at 32 pixels."
+  },
+  {
+    "file": "objects/crate.png",
+    "source": "assets/upgrade/sources/objects__crate.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow. Single asset, not a sheet or presentation. Wooden crate, stackable look. Native 32x32 pixel design, max 16 colors. Genuinely transparent RGBA background, one-pixel #101020 outline, complete object centered. Simple clear shapes legible at 32 pixels."
+  },
+  {
+    "file": "objects/bench.png",
+    "source": "assets/upgrade/sources/objects__bench.png",
+    "prompt": "Dungeonbound production game sprite. Late SNES console JRPG pixel art, chunky readable silhouette, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, no gradients, no shadow. Single asset, not a sheet or presentation. Crafting bench: workbench with tools and an \"OFFLINE\" screen. Native 32x32 pixel design, max 16 colors. Genuinely transparent RGBA background, one-pixel #101020 outline, complete object centered. Simple clear shapes legible at 32 pixels."
+  },
+  {
+    "file": "objects/vending.png",
+    "source": "assets/upgrade/sources/objects__vending.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. Vending machine with colorful cans behind glass. Native 32x32 pixel design, max 16 colors. Genuinely transparent RGBA background, one-pixel #101020 outline, complete object centered, readable at 32 pixels."
+  },
+  {
+    "file": "tiles/lobby/wall_front.png",
+    "source": "assets/upgrade/sources/tiles__lobby__wall_front.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. grey-blue office: Front face of wall with lit top edge. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; the texture fills the entire canvas. Flat top-down floor or liquid; straight-on wall front. "
+  },
+  {
+    "file": "tiles/sewer/wall_front.png",
+    "source": "assets/upgrade/sources/tiles__sewer__wall_front.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. green wet stone: Front face of wall with lit top edge. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; the texture fills the entire canvas. Flat top-down floor or liquid; straight-on wall front. "
+  },
+  {
+    "file": "tiles/arena/wall_front.png",
+    "source": "assets/upgrade/sources/tiles__arena__wall_front.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. sand and warm stone: Front face of wall with lit top edge. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; the texture fills the entire canvas. Flat top-down floor or liquid; straight-on wall front. "
+  },
+  {
+    "file": "objects/lootbox.png",
+    "source": "assets/upgrade/sources/objects__lootbox.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. Gold and magenta loot box (used in menus). Native 32x32 pixel design, max 16 colors. Genuinely transparent RGBA background, one-pixel #101020 outline, complete object centered, readable at 32 pixels."
+  },
+  {
+    "file": "tiles/void/wall_front.png",
+    "source": "assets/upgrade/sources/tiles__void__wall_front.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. dark purple: Front face of wall with lit top edge. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; the texture fills the entire canvas. Flat top-down floor or liquid; straight-on wall front. "
+  },
+  {
+    "file": "tiles/lobby/floor.png",
+    "source": "assets/upgrade/sources/tiles__lobby__floor.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. grey-blue office: Plain floor. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; the texture fills the entire canvas. Flat top-down floor or liquid; straight-on wall front. "
+  },
+  {
+    "file": "tiles/sewer/floor.png",
+    "source": "assets/upgrade/sources/tiles__sewer__floor.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. green wet stone: Plain floor. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; the texture fills the entire canvas. Flat top-down floor or liquid; straight-on wall front. "
+  },
+  {
+    "file": "tiles/lobby/water_1.png",
+    "source": "assets/upgrade/sources/tiles__lobby__water_1.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. grey-blue office: Animated hazard liquid frame 1. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; the texture fills the entire canvas. Flat top-down floor or liquid; straight-on wall front. cool blue water, broad repeating ripples and clearly liquid appearance."
+  },
+  {
+    "file": "tiles/arena/floor.png",
+    "source": "assets/upgrade/sources/tiles__arena__floor.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. sand and warm stone: Plain floor. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; the texture fills the entire canvas. Flat top-down floor or liquid; straight-on wall front. "
+  },
+  {
+    "file": "tiles/sewer/water_1.png",
+    "source": "assets/upgrade/sources/tiles__sewer__water_1.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. green wet stone: Animated hazard liquid frame 1. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; the texture fills the entire canvas. Flat top-down floor or liquid; straight-on wall front. green sewage, broad repeating ripples and clearly liquid appearance."
+  },
+  {
+    "file": "tiles/void/floor.png",
+    "source": "assets/upgrade/sources/tiles__void__floor.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. dark purple: Plain floor. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; the texture fills the entire canvas. Flat top-down floor or liquid; straight-on wall front. "
+  },
+  {
+    "file": "tiles/arena/water_1.png",
+    "source": "assets/upgrade/sources/tiles__arena__water_1.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. sand and warm stone: Animated hazard liquid frame 1. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; the texture fills the entire canvas. Flat top-down floor or liquid; straight-on wall front. orange molten hazard, broad repeating ripples and clearly liquid appearance."
+  },
+  {
+    "file": "tiles/void/water_1.png",
+    "source": "assets/upgrade/sources/tiles__void__water_1.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. dark purple: Animated hazard liquid frame 1. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; the texture fills the entire canvas. Flat top-down floor or liquid; straight-on wall front. purple ether liquid, broad repeating ripples and clearly liquid appearance."
+  },
+  {
+    "file": "tiles/safe/floor.png",
+    "source": "C:\\Users\\sleet\\.codex\\generated_images\\01a09940-eb18-7ea0-8f7c-911b2f730391\\exec-b3166ca8-bcac-4c34-b157-d8fc01703d34.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. warm wood and plaster: Plain floor. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; texture fills entire canvas. Flat top-down floor or liquid; straight-on wall front. "
+  },
+  {
+    "file": "tiles/safe/wall_front.png",
+    "source": "C:\\Users\\sleet\\.codex\\generated_images\\01a09940-eb18-7ea0-8f7c-911b2f730391\\exec-eda2507b-1db7-4465-8fa9-090031afba00.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. warm wood and plaster: Front face of wall with lit top edge. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; texture fills entire canvas. Flat top-down floor or liquid; straight-on wall front. "
+  },
+  {
+    "file": "tiles/safe/water_1.png",
+    "source": "C:\\Users\\sleet\\.codex\\generated_images\\01a09940-eb18-7ea0-8f7c-911b2f730391\\exec-e88a1211-adf6-499a-a694-ff85152aa063.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. warm wood and plaster: Animated hazard liquid frame 1. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; texture fills entire canvas. Flat top-down floor or liquid; straight-on wall front. teal water, broad repeating ripples and clearly liquid appearance."
+  },
+  {
+    "file": "tiles/hells/floor.png",
+    "source": "C:\\Users\\sleet\\.codex\\generated_images\\01a09940-eb18-7ea0-8f7c-911b2f730391\\exec-8a68da84-1f3b-4068-931b-298c2f3edcdc.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. dark red kitchen tile: Plain floor. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; texture fills entire canvas. Flat top-down floor or liquid; straight-on wall front. "
+  },
+  {
+    "file": "tiles/hells/wall_front.png",
+    "source": "C:\\Users\\sleet\\.codex\\generated_images\\01a09940-eb18-7ea0-8f7c-911b2f730391\\exec-0cc96596-e9bd-4b2b-b701-cee0ca8e87bc.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. dark red kitchen tile: Front face of wall with lit top edge. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; texture fills entire canvas. Flat top-down floor or liquid; straight-on wall front. "
+  },
+  {
+    "file": "tiles/hells/water_1.png",
+    "source": "C:\\Users\\sleet\\.codex\\generated_images\\01a09940-eb18-7ea0-8f7c-911b2f730391\\exec-7d3d800d-3c17-4707-8adb-d31573baac62.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. dark red kitchen tile: Animated hazard liquid frame 1. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; texture fills entire canvas. Flat top-down floor or liquid; straight-on wall front. red-orange lava, broad repeating ripples and clearly liquid appearance."
+  },
+  {
+    "file": "tiles/mercy/floor.png",
+    "source": "C:\\Users\\sleet\\.codex\\generated_images\\01a09940-eb18-7ea0-8f7c-911b2f730391\\exec-03bccec0-caf8-495d-aeeb-7555f1bb26ad.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. cool blue lounge: Plain floor. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; texture fills entire canvas. Flat top-down floor or liquid; straight-on wall front. "
+  },
+  {
+    "file": "tiles/mercy/water_1.png",
+    "source": "C:\\Users\\sleet\\.codex\\generated_images\\01a09940-eb18-7ea0-8f7c-911b2f730391\\exec-69c130f2-bfae-4ca7-b9ca-2f2038f1ce41.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. cool blue lounge: Animated hazard liquid frame 1. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; texture fills entire canvas. Flat top-down floor or liquid; straight-on wall front. cool blue water, broad repeating ripples and clearly liquid appearance."
+  },
+  {
+    "file": "tiles/mercy/wall_front.png",
+    "source": "C:\\Users\\sleet\\.codex\\generated_images\\01a09940-eb18-7ea0-8f7c-911b2f730391\\exec-db26ad3f-8bf4-4249-a651-06a3b00b0c3a.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. cool blue lounge: Front face of wall with lit top edge. Native 32x32 pixel design, max 16 colors. Opaque full-bleed square texture, SEAMLESS in all directions for floor/liquid and horizontally for walls. No border, no framing, no isolated square patch in a background; texture fills entire canvas. Flat top-down floor or liquid; straight-on wall front. "
+  },
+  {
+    "file": "tiles/shared/drain.png",
+    "source": "C:\\Users\\sleet\\.codex\\generated_images\\01a09940-eb18-7ea0-8f7c-911b2f730391\\exec-17fb3fcc-2686-4209-ba0d-13eb8ea1c95f.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. Grate in floor Native 32x32 pixel design, max 16 colors. Genuinely transparent RGBA background, one-pixel #101020 outline, complete object centered, readable at 32 pixels. Flat top-down floor decoration."
+  },
+  {
+    "file": "tiles/shared/sand.png",
+    "source": "C:\\Users\\sleet\\.codex\\generated_images\\01a09940-eb18-7ea0-8f7c-911b2f730391\\exec-7e40a74b-1473-4dfd-bbae-0c1920b95e40.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. Loose sand patch Native 32x32 pixel design, max 16 colors. Genuinely transparent RGBA background, one-pixel #101020 outline, complete object centered, readable at 32 pixels. Flat top-down floor decoration."
+  },
+  {
+    "file": "tiles/shared/banner.png",
+    "source": "C:\\Users\\sleet\\.codex\\generated_images\\01a09940-eb18-7ea0-8f7c-911b2f730391\\exec-7cab7508-4e53-4250-9cee-12603a5d3dc0.png",
+    "prompt": "Dungeonbound production game art. Late SNES console JRPG pixel art, chunky square pixels, saturated slightly dusty colors, limited base/shade/highlight, top-left lighting. No blur, gradients or shadow. Single asset only. Fallen red banner on floor Native 32x32 pixel design, max 16 colors. Genuinely transparent RGBA background, one-pixel #101020 outline, complete object centered, readable at 32 pixels. Flat top-down floor decoration."
+  }
+]

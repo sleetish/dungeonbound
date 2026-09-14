@@ -19,5 +19,5 @@ for(const [theme,desc] of Object.entries(themes)) for(const [id,tile] of Object.
 for(const [id,desc] of [['drain','Grate in floor'],['banner','Fallen red banner on floor'],['sand','Loose sand patch']]) add(`tiles/shared/${id}.png`,32,desc);
 if(assets.length!==162) throw new Error(`Expected 162 assets, got ${assets.length}`);
 const out=path.join(root,'assets/upgrade');fs.mkdirSync(out,{recursive:true});
-fs.writeFileSync(path.join(out,'production-plan.json'),JSON.stringify({source:'ASSET_SPEC.md',scope:'162 core assets; optional tier deferred',method:'Built-in image generation; exact-format processing awaiting user response',outline:'1px #101020',assets},null,2)+'\n');
+fs.writeFileSync(path.join(out,'production-plan.json'),JSON.stringify({source:'ASSET_SPEC.md',scope:'162 core assets; optional tier deferred',method:'Built-in image generation with user-authorized scripted finishing',outline:'1px #101020',assets},null,2)+'\n');
 console.log(`Prepared ${assets.length} asset paths and prompts.`);

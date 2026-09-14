@@ -26,6 +26,15 @@ THEMES = {
  'hells':['2c2130','4b2b37','763b3e','a65044','cd7954','eeb27c','783f58','b66571'],
  'mercy':['232c43','354a68','526f8f','789cac','aac6c9','dce6df','5e778c','99a4be'],
 }
+LIQUIDS = {
+ 'lobby':['182c47','315378','4f88a0','78b8c3'],
+ 'sewer':['24382b','527347','7d964d','a1b35f'],
+ 'arena':['512f32','9b4a3e','dd814e','f0bb71'],
+ 'void':['29213e','4c3269','795390','bb8dbc'],
+ 'safe':['284546','437775','6ca7a0','b4d5bb'],
+ 'hells':['472337','88313d','ce5940','efac62'],
+ 'mercy':['263b54','466988','74a2b6','c3e0df'],
+}
 def rgb(h): return tuple(bytes.fromhex(h.lstrip('#')))
 FAMILY = [INK]+[rgb(h) for h in ['f4e9ce','d7cfb5','f2c59a','d69b79','a56856','563c3c','7c5140','ac7950','d2a16a','b13e50','df6571','7d2c40','375a8c','587fb1','8badc4','294267','344635','52704a','7fa05e','adc57b','8dabc0','647d95','414c68','343346','71507c','9b71a2','c59fbf','a85184','d57aac','ecd89a','c9a858','927247','3e8586','68b5b1','ace0cc','d77c47','efac62','8d483b','ece9dc','757b83','a5adb0','384a4b','c44c37','ea8060','786950','a3946c','adaab9']]
 HUMAN = [INK]+[rgb(h) for h in ['f4e9ce','f2c59a','d69b79','a56856','563c3c','7c5140','ac7950','7d2c40','b13e50','df6571','294267','375a8c','587fb1','8badc4']]
@@ -196,20 +205,27 @@ def object_finish(file,im):
 
 def tile_source(theme,id):
  p=source(f'tiles/{theme}/{id}.png')
- im=Image.open(p).convert('RGB').resize((16,16),NN).convert('RGBA')
- return palette_map(im,[INK]+[rgb(h) for h in THEMES[theme]],16)
+ raw=Image.open(p).convert('RGB')
+ # A source is a texture sheet; sample a smaller area to keep masonry and ripples readable.
+ w,h=raw.size
+ im=raw.crop((w//4,h//4,3*w//4,3*h//4)).resize((16,16),NN).convert('RGBA')
+ return palette_map(im,[INK]+[rgb(h) for h in (LIQUIDS[theme] if id.startswith('water') else THEMES[theme])],16)
 
 def seal(im,c,vertical=True):
- d=ImageDraw.Draw(im);n=im.width
- d.line((0,0,n-1,0),fill=c);d.line((0,n-1,n-1,n-1),fill=c)
+ n=im.width
+ # Preserve the texture at the repeat boundary instead of drawing a solid frame.
+ for x in range(n):
+  p=im.getpixel((x,1));im.putpixel((x,0),p);im.putpixel((x,n-1),p)
  if vertical:
-  d.line((0,0,0,n-1),fill=c);d.line((n-1,0,n-1,n-1),fill=c)
+  for y in range(n):
+   p=im.getpixel((1,y));im.putpixel((0,y),p);im.putpixel((n-1,y),p)
  return im
 
 def tile_family(theme):
  colors=[(*rgb(h),255) for h in THEMES[theme]]
+ liquid_colors=[(*rgb(h),255) for h in LIQUIDS[theme]]
  floor=tile_source(theme,'floor');wall=tile_source(theme,'wall_front');water=tile_source(theme,'water_1')
- floor=seal(floor,colors[2]);water=seal(water,colors[0])
+ floor=seal(floor,colors[2]);water=seal(water,liquid_colors[1])
  # Every wall row uses matching outer columns, allowing horizontal repetition.
  for y in range(16):
   c=wall.getpixel((1,y));wall.putpixel((0,y),c);wall.putpixel((15,y),c)
@@ -225,7 +241,7 @@ def tile_family(theme):
   # Periodic ripples move two logical pixels per frame; the edge remains stable.
   for y in (4,10):
    for x in range(2,14):
-    if ((x-frame*2+y)%10)<4:d.point((x,y+(1 if (x+frame)%6==0 else 0)),fill=colors[4])
+    if ((x-frame*2+y)%10)<4:d.point((x,y+(1 if (x+frame)%6==0 else 0)),fill=liquid_colors[3])
   result[f'water_{frame+1}']=liquid
  pillar=floor.copy();d=ImageDraw.Draw(pillar)
  d.rectangle((4,12,11,13),fill=(*INK,255));d.rectangle((5,4,10,11),fill=colors[2]);d.line((5,4,5,11),fill=colors[4]);d.line((10,4,10,11),fill=colors[0]);d.rectangle((4,2,11,4),fill=colors[3]);d.line((4,2,11,2),fill=colors[5]);result['pillar']=pillar

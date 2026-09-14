@@ -1,107 +1,15 @@
 {
   "expected": 162,
-  "present": 71,
+  "present": 162,
   "groups": {
     "characters": 27,
     "masks": 9,
     "monsters": 20,
-    "objects": 15,
-    "tiles": 0
+    "objects": 19,
+    "tiles": 87
   },
-  "passed": false,
-  "errors": [
-    "Missing objects/bench.png",
-    "Missing objects/crate.png",
-    "Missing objects/vending.png",
-    "Missing objects/lootbox.png",
-    "Missing tiles/lobby/floor.png",
-    "Missing tiles/lobby/floor_alt.png",
-    "Missing tiles/lobby/floor_cracked.png",
-    "Missing tiles/lobby/wall_top.png",
-    "Missing tiles/lobby/wall_front.png",
-    "Missing tiles/lobby/wall_torch.png",
-    "Missing tiles/lobby/water_1.png",
-    "Missing tiles/lobby/water_2.png",
-    "Missing tiles/lobby/water_3.png",
-    "Missing tiles/lobby/pillar.png",
-    "Missing tiles/lobby/rubble.png",
-    "Missing tiles/lobby/safe_zone.png",
-    "Missing tiles/sewer/floor.png",
-    "Missing tiles/sewer/floor_alt.png",
-    "Missing tiles/sewer/floor_cracked.png",
-    "Missing tiles/sewer/wall_top.png",
-    "Missing tiles/sewer/wall_front.png",
-    "Missing tiles/sewer/wall_torch.png",
-    "Missing tiles/sewer/water_1.png",
-    "Missing tiles/sewer/water_2.png",
-    "Missing tiles/sewer/water_3.png",
-    "Missing tiles/sewer/pillar.png",
-    "Missing tiles/sewer/rubble.png",
-    "Missing tiles/sewer/safe_zone.png",
-    "Missing tiles/arena/floor.png",
-    "Missing tiles/arena/floor_alt.png",
-    "Missing tiles/arena/floor_cracked.png",
-    "Missing tiles/arena/wall_top.png",
-    "Missing tiles/arena/wall_front.png",
-    "Missing tiles/arena/wall_torch.png",
-    "Missing tiles/arena/water_1.png",
-    "Missing tiles/arena/water_2.png",
-    "Missing tiles/arena/water_3.png",
-    "Missing tiles/arena/pillar.png",
-    "Missing tiles/arena/rubble.png",
-    "Missing tiles/arena/safe_zone.png",
-    "Missing tiles/void/floor.png",
-    "Missing tiles/void/floor_alt.png",
-    "Missing tiles/void/floor_cracked.png",
-    "Missing tiles/void/wall_top.png",
-    "Missing tiles/void/wall_front.png",
-    "Missing tiles/void/wall_torch.png",
-    "Missing tiles/void/water_1.png",
-    "Missing tiles/void/water_2.png",
-    "Missing tiles/void/water_3.png",
-    "Missing tiles/void/pillar.png",
-    "Missing tiles/void/rubble.png",
-    "Missing tiles/void/safe_zone.png",
-    "Missing tiles/safe/floor.png",
-    "Missing tiles/safe/floor_alt.png",
-    "Missing tiles/safe/floor_cracked.png",
-    "Missing tiles/safe/wall_top.png",
-    "Missing tiles/safe/wall_front.png",
-    "Missing tiles/safe/wall_torch.png",
-    "Missing tiles/safe/water_1.png",
-    "Missing tiles/safe/water_2.png",
-    "Missing tiles/safe/water_3.png",
-    "Missing tiles/safe/pillar.png",
-    "Missing tiles/safe/rubble.png",
-    "Missing tiles/safe/safe_zone.png",
-    "Missing tiles/hells/floor.png",
-    "Missing tiles/hells/floor_alt.png",
-    "Missing tiles/hells/floor_cracked.png",
-    "Missing tiles/hells/wall_top.png",
-    "Missing tiles/hells/wall_front.png",
-    "Missing tiles/hells/wall_torch.png",
-    "Missing tiles/hells/water_1.png",
-    "Missing tiles/hells/water_2.png",
-    "Missing tiles/hells/water_3.png",
-    "Missing tiles/hells/pillar.png",
-    "Missing tiles/hells/rubble.png",
-    "Missing tiles/hells/safe_zone.png",
-    "Missing tiles/mercy/floor.png",
-    "Missing tiles/mercy/floor_alt.png",
-    "Missing tiles/mercy/floor_cracked.png",
-    "Missing tiles/mercy/wall_top.png",
-    "Missing tiles/mercy/wall_front.png",
-    "Missing tiles/mercy/wall_torch.png",
-    "Missing tiles/mercy/water_1.png",
-    "Missing tiles/mercy/water_2.png",
-    "Missing tiles/mercy/water_3.png",
-    "Missing tiles/mercy/pillar.png",
-    "Missing tiles/mercy/rubble.png",
-    "Missing tiles/mercy/safe_zone.png",
-    "Missing tiles/shared/drain.png",
-    "Missing tiles/shared/banner.png",
-    "Missing tiles/shared/sand.png"
-  ],
+  "passed": true,
+  "errors": [],
   "assets": [
     {
       "file": "characters/hero_down.png",
@@ -408,7 +316,7 @@
       ],
       "colors": 3,
       "binaryAlpha": true,
-      "sha256": "cf79f204366ce09e2ef8739c4371aada935dbd7760d19d521821535eec1ac419",
+      "sha256": "e60ccbe3fe64915e68fbaa17eee474b2e1af4d7e1331c5f6dd865a174e6cff36",
       "method": "Exact semantic palette mask of corresponding final human frame"
     },
     {
@@ -419,7 +327,7 @@
       ],
       "colors": 3,
       "binaryAlpha": true,
-      "sha256": "aa31813b54363f5e4f876d9d7c8c2df275e50335e21ba7505754e2c55dd00351",
+      "sha256": "1f59464dce614362778a1bd60a0214165ad18abf653b7fd3ce2343f90503c073",
       "method": "Exact semantic palette mask of corresponding final human frame"
     },
     {
@@ -430,7 +338,7 @@
       ],
       "colors": 3,
       "binaryAlpha": true,
-      "sha256": "f3c90f728b1cfa002f6c41184c674b492775b17aee62d7cee98163a7b90422b5",
+      "sha256": "22ca3ecff608ed27b80c16e5172ef7f2dcf422a4ad7b3be45a0277c73fdc5791",
       "method": "Exact semantic palette mask of corresponding final human frame"
     },
     {
@@ -474,7 +382,7 @@
       ],
       "colors": 3,
       "binaryAlpha": true,
-      "sha256": "d570d8713a69c849aad189fae8eee2f66f3db2935abc3c59f714077e34e8faed",
+      "sha256": "478ca6ccfca5ec604cdf068996cd9b8ea6dc2d45fe26b31859f96c9c14c78a6d",
       "method": "Exact semantic palette mask of corresponding final human frame"
     },
     {
@@ -485,7 +393,7 @@
       ],
       "colors": 3,
       "binaryAlpha": true,
-      "sha256": "e589798c0983c54960c350394facc7452f8b827b156542bfe02cfc40d8a678cc",
+      "sha256": "88b6adcc8f90c8c00c8929619de978de923b2479d9360e61daf10d2c51f25bb3",
       "method": "Exact semantic palette mask of corresponding final human frame"
     },
     {
@@ -496,7 +404,7 @@
       ],
       "colors": 3,
       "binaryAlpha": true,
-      "sha256": "47350dc910db61d14a5830d4bc1af53c20553fa6b464d7034ce31a27a0b3b63b",
+      "sha256": "c100e8b093df569d4c69e60801d30582ec6c7b34ba6df32cdb3b05336849bb8e",
       "method": "Exact semantic palette mask of corresponding final human frame"
     },
     {
@@ -874,6 +782,17 @@
       "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
     },
     {
+      "file": "objects/bench.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "974589dc349f2020d1eb2237a1f332bb6d7d710c72746641f828cc331a9e113f",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
       "file": "objects/bed.png",
       "size": [
         32,
@@ -882,6 +801,996 @@
       "colors": 16,
       "binaryAlpha": true,
       "sha256": "8affd4aeea118e1a516ae909666abe8f2664382f7ab9d9088532fe0d0a42a8f5",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "objects/crate.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "d1864673842e61b9cf27d7fc809232c67c78ac5ca64d5518d0afded4eef5726f",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "objects/vending.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "4e327b10a97dd586fee9614e7180d6fe9df189528c8752bfd990e88615ac4a73",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "objects/lootbox.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "4748f4777cb464886548c8012cc8216334713fe313ca69d35bdc083b89a4ca97",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "tiles/lobby/floor.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 5,
+      "binaryAlpha": true,
+      "sha256": "78f3edaeacc838018af6b959fb6f93a172b6c6ae03c4a6f99401eceabd178cb0",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/lobby/floor_alt.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 5,
+      "binaryAlpha": true,
+      "sha256": "120b28001803d72af49aea465ae96807291766c522c248db279d4814f4d9371b",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/lobby/floor_cracked.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 6,
+      "binaryAlpha": true,
+      "sha256": "627fbda829d90d50c1777a43cf9ca4fd25473ab9dad88e637698ebf1be1b5594",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/lobby/wall_top.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 6,
+      "binaryAlpha": true,
+      "sha256": "68b26427ca81c054d23c82632a1e8e4286208e2a26576cd9c1d8bcf3fa7e9488",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/lobby/wall_front.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 6,
+      "binaryAlpha": true,
+      "sha256": "b7de1f785a66952d008aff80767d8a20c65c9403f7e6b44e9abae28679570d48",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/lobby/wall_torch.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 10,
+      "binaryAlpha": true,
+      "sha256": "1091b2ddc37fb5cb8496dcf84701230e829a30cd663aca8ee47087ec67b2c64e",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/lobby/water_1.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "b4e3ee6fd26efa4e27013d66a55ac770610f12cd9f137c0b533134b7977f9a45",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/lobby/water_2.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "7280cd76f3cd327175c2c986b3f53a22eabf5ccc488b1cd62acfcbba714598c7",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/lobby/water_3.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "72753fb652665f9d225f632d2dfc93fb3992158b14c915bf3dc800f533b18468",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/lobby/pillar.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 9,
+      "binaryAlpha": true,
+      "sha256": "5733deecd7d7bee48c15849fbfe08909f22cdd5e342cb0802420d9ab943dfdbc",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/lobby/rubble.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 7,
+      "binaryAlpha": true,
+      "sha256": "4015f8479249106d2eb6b832ea833916a045af548d17094195044c5ebdc45c6a",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/lobby/safe_zone.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 7,
+      "binaryAlpha": true,
+      "sha256": "5bd355df0bb706a7898a3a9760456fef1a0d1072051a706dfaa95c19662920f9",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/sewer/floor.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 6,
+      "binaryAlpha": true,
+      "sha256": "511e7e2cb1ea39c2381c32bc59130ccbb345a5a9320f5e568e8b32828beb14ab",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/sewer/floor_alt.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 6,
+      "binaryAlpha": true,
+      "sha256": "737e47d5cb26b9f50b356dcd1040cccf5819fc1cee1ace8a2570c5918d6a6c57",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/sewer/floor_cracked.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 6,
+      "binaryAlpha": true,
+      "sha256": "b588d06509f40d37109ac74ecab78c52bcc43839dfc4b430e42f407508dad11e",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/sewer/wall_top.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 5,
+      "binaryAlpha": true,
+      "sha256": "73f987f5dbbe400c91f7732fc518982b7a90bdf594d612f5ab27cce90c040e26",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/sewer/wall_front.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 7,
+      "binaryAlpha": true,
+      "sha256": "3770100482c61a37fdf513bde8369252e5b3e2df0f16d63266a66960a04ab998",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/sewer/wall_torch.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 10,
+      "binaryAlpha": true,
+      "sha256": "8d8f5a67e6a040741d26b8a17709d1cd5cde07d291c58c4fa4323a6df4090c22",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/sewer/water_1.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 4,
+      "binaryAlpha": true,
+      "sha256": "0737edc17781d96e15dcfd8e37ff9146870f6a7afcb454ca7bcbf437f9ae08c0",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/sewer/water_2.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 4,
+      "binaryAlpha": true,
+      "sha256": "cdc3436c3689e7f1716c3c53ccb5b349d552b97dfd19307a3046854520d5ef6b",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/sewer/water_3.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 4,
+      "binaryAlpha": true,
+      "sha256": "7a663e560a3d5b6f81690c60e47062dad1979c6835747ac7ccece726d81b6c09",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/sewer/pillar.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 7,
+      "binaryAlpha": true,
+      "sha256": "77ffa4419880fcf02899cfa45126c720df4bc9b35239812df68ca55000f6bece",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/sewer/rubble.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 6,
+      "binaryAlpha": true,
+      "sha256": "59298d273f37b3c9f722154f9da4f6c6d905ce26cd21b1ae28bd83a991f3449e",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/sewer/safe_zone.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 7,
+      "binaryAlpha": true,
+      "sha256": "faca8fc21180d4f828afdd8522d9bb79f1438f2d04ab040d41fd22b05866d4ef",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/arena/floor.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 5,
+      "binaryAlpha": true,
+      "sha256": "44c806aa0a2bcb8515f1aac3561c3f6f3840598eb6104d4ca48945cd7ec7554e",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/arena/floor_alt.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 5,
+      "binaryAlpha": true,
+      "sha256": "3125942fb737a888a00203506784bedaff9c8498f297aab6eaf37b09a41ace61",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/arena/floor_cracked.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 6,
+      "binaryAlpha": true,
+      "sha256": "57ed70a9ea1226c24725cbea70103d5f83def6e4965d1051860f86eb0be94677",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/arena/wall_top.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 6,
+      "binaryAlpha": true,
+      "sha256": "eb9df492ff46441304107b0d9cd5a4cbd896e1aae168301844809e64dd1e8039",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/arena/wall_front.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 7,
+      "binaryAlpha": true,
+      "sha256": "6f0bb78b83d5baca1e67415601eb5b1c38faaa0bed88ff79a6fa0b1da0008c6c",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/arena/wall_torch.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 11,
+      "binaryAlpha": true,
+      "sha256": "4cba94f201f4cb081f47e1e5704b5969f77eff09233131c675185400d8577311",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/arena/water_1.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "873145c7a70d83b9b3c5e2db75d99e0ca93910050f6b3333054f854fc0dbdadb",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/arena/water_2.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "e9605ec4053e4d4a4e0f80a91c9843ced2605544b006e480a8df3f7f42fff0f5",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/arena/water_3.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "7e096af1c608dbdad1694ecd297879b4d2fe1f319ad468fd875e38a37b54d392",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/arena/pillar.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 7,
+      "binaryAlpha": true,
+      "sha256": "a731bd3b4b350e9e24cd4231dcefe86fee605a041e692efd6d466f7b8fca52a3",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/arena/rubble.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 5,
+      "binaryAlpha": true,
+      "sha256": "a84a5c83ca509bf1640477b29720cbccf593d0da5a41b9a60fb4cabc750941ee",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/arena/safe_zone.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 7,
+      "binaryAlpha": true,
+      "sha256": "3bddc401624aef9ce1dcf11e4d78cb76554c5eb1cd9034505b0aa4dd045a087c",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/void/floor.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 4,
+      "binaryAlpha": true,
+      "sha256": "25b0feff57b308db34ff5405e6fdf235bc6b08a0832db8bc8dc082146c4eb116",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/void/floor_alt.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 4,
+      "binaryAlpha": true,
+      "sha256": "7371ce2d9edcc90cddf31e6792761783dbd97a2415bea5301d5eae71ae741883",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/void/floor_cracked.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 4,
+      "binaryAlpha": true,
+      "sha256": "d9b8901513fa7b318da5e1bd47f0954d745b875d8fa1754972d104fcfe9cf9e0",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/void/wall_top.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 5,
+      "binaryAlpha": true,
+      "sha256": "3cd9ba49c6cb7a9fe8b9a11c9f6b36954d14cda87373399882f144b3e5eed7f9",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/void/wall_front.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 5,
+      "binaryAlpha": true,
+      "sha256": "a9ef432b6f63fbd05307d0be5401f10b81a76ceee514c7b9496f6ef101ac4dac",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/void/wall_torch.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 9,
+      "binaryAlpha": true,
+      "sha256": "68b6727ebecf043c755a2416b511916142e095c4230ff4936999a35d2467ed4b",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/void/water_1.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "5cdb864c0a504e39a87806733d08f7280b41e722e599c98d1dd3b1c08cd618e6",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/void/water_2.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "5474aaece51aa5d1bc904d07946aa4cd307bb4b7216b1da0efaeb2929132663c",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/void/water_3.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "91c9f4439c7f413179a1a795a3612972578e941e23740cc06647ecfd38b4649c",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/void/pillar.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 7,
+      "binaryAlpha": true,
+      "sha256": "2161858cb6a657ff1b1e833f4a215b659454a2405f0ecea9374ddc1df8c4161d",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/void/rubble.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 5,
+      "binaryAlpha": true,
+      "sha256": "1929ef737ae28bb1aa95114ee71e80a44d76949312876088766db841aab07d3f",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/void/safe_zone.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 6,
+      "binaryAlpha": true,
+      "sha256": "ec0580f59cb823ab41133038f6d943b5a91123376cb44d81c706423f13561525",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/safe/floor.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 4,
+      "binaryAlpha": true,
+      "sha256": "169b8a9acbd08f255a69d6ae9d5f0ec9d64377ca3046a296140d1299f8be50f1",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/safe/floor_alt.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 4,
+      "binaryAlpha": true,
+      "sha256": "288c3304c8064dc0a42075352b41edea6eec38ddfea8ec07f8237198fb4cb848",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/safe/floor_cracked.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 4,
+      "binaryAlpha": true,
+      "sha256": "c1a766bf8769c05fa2bc1cf045899655ac19144b8ecf898b4e3614668335e7bb",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/safe/wall_top.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 4,
+      "binaryAlpha": true,
+      "sha256": "7de0b1052103ab3ce6e4ac8f6e79799e14a93886b03d953e5281b57fec611ddb",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/safe/wall_front.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 5,
+      "binaryAlpha": true,
+      "sha256": "fa1b9c310f3a81da741ce5fd6a2359470996b615f80d147723d47de2d120277d",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/safe/wall_torch.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 9,
+      "binaryAlpha": true,
+      "sha256": "91e7bb1fbcec35c729b298c85b92e015dbed577f784a7cc5a19fb0f2f6f3bac4",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/safe/water_1.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "e13655ce031da388fd1175bb30313f32327a4c296f901368b926f99c2af94dea",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/safe/water_2.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "0217619184ef0073a3d817da67105cd4301a36f87d13b6d96442813f3672684c",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/safe/water_3.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "9d0b06b37b3df770f5345c54f98c759100c146ddaf74325fa9a037775a01b31e",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/safe/pillar.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 7,
+      "binaryAlpha": true,
+      "sha256": "cf56461408d192cf2f85d1d31144890d14c9a0e3acda0c9963c94313bcdbea6e",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/safe/rubble.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 5,
+      "binaryAlpha": true,
+      "sha256": "c83ec852702ff38e814aa5abbc7ee39cd8539db55f99db56e4dfd115618a6893",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/safe/safe_zone.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 6,
+      "binaryAlpha": true,
+      "sha256": "aec3a2b19d6e67faa2c67d673f10f078dea4bd728ce46923060f8f1945702398",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/hells/floor.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 4,
+      "binaryAlpha": true,
+      "sha256": "86110636d3dcc10c0c60d9b0b843d11ab816a8011b22fcf88dcd8cef41052700",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/hells/floor_alt.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 4,
+      "binaryAlpha": true,
+      "sha256": "6850d4b2c39c098c29f07d60cfb7763ae9e61a7bb29b256458b5b60dcba53319",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/hells/floor_cracked.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 4,
+      "binaryAlpha": true,
+      "sha256": "cf29a217d52cf8d55349eb95bcdcec347f2a4488cbde144df3ba083597cd56f0",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/hells/wall_top.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 5,
+      "binaryAlpha": true,
+      "sha256": "6d6e7cdc15f4c7ac2571b205fe51da5b4f63f8ba22dce551a13db9f94585e4da",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/hells/wall_front.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 5,
+      "binaryAlpha": true,
+      "sha256": "5771e6ea235721cd15043b8d1075bfa99713d4bf0e187d51bdf2e6213043c3ab",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/hells/wall_torch.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 9,
+      "binaryAlpha": true,
+      "sha256": "ccd49b03af31ca160c8368924f21b4448bcfc2ab78b97833ca15207e6635cbc5",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/hells/water_1.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "c712c7ca5ce97fc3d13dfe097be3590bd829ac2bfe0938a459e8fc2fe390d710",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/hells/water_2.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "e8c3cd464341fad2e2ee28c7a95618c28c6265835a965900d94fb67109e80aa4",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/hells/water_3.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "57a1dab22494d8d3afa7464a4a573b7841427edb56590d5f150317b77368e5fb",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/hells/pillar.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 7,
+      "binaryAlpha": true,
+      "sha256": "629c4c6dd1f359479759abdfa31355fc2b4a1d618224350b5ae71cbf989905f1",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/hells/rubble.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 5,
+      "binaryAlpha": true,
+      "sha256": "be2616b0c628db12e1cf93a6cd40e51e6ae6609fea03e1654be9b26f5cdf24c8",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/hells/safe_zone.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 6,
+      "binaryAlpha": true,
+      "sha256": "b384e05d70db676dd30beb4e5d20cda1898be85643536b884ce8c84292d99e41",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/mercy/floor.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 7,
+      "binaryAlpha": true,
+      "sha256": "ffce86a6692961a3cf271d783284c0efa57bb7a7580d827d2eee6c59ee8634d5",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/mercy/floor_alt.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 7,
+      "binaryAlpha": true,
+      "sha256": "82f040e83427bdba91f3777f9d9941bc490e659cf7e9b307a4c3399557a8e2dc",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/mercy/floor_cracked.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 7,
+      "binaryAlpha": true,
+      "sha256": "8b27950cb088cde2ed6571f52a8a773cbd23fd20b8ad3b6a47f3e220befae622",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/mercy/wall_top.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 7,
+      "binaryAlpha": true,
+      "sha256": "234342083be713075f6d1232ae91f2d4fde588585fe0ef385d14f2bfa86f5a38",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/mercy/wall_front.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 7,
+      "binaryAlpha": true,
+      "sha256": "4ebf31e42a0a6346e36c2161edddafc8c13bb359760dec64b56d45947efd8575",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/mercy/wall_torch.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 10,
+      "binaryAlpha": true,
+      "sha256": "9c95daadc2a8b6922279e29682ed33f1ac15b8cf5b8c1b01e88779722ddbc7ba",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/mercy/water_1.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "68ff1690d31f65f6c837b8800208c6ac2ba5a4dff1aad6133732c185aae5e9db",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/mercy/water_2.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "2a39640eceb0ebc3ec8188d155308eef911829683c897055763e2119e5b56703",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/mercy/water_3.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 3,
+      "binaryAlpha": true,
+      "sha256": "2b8bc1919aacf55c28c7253c2163676ac593636166c4eb0e13276068d186fd94",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/mercy/pillar.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 9,
+      "binaryAlpha": true,
+      "sha256": "1dc85d1110660b3b0b00b058fae8603ff531028cf68307e4dd1f46444aefd51d",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/mercy/rubble.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 7,
+      "binaryAlpha": true,
+      "sha256": "92618635ab284c36b52588d13f85cca4279e21be2b1403dcdb63628cf87b35f9",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/mercy/safe_zone.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 9,
+      "binaryAlpha": true,
+      "sha256": "fcf6912b1513f331736cae443dc9ab219756472d060f45ed38b1a9db48af3c56",
+      "method": "Generated theme sources; derived tile details and periodic liquid animation"
+    },
+    {
+      "file": "tiles/shared/drain.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 16,
+      "binaryAlpha": true,
+      "sha256": "761f61d997eecd31f1dae0e56280df55b0f6e9b1d80a07eba6aa7248379350f5",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "tiles/shared/banner.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 12,
+      "binaryAlpha": true,
+      "sha256": "2e97b2cd316b63f566811bda39299c5ff77c56e6e98b2289c00841a38f33391e",
+      "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
+    },
+    {
+      "file": "tiles/shared/sand.png",
+      "size": [
+        32,
+        32
+      ],
+      "colors": 15,
+      "binaryAlpha": true,
+      "sha256": "9c792ffe92c8557f4a09b48e53148a6c75a18cff68f8449dbbd25a5a02614ad0",
       "method": "Generated source; alpha cleanup, nearest-neighbor sizing, shared palette, boundary outline"
     }
   ]

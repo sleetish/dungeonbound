@@ -352,8 +352,463 @@
       "width": 32,
       "height": 32
     },
+    "objects/bench.png": {
+      "file": "objects/bench.png",
+      "width": 32,
+      "height": 32
+    },
     "objects/bed.png": {
       "file": "objects/bed.png",
+      "width": 32,
+      "height": 32
+    },
+    "objects/crate.png": {
+      "file": "objects/crate.png",
+      "width": 32,
+      "height": 32
+    },
+    "objects/vending.png": {
+      "file": "objects/vending.png",
+      "width": 32,
+      "height": 32
+    },
+    "objects/lootbox.png": {
+      "file": "objects/lootbox.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/lobby/floor.png": {
+      "file": "tiles/lobby/floor.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/lobby/floor_alt.png": {
+      "file": "tiles/lobby/floor_alt.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/lobby/floor_cracked.png": {
+      "file": "tiles/lobby/floor_cracked.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/lobby/wall_top.png": {
+      "file": "tiles/lobby/wall_top.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/lobby/wall_front.png": {
+      "file": "tiles/lobby/wall_front.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/lobby/wall_torch.png": {
+      "file": "tiles/lobby/wall_torch.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/lobby/water_1.png": {
+      "file": "tiles/lobby/water_1.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/lobby/water_2.png": {
+      "file": "tiles/lobby/water_2.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/lobby/water_3.png": {
+      "file": "tiles/lobby/water_3.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/lobby/pillar.png": {
+      "file": "tiles/lobby/pillar.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/lobby/rubble.png": {
+      "file": "tiles/lobby/rubble.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/lobby/safe_zone.png": {
+      "file": "tiles/lobby/safe_zone.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/sewer/floor.png": {
+      "file": "tiles/sewer/floor.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/sewer/floor_alt.png": {
+      "file": "tiles/sewer/floor_alt.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/sewer/floor_cracked.png": {
+      "file": "tiles/sewer/floor_cracked.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/sewer/wall_top.png": {
+      "file": "tiles/sewer/wall_top.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/sewer/wall_front.png": {
+      "file": "tiles/sewer/wall_front.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/sewer/wall_torch.png": {
+      "file": "tiles/sewer/wall_torch.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/sewer/water_1.png": {
+      "file": "tiles/sewer/water_1.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/sewer/water_2.png": {
+      "file": "tiles/sewer/water_2.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/sewer/water_3.png": {
+      "file": "tiles/sewer/water_3.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/sewer/pillar.png": {
+      "file": "tiles/sewer/pillar.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/sewer/rubble.png": {
+      "file": "tiles/sewer/rubble.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/sewer/safe_zone.png": {
+      "file": "tiles/sewer/safe_zone.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/arena/floor.png": {
+      "file": "tiles/arena/floor.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/arena/floor_alt.png": {
+      "file": "tiles/arena/floor_alt.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/arena/floor_cracked.png": {
+      "file": "tiles/arena/floor_cracked.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/arena/wall_top.png": {
+      "file": "tiles/arena/wall_top.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/arena/wall_front.png": {
+      "file": "tiles/arena/wall_front.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/arena/wall_torch.png": {
+      "file": "tiles/arena/wall_torch.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/arena/water_1.png": {
+      "file": "tiles/arena/water_1.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/arena/water_2.png": {
+      "file": "tiles/arena/water_2.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/arena/water_3.png": {
+      "file": "tiles/arena/water_3.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/arena/pillar.png": {
+      "file": "tiles/arena/pillar.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/arena/rubble.png": {
+      "file": "tiles/arena/rubble.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/arena/safe_zone.png": {
+      "file": "tiles/arena/safe_zone.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/void/floor.png": {
+      "file": "tiles/void/floor.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/void/floor_alt.png": {
+      "file": "tiles/void/floor_alt.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/void/floor_cracked.png": {
+      "file": "tiles/void/floor_cracked.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/void/wall_top.png": {
+      "file": "tiles/void/wall_top.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/void/wall_front.png": {
+      "file": "tiles/void/wall_front.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/void/wall_torch.png": {
+      "file": "tiles/void/wall_torch.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/void/water_1.png": {
+      "file": "tiles/void/water_1.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/void/water_2.png": {
+      "file": "tiles/void/water_2.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/void/water_3.png": {
+      "file": "tiles/void/water_3.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/void/pillar.png": {
+      "file": "tiles/void/pillar.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/void/rubble.png": {
+      "file": "tiles/void/rubble.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/void/safe_zone.png": {
+      "file": "tiles/void/safe_zone.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/safe/floor.png": {
+      "file": "tiles/safe/floor.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/safe/floor_alt.png": {
+      "file": "tiles/safe/floor_alt.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/safe/floor_cracked.png": {
+      "file": "tiles/safe/floor_cracked.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/safe/wall_top.png": {
+      "file": "tiles/safe/wall_top.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/safe/wall_front.png": {
+      "file": "tiles/safe/wall_front.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/safe/wall_torch.png": {
+      "file": "tiles/safe/wall_torch.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/safe/water_1.png": {
+      "file": "tiles/safe/water_1.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/safe/water_2.png": {
+      "file": "tiles/safe/water_2.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/safe/water_3.png": {
+      "file": "tiles/safe/water_3.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/safe/pillar.png": {
+      "file": "tiles/safe/pillar.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/safe/rubble.png": {
+      "file": "tiles/safe/rubble.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/safe/safe_zone.png": {
+      "file": "tiles/safe/safe_zone.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/hells/floor.png": {
+      "file": "tiles/hells/floor.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/hells/floor_alt.png": {
+      "file": "tiles/hells/floor_alt.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/hells/floor_cracked.png": {
+      "file": "tiles/hells/floor_cracked.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/hells/wall_top.png": {
+      "file": "tiles/hells/wall_top.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/hells/wall_front.png": {
+      "file": "tiles/hells/wall_front.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/hells/wall_torch.png": {
+      "file": "tiles/hells/wall_torch.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/hells/water_1.png": {
+      "file": "tiles/hells/water_1.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/hells/water_2.png": {
+      "file": "tiles/hells/water_2.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/hells/water_3.png": {
+      "file": "tiles/hells/water_3.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/hells/pillar.png": {
+      "file": "tiles/hells/pillar.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/hells/rubble.png": {
+      "file": "tiles/hells/rubble.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/hells/safe_zone.png": {
+      "file": "tiles/hells/safe_zone.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/mercy/floor.png": {
+      "file": "tiles/mercy/floor.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/mercy/floor_alt.png": {
+      "file": "tiles/mercy/floor_alt.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/mercy/floor_cracked.png": {
+      "file": "tiles/mercy/floor_cracked.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/mercy/wall_top.png": {
+      "file": "tiles/mercy/wall_top.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/mercy/wall_front.png": {
+      "file": "tiles/mercy/wall_front.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/mercy/wall_torch.png": {
+      "file": "tiles/mercy/wall_torch.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/mercy/water_1.png": {
+      "file": "tiles/mercy/water_1.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/mercy/water_2.png": {
+      "file": "tiles/mercy/water_2.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/mercy/water_3.png": {
+      "file": "tiles/mercy/water_3.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/mercy/pillar.png": {
+      "file": "tiles/mercy/pillar.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/mercy/rubble.png": {
+      "file": "tiles/mercy/rubble.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/mercy/safe_zone.png": {
+      "file": "tiles/mercy/safe_zone.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/shared/drain.png": {
+      "file": "tiles/shared/drain.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/shared/banner.png": {
+      "file": "tiles/shared/banner.png",
+      "width": 32,
+      "height": 32
+    },
+    "tiles/shared/sand.png": {
+      "file": "tiles/shared/sand.png",
       "width": 32,
       "height": 32
     }
