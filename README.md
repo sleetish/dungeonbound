@@ -10,9 +10,9 @@ No build step. Open `index.html` in a browser (or serve the folder with any stat
 
 ## Play with friends (quick start)
 
-1. **Easiest:** zip this folder and send it. Recipients double-click `index.html`, or drag it into Chrome/Firefox/Safari.
-2. **Better (localStorage + no file quirks):** from this folder run `python3 -m http.server 8000` and open `http://localhost:8000`.
-3. **Hosted:** drop the folder on any static host (GitHub Pages, Netlify, itch.io HTML). No build, no Node required.
+1. **Share this link:** [https://sleetish.github.io/dungeonbound/](https://sleetish.github.io/dungeonbound/) (GitHub Pages; goes live after merge to `main`).
+2. **Offline zip:** send this folder. Recipients double-click `index.html`, or drag it into Chrome/Firefox/Safari.
+3. **Local server:** `python3 -m http.server 8000` then open `http://localhost:8000`.
 
 **Controls:** Arrows/WASD move · Z/Space confirm · X/Esc cancel · Enter menu · M mute. Touch devices get on-screen buttons. Mouse works in menus.
 
