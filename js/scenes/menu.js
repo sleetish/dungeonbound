@@ -51,7 +51,7 @@ class MenuScene {
   }
   enter() {
     const items = [{ label: 'Goods', value: 'items' }, { label: 'Skills', value: 'skills' }, { label: 'Equip', value: 'equip' }, { label: 'Status', value: 'status' }, { label: 'Party', value: 'party' }, { label: 'Ranking', value: 'ranking' }, { label: 'Sponsors', value: 'sponsors' }, { label: 'Trophies', value: 'trophies' }];
-    if (this.opts.inSafeRoom) items.push({ label: 'Save', value: 'save' });
+    items.push({ label: 'Save', value: 'save' });
     items.push({ label: 'Close', value: 'close' });
     this.push(new Menu(items, { x: 8, y: 8, w: 84 }), it => this.mainSelect(it.value), ctx => this.drawPartyStrip(ctx));
   }
@@ -105,7 +105,10 @@ class MenuScene {
     else if (v === 'ranking') this.openRanking();
     else if (v === 'sponsors') this.openSponsors();
     else if (v === 'trophies') this.openTrophies();
-    else if (v === 'save') { if (G.save()) this.message('Progress saved. The network thanks you for your data.'); else this.message('Save failed. Storage is unavailable in this browser.'); }
+    else if (v === 'save') {
+      if (G.save()) this.message(this.opts.inSafeRoom ? 'Progress saved. The network thanks you for your data.' : 'Progress saved. (Terminals and safe rooms still work too.)');
+      else this.message('Save failed. Storage is unavailable in this browser.');
+    }
   }
   memberMenu(title, filter) {
     const ms = G.party.members.filter(filter || (() => true));

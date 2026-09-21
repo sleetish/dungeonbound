@@ -358,8 +358,14 @@ class OverworldScene {
           sayLines([{ text: 'Somewhere on the floor, a gate grinds open.', speaker: 'SYSTEM', color: UI.COLORS.sys }]);
         } else {
           self.fs.bossDefeated = true; G.event('bossKills'); G.addViewers(1200, 'floor boss down');
-          G.unlock(G.floor === 1 ? 'boss1' : G.floor === 2 ? 'boss2' : 'boss3');
-          sayLines([{ text: 'Floor Boss defeated. The stairs have been unsealed. Please proceed to your next humiliation.', speaker: 'SYSTEM', color: UI.COLORS.sys }]);
+          if (G.floor === 1) G.unlock('boss1');
+          else if (G.floor === 2) G.unlock('boss2');
+          else if (G.floor === 3) G.unlock('boss3');
+          else if (G.floor === 18) G.unlock('boss18');
+          const stairsLine = G.floor === 18
+            ? 'The Showrunner is down. The Broadcast Deck stairs are no longer stairs — they are an exit. Walk out, or the network will invent a reason to keep you.'
+            : 'Floor Boss defeated. The stairs have been unsealed. Please proceed to your next humiliation.';
+          sayLines([{ text: stairsLine, speaker: 'SYSTEM', color: UI.COLORS.sys }]);
         }
       } });
     }));
@@ -484,10 +490,17 @@ class OverworldScene {
     }
     if (this.stairsWarned) return;
     this.stairsWarned = true; const self = this;
+    const finale = G.floor === 18 && !G.flags.endless;
     Game.push(new DialogScene(function* (d) {
-      yield d.sys('Stairs to Floor ' + (G.floor + 1) + '. Descend? Once you go down, this floor is gone.');
-      yield d.choice(['Descend', 'Not yet']);
-      if (d.result === 'Descend') self.descend(false);
+      if (finale) {
+        yield d.sys('An exit door. Beyond it: the end of the show. Walk out?');
+        yield d.choice(['Escape', 'Not yet']);
+        if (d.result === 'Escape') self.descend(false);
+      } else {
+        yield d.sys('Stairs to Floor ' + (G.floor + 1) + '. Descend? Once you go down, this floor is gone.');
+        yield d.choice(['Descend', 'Not yet']);
+        if (d.result === 'Descend') self.descend(false);
+      }
     }));
   }
   descend(forced) {
@@ -500,6 +513,13 @@ class OverworldScene {
     const leavers = G.checkLoyalty();
     const summary = G.floorSummary(); G.resetFloorStats();
     G.pkThisFloor = false;
+    // Clearing Floor 18 ends the advertised run (unless already in endless mode).
+    if (G.floor === 18 && !G.flags.endless) {
+      G.deepest = Math.max(G.deepest, 18);
+      G.save();
+      Game.transition(() => Game.replace(new VictoryScene()));
+      return;
+    }
     G.floor++; G.deepest = Math.max(G.deepest, G.floor); G.score += 100; G.addViewers(250, 'descended');
     G.advanceCrawlers(G.floor);
     G.save();
@@ -688,5 +708,17 @@ class OverworldScene {
       const v = G.viewers >= 1000 ? (G.viewers / 1000).toFixed(1) + 'k' : String(G.viewers);
       UI.labelBox(ctx, 'V ' + v, UI.W - 8, 28, { right: true, minW: 56, color: '#c0c0ff' });
     }
+    // Compact party HP (top-left) so you never walk into a fight blind — keeps clear of touch controls.
+    const ms = G.party.members; const stripH = 4 + ms.length * 11;
+    const stripY = 28;
+    UI.window(ctx, 4, stripY, 78, stripH, { fill: 'rgba(10,10,20,0.82)' });
+    ms.forEach((m, i) => {
+      const y = stripY + 3 + i * 11;
+      const hp = Math.max(0, Math.ceil(m.hpDisplay != null ? m.hpDisplay : m.hp));
+      const low = !m.alive || hp <= m.maxhp * 0.25;
+      const name = (m.name || '?').slice(0, 5);
+      UI.text(ctx, name, 8, y, m.alive ? '#fff' : UI.COLORS.bad);
+      UI.text(ctx, String(hp), 78 - 4 - UI.width(ctx, String(hp)), y, low ? '#ff8080' : '#c0c0ff');
+    });
   }
 }

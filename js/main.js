@@ -51,5 +51,9 @@ const Game = {
 };
 
 if (typeof window !== 'undefined' && typeof document !== 'undefined' && document.getElementById) {
-  window.addEventListener('load', () => Game.init());
+  window.addEventListener('load', () => {
+    Game.init();
+    const c = document.getElementById('game');
+    if (c && c.focus) try { c.focus(); } catch (e) {}
+  });
 }

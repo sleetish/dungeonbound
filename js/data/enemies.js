@@ -74,6 +74,15 @@ const ENEMIES = {
     intro: 'The crowd noise is piped in. The champion is not. Gladiatron cracks its golden knuckles.',
     phases: [{ at: 0.6, tell: 'Gladiatron raises its arms to the crowd! The roar is deafening! (Guard everyone!)', effect: 'hypeslam' }, { at: 0.25, tell: 'Gladiatron drops to one knee... then rises, furious!', effect: 'rage' }],
     actions: [{ type: 'attack', verb: 'pummels', w: 4 }, { type: 'attack', verb: 'unleashes a Crowd Pleaser on', all: true, mult: 0.8, w: 3 }, { type: 'skill', id: 'hype', w: 1 }, { type: 'skill', id: 'siphon', w: 2 }] },
+  // Floor 18 finale — the face of the show, not just another recycled champion
+  showrunner: { name: 'The Showrunner', sprite: 'gladiatron', pal: { G: '#c060ff', g: '#6020a0', y: '#ffe080', o: '#ff40a0' }, level: 22, hp: 1400, str: 52, def: 30, spd: 15, luck: 14, exp: 3200, money: 3000, boss: true,
+    drops: [{ id: 'box_gold', p: 1 }, { id: 'critlens', p: 1 }, { id: 'regenband', p: 0.5 }], article: '',
+    intro: 'The Broadcast Deck goes silent. A figure in a tailored void-suit steps into the spotlight. "Ratings are up. You are not leaving without a finale."',
+    phases: [
+      { at: 0.66, tell: 'The Showrunner cues the band! Sponsor Drones drop from the rafters!', effect: 'summon', summon: 'drone', count: 2 },
+      { at: 0.33, tell: 'Live audience feed maxed! The Showrunner winds up a season finale blow! (Guard everyone!)', effect: 'hypeslam' },
+    ],
+    actions: [{ type: 'attack', verb: 'executes', w: 4 }, { type: 'attack', verb: 'cuts to commercial on', all: true, mult: 0.85, w: 3 }, { type: 'skill', id: 'nova', w: 1 }, { type: 'skill', id: 'siphon', w: 2 }, { type: 'skill', id: 'hype', w: 1 }] },
 };
 
 // per floor: [first gate guardian, second gate guardian], ordered weak to strong
