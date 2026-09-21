@@ -90,4 +90,5 @@ function* INTRO_SCRIPT(d) {
   Sound.sfx('levelup');
   yield d.sys('Chancellor Tibbs joined the party!');
   yield d.sys('Tip: monsters roam the floor. Touch one to fight. Hit it from BEHIND to strike first. Other crawlers roam too. Some want friends. Some want your stuff.');
+  yield d.sys('Tip: open the menu with Enter to Save anytime. Face-doors on this floor are managers — pick one; they stick for the run.');
 }

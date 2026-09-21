@@ -8,6 +8,18 @@ crawlers.
 
 No build step. Open `index.html` in a browser (or serve the folder with any static server).
 
+## Play with friends (quick start)
+
+1. **Share this link:** [https://sleetish.github.io/dungeonbound/](https://sleetish.github.io/dungeonbound/) (GitHub Pages; goes live after merge to `main`).
+2. **Offline zip:** send this folder. Recipients double-click `index.html`, or drag it into Chrome/Firefox/Safari.
+3. **Local server:** `python3 -m http.server 8000` then open `http://localhost:8000`.
+
+**Controls:** Arrows/WASD move · Z/Space confirm · X/Esc cancel · Enter menu · M mute. Touch devices get on-screen buttons. Mouse works in menus.
+
+**Save often:** Enter → **Save** works anywhere. Terminals and safe rooms also save. The game auto-saves when you descend a floor.
+
+**Goal:** Survive 18 floors. Floors 1–3 are scripted; 4–17 are generated; Floor 18 is the Broadcast Deck finale. After you escape you can optionally keep crawling endless.
+
 ## Controls
 
 | Action | Keys |

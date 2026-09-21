@@ -35,4 +35,6 @@ const ACHIEVEMENTS = {
   viewers: { title: 'Trending', hint: 'Reach 10,000 viewers.', text: 'Ten thousand viewers. Your ratings have been noticed by people who own moons. Reward: Gold Loot Box.', reward: 'box_gold' },
   unique: { title: 'Collector\'s Item', hint: 'Find a unique piece of gear.', text: 'You found a unique item. There is only one. There will be a very good replica in the gift shop by morning. Reward: Silver Loot Box.', reward: 'box_silver' },
   rival: { title: 'Sore Winner', hint: 'Be ambushed by a crawler you spared or knocked out.', text: 'A crawler you let live came back for you. The audience adores a grudge. Reward: Silver Loot Box.', reward: 'box_silver' },
+  escape: { title: 'Credit Roll', hint: 'Clear Floor 18 and leave the dungeon.', text: 'You cleared the Broadcast Deck and walked out of an 18-floor entertainment dungeon. The network will miss you. Briefly. Reward: Gold Loot Box.', reward: 'box_gold' },
+  boss18: { title: 'Season Finale', hint: 'Defeat The Showrunner on Floor 18.', text: 'You beat The Showrunner live on air. Clip of the season. Merch pending. Reward: Gold Loot Box.', reward: 'box_gold' },
 };

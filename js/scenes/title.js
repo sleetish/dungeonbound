@@ -18,8 +18,21 @@ class TitleScene {
     if (r && r.select) {
       if (r.select.value === 'continue') {
         if (G.load()) Game.transition(() => Game.replace(new OverworldScene()));
-      } else {
+      } else if (r.select.value === 'new') {
+        if (G.hasSave()) {
+          this.menu = new Menu([
+            { label: 'Overwrite save', value: 'confirm-new' },
+            { label: 'Cancel', value: 'cancel-new' },
+          ], { x: UI.W / 2 - 60, y: 150, w: 120, cancelable: false, center: true });
+        } else {
+          Game.transition(() => Game.replace(new NameEntryScene()));
+        }
+      } else if (r.select.value === 'confirm-new') {
         Game.transition(() => Game.replace(new NameEntryScene()));
+      } else if (r.select.value === 'cancel-new') {
+        const items = [{ label: 'New Game', value: 'new' }];
+        if (G.hasSave()) items.unshift({ label: 'Continue', value: 'continue' });
+        this.menu = new Menu(items, { x: UI.W / 2 - 40, y: 150, w: 80, cancelable: false, center: true });
       }
     }
   }

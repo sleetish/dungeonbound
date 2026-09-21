@@ -203,9 +203,14 @@ function generateFloor(n) {
   const names = ['The Undercroft', 'The Server Farm', 'The Food Court', 'The Vault', 'The Nursery', 'The Boiler Deck', 'The Archive', 'The Aquarium', 'The Parking Structure', 'The Studio'];
   const subPool = spec ? SUBBOSS_POOLS[spec.pool] : SUBBOSS_POOLS.all;
   const subbosses = spec ? [subPool[0], subPool[1]] : [subPool[ri(0, 1)], subPool[ri(2, subPool.length - 1)]];
+  const isFinale = n === 18;
+  if (isFinale && !modifiers.includes('dark')) modifiers.push('dark');
+  if (isFinale && !modifiers.includes('bounty')) modifiers.push('bounty');
   return {
-    name: spec ? spec.name : 'Floor ' + n + ': ' + names[(n - 4) % names.length], pool: spec ? spec.pool : 'all', level: n, generated: true,
-    boss: spec ? spec.boss : bosses[(n - 1) % bosses.length], subbosses, music: 'overworld', theme, modifiers,
+    name: spec ? spec.name : (isFinale ? 'Floor 18: The Broadcast Deck' : 'Floor ' + n + ': ' + names[(n - 4) % names.length]),
+    pool: spec ? spec.pool : 'all', level: n, generated: true, finale: isFinale,
+    boss: spec ? spec.boss : (isFinale ? 'showrunner' : bosses[(n - 1) % bosses.length]),
+    subbosses, music: 'overworld', theme: isFinale ? 'void' : theme, modifiers,
     crawlers: spec ? spec.crawlers : [], chests, npcs: spec ? spec.npcs : [],
     shop: spec ? spec.shop : ['feast', 'brew', 'defib', 'puck', 'toxcan', 'grenade', 'taser', 'boot', 'plate', 'exo', 'gutsring', 'earbuds', 'mask', 'box_silver'],
     timeLimit: (14 + n * 2) * 60 * 60, gates: gates.length,

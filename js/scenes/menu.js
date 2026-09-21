@@ -51,9 +51,9 @@ class MenuScene {
   }
   enter() {
     const items = [{ label: 'Goods', value: 'items' }, { label: 'Skills', value: 'skills' }, { label: 'Equip', value: 'equip' }, { label: 'Status', value: 'status' }, { label: 'Party', value: 'party' }, { label: 'Ranking', value: 'ranking' }, { label: 'Sponsors', value: 'sponsors' }, { label: 'Trophies', value: 'trophies' }];
-    if (this.opts.inSafeRoom) items.push({ label: 'Save', value: 'save' });
+    items.push({ label: 'Save', value: 'save' });
     items.push({ label: 'Close', value: 'close' });
-    this.push(new Menu(items, { x: 8, y: 8, w: 84 }), it => this.mainSelect(it.value), ctx => this.drawPartyStrip(ctx));
+    this.push(new Menu(items, { x: 8, y: 8, w: 92 }), it => this.mainSelect(it.value), ctx => this.drawPartyStrip(ctx));
   }
   push(menu, onSelect, panel, onCancel) { this.stack.push({ menu, onSelect, panel, onCancel }); }
   pop() { this.stack.pop(); if (!this.stack.length) Game.pop(); }
@@ -89,9 +89,9 @@ class MenuScene {
       const st = Object.keys(m.status).map(s => STATUS_INFO[s].short).slice(0, 2).join(' ');
       if (st) UI.text(ctx, st, 196, y + 5, UI.COLORS.bad);
     });
-    const gy = this.leftY; UI.window(ctx, 8, gy, 84, 36);
+    const gy = this.leftY; UI.window(ctx, 8, gy, 92, 36);
     UI.text(ctx, 'Gold', 14, gy + 5, UI.COLORS.dim); UI.text(ctx, String(G.party.money), 14, gy + 15, '#fff');
-    UI.text(ctx, 'F' + G.floor, 62, gy + 15, UI.COLORS.dim);
+    UI.text(ctx, 'F' + G.floor, 70, gy + 15, UI.COLORS.dim);
   }
   descPanel(text) { return ctx => { UI.window(ctx, 8, 128, UI.W - 16, 28); UI.wrap(ctx, text || '', UI.W - 30).slice(0, 2).forEach((l, i) => UI.text(ctx, l, 14, 134 + i * 10, UI.COLORS.dim)); }; }
   // ---- main ----
@@ -105,7 +105,10 @@ class MenuScene {
     else if (v === 'ranking') this.openRanking();
     else if (v === 'sponsors') this.openSponsors();
     else if (v === 'trophies') this.openTrophies();
-    else if (v === 'save') { if (G.save()) this.message('Progress saved. The network thanks you for your data.'); else this.message('Save failed. Storage is unavailable in this browser.'); }
+    else if (v === 'save') {
+      if (G.save()) this.message(this.opts.inSafeRoom ? 'Progress saved. The network thanks you for your data.' : 'Progress saved. (Terminals and safe rooms still work too.)');
+      else this.message('Save failed. Storage is unavailable in this browser.');
+    }
   }
   memberMenu(title, filter) {
     const ms = G.party.members.filter(filter || (() => true));
